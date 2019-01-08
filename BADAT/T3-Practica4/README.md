@@ -18,6 +18,16 @@
     provincia VARCHAR2(25),<br>
     CONSTRAINT pk_soci PRIMARY KEY (DNI)<br>
   );`
--  
+- CREATE TABLE prestamo (<br>
+    DNI VARCHAR2(9),<br>
+    ISBN VARCHAR2(9),<br>
+    titulo VARCHAR2(25),<br>
+    fecha_prestamo DATE,<br>
+    fecha_devolucion DATE,<br>
+    devuelto VARCHAR2(2),<br>
+    CONSTRAINT pk_presta PRIMARY KEY (fecha_prestamo),<br>
+    CONSTRAINT fk_presta_libro FOREIGN KEY (ISBN,titulo) REFERENCES libro (ISBN, titulo),<br>
+    CONSTRAINT fk_presta_soci FOREIGN KEY (DNI) REFERENCES socio (DNI)<br>
+  );
 ### Apuntes:
 `TO_DATE('26/04/1982','dd/mm/yyyy');`
