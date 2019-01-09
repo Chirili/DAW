@@ -48,3 +48,8 @@
     CONSTRAINT pk_arma PRIMARY KEY (cod_arma),<br>
     CONSTRAINT fk_arma_poli FOREIGN KEY (dni_poli) REFERENCES policia (dni_poli)<br>
 );
+#### Alter tables
+1. ALTER TABLE calabozo ADD CONSTRAINT ck_ubic CHECK (ubicacion NOT IN('Huelva','Malaga'));
+2. ALTER TABLE caso MODIFY juzgado VARCHAR2(25) DEFAULT ('Sevilla');
+3. ALTER TABLE arma ADD CONSTRAINT ck_arma CHECK (clase_pertenece  IN('Subfusil','Fusil','Fusil de asalto','Francotirador','Rifle','Escopeta','Pistola'));
+4. ALTER TABLE policia ADD CONSTRAINT ck_poli CHECK (jefe  IN('Si','No'));
