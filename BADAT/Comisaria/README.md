@@ -53,3 +53,10 @@
 2. ALTER TABLE caso MODIFY juzgado VARCHAR2(25) DEFAULT ('Sevilla');
 3. ALTER TABLE arma ADD CONSTRAINT ck_arma CHECK (clase_pertenece  IN('Subfusil','Fusil','Fusil de asalto','Francotirador','Rifle','Escopeta','Pistola'));
 4. ALTER TABLE policia ADD CONSTRAINT ck_poli CHECK (jefe  IN('Si','No'));
+#### Inserts
+1. INSERT INTO calabozo (codigo_cala, ubicacion)
+    VALUES ('763452134','Almeria').
+2. INSERT INTO casos (cod_caso, juzgado, cargo)
+    VALUES ('623456654','Almeria','Asesinato')
+3. INSERT INTO delincuente (dni_deli,nombre, telefono)
+    VALUES ('72345267W','Antonio','662351235')
