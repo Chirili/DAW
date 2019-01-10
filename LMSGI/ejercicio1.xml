@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<figuras>
+ <figura>
+ <nombre>cuadrado</nombre>
+ </lados 4>
+ </figura>
+ <figura plana>
+ <nombre>triángulo</nombre>
+ </lados 3>
+ </figura> 
+2
+ <figura tridimensional>
+ <nombre>cubo</nombre>
+ </aristas 12>
+ </caras 6>
+ </figura>
+</figuras> 

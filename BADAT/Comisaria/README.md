@@ -1,4 +1,5 @@
 # DAW
+<<<<<<< HEAD
 ## Ejercicio de Comisaria
 ### Modelo Entidad-Relación
 ![comisaria2](https://user-images.githubusercontent.com/23047899/50920117-db3c3b00-1444-11e9-85ae-f75e51c72961.png)
@@ -60,3 +61,6 @@
     VALUES ('623456654','Almeria','Asesinato')
 3. INSERT INTO delincuente (dni_deli,nombre, telefono)
     VALUES ('72345267W','Antonio','662351235')
+=======
+Ejercicios y apuntes del Ciclo Superior de Desarrollo de Aplicaciones Web
+>>>>>>> Folder recovery
