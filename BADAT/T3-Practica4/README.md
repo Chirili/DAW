@@ -1,6 +1,6 @@
 # DAW
 
-## Ejercicios 4 Tema 3 Base de datos.
+## Práctica 4 Tema 3 Base de datos.
 
 ### Create Tables:
 
@@ -29,5 +29,11 @@
     CONSTRAINT fk_presta_libro FOREIGN KEY (ISBN,titulo) REFERENCES libro (ISBN, titulo),<br>
     CONSTRAINT fk_presta_soci FOREIGN KEY (DNI) REFERENCES socio (DNI)<br>
   );
+
+### Alter tables:
+1. La provincia por defecto del socio será Almería, Córdoba, Málaga o Granada:
+  - ALTER TABLE socio ADD CONSTRAINT ck_provi CHECK (provincia IN('Almería','Córdoba','Málaga','Granada'));
+2. El socio debe de ser mayor de edad. Tomaremos para eso fechas de nacimiento anteriores al 9/12/1998:
+  - ALTER TABLE socio ADD CONSTRAINT ck_fecha CHECK (fecha_nacimiento < TO_DATE('9/12/1998','dd/mm/yyyy'));
 ### Apuntes:
 `TO_DATE('26/04/1982','dd/mm/yyyy');`
