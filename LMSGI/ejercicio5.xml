@@ -1,0 +1,13 @@
+<?xml-stylesheet type="text/css" href="estilo-articulos.css"?>
+<articulos>
+    <nombre>
+        <articulo>Sofá</articulo1>
+        <articulo>Mesa</articulo2>
+        <articulo>Lámpara</articulo3>    
+    </nombre>
+    <precio>
+        <articulo>642</articulo>
+        <articulo>305</articulo>
+        <articulo>89</articulo>
+    </precio>
+</articulos>
