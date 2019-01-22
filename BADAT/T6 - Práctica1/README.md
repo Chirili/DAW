@@ -16,4 +16,15 @@
   - SELECT dni,nombre,apellidos,curso,nivel,clase FROM alum0405 ORDER BY nombre,apellidos ASC;
 
 #### Ejercicio2
-2. 
+2. Muestra los datos (apellido, oficio, salario y fecha de alta) de aquellos empleados que desempeñen el mismo oficio que ‘JIMENEZ’ o que tengan un salario mayor o igual que ‘FERNANDEZ’.
+  - SELECT apellido,oficio,salario,fecha_alt FROM emple WHERE oficio LIKE 'DIRECTOR' OR salario >= '3000';
+3. Presenta los apellidos y oficios de los empleados que tienen el mismo trabajo que ‘JIMENEZ’.
+  - SELECT apellido,oficio FROM emple WHERE oficio LIKE 'DIRECTOR';
+4. Muestra en pantalla el APELLIDO, OFICIO y SALARIO de los empleados del departamento de ‘FERNANDEZ’ que tengan su mismo salario.
+  - SELECT apellido,oficio,salario FROM emple WHERE salario LIKE '3000';
+5. Visualiza los nombres de alumnos que tengan una nota entre 7 y 8 en la asignatura de ‘FOL’.
+  - SELECT apenom FROM notas,alumnos,asignaturas<br>
+  HERE cod=4 AND nota between 7 AND 8<br>
+  AND asignaturas.cod = notas.cod and<br>
+  alumnos.dni = notas.dni<br>
+

@@ -1,0 +1,1 @@
+SELECT apellido,oficio,salario,fecha_alt FROM emple WHERE oficio IN(SELECT oficio FROM emple WHERE oficio LIKE 'DIRECTOR' OR salario=>'FERNANDEZ');
