@@ -5,11 +5,23 @@
 ### Consultas SQL
 #### Ejercicio 1
 1. 1.a  Obtén todos los datos del alumno:
+<<<<<<< HEAD
   - ```markdownSELECT * FROM alum0405;```
 2. 1.b Obtén los siguientes datos del alumno: dni, nombre, apellidos, curso, nivel y clase.
   - SELECT dni,nombre,apellidos,curso,nivel,clase FROM alum0405;
+=======
+``` js
+  SELECT * FROM alum0405;
+```
+2. 1.b Obtén los siguientes datos del alumno: dni, nombre, apellidos, curso, nivel y clase.
+``` js
+  SELECT dni,nombre,apellidos,curso,nivel,clase FROM alum0405;
+```
+>>>>>>> 2056cec72865bf996bd8a0b1df58647a8a56e823
 3. 1.c Obtén todos los datos del alumno cuya población sea ‘GUADALAJARA’.
-  - SELECT * FROM alum0405 WHERE poblacion='GUADALAJARA';
+``` js
+  SELECT * FROM alum0405 WHERE poblacion='GUADALAJARA';
+```
 4. 1.d Obtén el nombre y apellidos de todos los alumnos cuya población sea ‘GUADALAJARA’.
   - SELECT nombre,apellidos FROM alum0405 WHERE poblacion='GUADALAJARA';
 5. 1.e Consulta el dni, nombre, apellidos, curso, nivel y clase de todos los alumnos ordenados por apellido y nombre ascendente.
@@ -40,7 +52,7 @@
 9. Obtén los datos de los empleados del departamento de “VENTAS”.
   - SELECT*FROM EMPLE WHERE dept_no=(SELECT dept_no FROM depart WHERE dnombre='VENTAS');
 #### Ejercicio 10
-10. - Obtén los datos de los departamentos que NO tengan empleados.
+10. Obtén los datos de los departamentos que NO tengan empleados.
   - SELECT * FROM depart WHERE dept_no NOT IN(SELECT dept_no FROM emple);
 #### Ejercicio 11
 11. Obtén los datos de los departamentos que tengan empleados.
