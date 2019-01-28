@@ -5,11 +5,6 @@
 ### Consultas SQL
 #### Ejercicio 1
 1. 1.a  Obtén todos los datos del alumno:
-<<<<<<< HEAD
-  - ```markdownSELECT * FROM alum0405;```
-2. 1.b Obtén los siguientes datos del alumno: dni, nombre, apellidos, curso, nivel y clase.
-  - SELECT dni,nombre,apellidos,curso,nivel,clase FROM alum0405;
-=======
 ``` js
   SELECT * FROM alum0405;
 ```
@@ -17,7 +12,6 @@
 ``` js
   SELECT dni,nombre,apellidos,curso,nivel,clase FROM alum0405;
 ```
->>>>>>> 2056cec72865bf996bd8a0b1df58647a8a56e823
 3. 1.c Obtén todos los datos del alumno cuya población sea ‘GUADALAJARA’.
 ``` js
   SELECT * FROM alum0405 WHERE poblacion='GUADALAJARA';
