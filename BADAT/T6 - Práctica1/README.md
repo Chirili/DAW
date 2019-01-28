@@ -42,7 +42,7 @@
 #### Ejercicio 5
 5. Visualiza los nombres de alumnos que tengan una nota entre 7 y 8 en la asignatura de ‘FOL’
 ``` js
-  SELECT APENOM FROM ALUMNOS, NOTAS WHERE NOTA IN (SELECT NOTA FROM NOTAS WHERE COD IN (SELECT COD FROM ASIGNATURAS WHERE NOTA BETWEEN 7 AND 8)AND ALUMNOS.DNI=NOTAS.DNI)
+  SELECT APENOM FROM alumnos, notas WHERE NOTA IN (SELECT nota FROM notas WHERE COD IN (SELECT COD FROM asignaturas WHERE nota BETWEEN 7 AND 8)AND alumnos.dni=notas.dni)
 ```
 #### Ejercicio 6
 5. Visualiza los nombres de las asignaturas que no tengan suspensos.
