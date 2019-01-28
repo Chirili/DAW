@@ -5,9 +5,9 @@
 ### Consultas SQL
 #### Ejercicio 1
 1. 1.a  Obtén todos los datos del alumno:
-  - SELECT * FROM alum0405;
+  - `SELECT * FROM alum0405;`
 2. 1.b Obtén los siguientes datos del alumno: dni, nombre, apellidos, curso, nivel y clase.
-  - 'SELECT dni,nombre,apellidos,curso,nivel,clase FROM alum0405;'
+  - SELECT dni,nombre,apellidos,curso,nivel,clase FROM alum0405;
 3. 1.c Obtén todos los datos del alumno cuya población sea ‘GUADALAJARA’.
   - SELECT * FROM alum0405 WHERE poblacion='GUADALAJARA';
 4. 1.d Obtén el nombre y apellidos de todos los alumnos cuya población sea ‘GUADALAJARA’.
