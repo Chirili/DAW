@@ -17,15 +17,23 @@
   SELECT * FROM alum0405 WHERE poblacion='GUADALAJARA';
 ```
 4. 1.d Obtén el nombre y apellidos de todos los alumnos cuya población sea ‘GUADALAJARA’.
-  - SELECT nombre,apellidos FROM alum0405 WHERE poblacion='GUADALAJARA';
+``` js
+  SELECT nombre,apellidos FROM alum0405 WHERE poblacion='GUADALAJARA';
+```
 5. 1.e Consulta el dni, nombre, apellidos, curso, nivel y clase de todos los alumnos ordenados por apellido y nombre ascendente.
-  - SELECT dni,nombre,apellidos,curso,nivel,clase FROM alum0405 ORDER BY nombre,apellidos ASC;
+``` js
+  SELECT dni,nombre,apellidos,curso,nivel,clase FROM alum0405 ORDER BY nombre,apellidos ASC;
+```
 #### Ejercicio 2
 2. Muestra los datos (apellido, oficio, salario y fecha de alta) de aquellos empleados que desempeñen el mismo oficio que ‘JIMENEZ’ o que tengan un salario mayor o igual que ‘FERNANDEZ’.
+``` js
   - SELECT apellido,oficio,salario,fecha_alt FROM emple WHERE oficio LIKE 'DIRECTOR' OR salario >= '3000';
+```
 #### Ejercicio 3
 3. Presenta los apellidos y oficios de los empleados que tienen el mismo trabajo que ‘JIMENEZ’.
+``` js
   - SELECT apellido,oficio FROM emple WHERE oficio LIKE 'DIRECTOR';
+```
 #### Ejercicio 4
 4. Muestra en pantalla el APELLIDO, OFICIO y SALARIO de los empleados del departamento de ‘FERNANDEZ’ que tengan su mismo salario.
   - SELECT apellido,oficio,salario FROM emple WHERE salario LIKE '3000';
