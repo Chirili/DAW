@@ -23,8 +23,9 @@
 4. Muestra en pantalla el APELLIDO, OFICIO y SALARIO de los empleados del departamento de ‘FERNANDEZ’ que tengan su mismo salario.
   - SELECT apellido,oficio,salario FROM emple WHERE salario LIKE '3000';
 5. Visualiza los nombres de alumnos que tengan una nota entre 7 y 8 en la asignatura de ‘FOL’.
-  - SELECT apenom FROM notas,alumnos,asignaturas<br>
-  HERE cod=4 AND nota between 7 AND 8<br>
-  AND asignaturas.cod = notas.cod and<br>
-  alumnos.dni = notas.dni<br>
+  - SELECT apenom FROM notas,alumnos,asignaturas
+  WHERE nota between 7 AND 8
+  AND asignaturas.cod = notas.cod and
+  alumnos.dni = notas.dni
+
 
