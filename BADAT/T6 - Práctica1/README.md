@@ -115,7 +115,7 @@
 #### Ejercicio 19
 19. Muestra  los  nombres  de  los  alumnos  que  tengan  la  misma  nota  que  tiene  “Díaz Fernandez, Maria” en “FOL” en alguna asignatura.
 ``` js
-  SELECT apenom FROM alumno, notas WHERE nota IN (SELECT nota FROM notas WHERE cod IN (SELECT cod FROM asignaturas WHERE nombre='FOL')AND dni IN (SELECT dni FROM alumnos WHERE apenom='Díaz Fernández, María') AND ALUMNOS.DNI=NOTAS.DNI);
+  SELECT apenom FROM alumnos,notas WHERE nota IN (SELECT nota FROM notas WHERE cod IN (SELECT cod FROM asignaturas WHERE nombre='FOL')AND dni IN (SELECT dni FROM alumnos WHERE apenom='Díaz Fernández, María') AND ALUMNOS.DNI=NOTAS.DNI);
 ```
 #### Ejercicio 20
 20. Obtén los datos de las asignaturas que no tengan alumnos.
