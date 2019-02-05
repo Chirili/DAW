@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE lista_personas[
+<!ELEMENT lista_personas (persona)>
+<!ELEMENT persona (nombre,fecha_nacimiento,sexo)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fecha_nacimiento (#PCDATA)>
+<!ELEMENT sexo (#PCDATA)>
+]>
+<lista_personas>
+    <persona>
+        <nombre>Antonio Moreno</nombre>
+        <fecha_nacimiento>27-11-2008</fecha_nacimiento>
+        <sexo>Varón</sexo>
+    </persona>
+</lista_personas>

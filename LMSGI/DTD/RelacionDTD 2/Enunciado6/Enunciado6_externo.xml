@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ventas_editorial SYSTEM "../DTDExterno/Enunciado6.dtd">
+<ventas_editorial>
+    <edicion>EdicionesAranda</edicion>
+    <informe tipo="regional_del_ventas" fecha="30/12/2009"></informe>
+    <region>
+        <zona>
+            <norte>
+                <trimestre libros_vendidos="24000">1</trimestre>
+                <trimestre libros_vendidos="38600">2</trimestre>
+                <trimestre libros_vendidos="NO_INFO">3</trimestre>
+                <trimestre libros_vendidos="NO_INFO">4</trimestre>
+            </norte>
+            <centro>
+                <trimestre libros_vendidos="NO_INFO">1</trimestre>
+                <trimestre libros_vendidos="16080">2</trimestre>
+                <trimestre libros_vendidos="25000">3</trimestre>
+                <trimestre libros_vendidos="29000">4</trimestre>
+            </centro>
+            <sur>
+                <trimestre libros_vendidos="27000">1</trimestre>
+                <trimestre libros_vendidos="31400">2</trimestre>
+                <trimestre libros_vendidos="40100">3</trimestre>
+                <trimestre libros_vendidos="30000">4</trimestre>
+            </sur>
+        </zona>
+    </region>
+</ventas_editorial>

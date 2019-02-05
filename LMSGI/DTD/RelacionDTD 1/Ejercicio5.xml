@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aviso[
+<!ELEMENT aviso (titulo?, (parrafo+, grafico)*)> 
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT parrafo (#PCDATA)>
+<!ELEMENT grafico (#PCDATA)>
+]>
+<aviso>
+  <titulo></titulo>
+  <parrafo></parrafo>
+  <grafico></grafico>
+  </aviso>

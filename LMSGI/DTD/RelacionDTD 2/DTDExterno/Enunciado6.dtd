@@ -1,0 +1,12 @@
+<!ELEMENT ventas_editorial (edicion,informe,region)>
+<!ELEMENT edicion (#PCDATA)>
+<!ELEMENT informe (#PCDATA)>
+<!ATTLIST informe tipo CDATA #REQUIRED>
+<!ATTLIST informe fecha CDATA #REQUIRED>
+<!ELEMENT region (zona)>
+<!ELEMENT zona (norte,centro,sur)>
+<!ELEMENT norte (trimestre)+>
+<!ELEMENT centro (trimestre)+>
+<!ELEMENT sur (trimestre)+>
+<!ELEMENT trimestre (#PCDATA)>
+<!ATTLIST trimestre libros_vendidos CDATA #REQUIRED>
