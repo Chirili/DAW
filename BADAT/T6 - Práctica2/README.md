@@ -45,3 +45,48 @@
     ```js
     
     ```
+7. Visualiza  los  títulos  de  la  tabla  MISTEXTOS  sin  los  caracteres  punto  y  comillas,  y  en minúscula, de dos formas distintas.
+    ```js
+    SELECT LOWER (LTRIM(RTRIM(titulo,'.'''''),''''))FROM mistextos;
+
+    ```
+8. Dada  la  tabla  LIBROS,  escribe  la  sentencia  SELECT  que  visualice  dos  columnas,  una  con  el AUTOR y otra con el apellido del autor.
+    ```js
+    SELECT autor, SUBSTR (autor,0,INSTR(autor, '.' , 1)-1)FROM libros
+    ```
+9. Escribe  la  sentencia  SELECT  que  visualice  las  columnas  de  AUTOR  y  otra  columna  con el nombre del autor (sin el apellido) de la tabla LIBROS.
+    ```js
+    SELECT autor,SUBSTR(autor,0,INSTR(autor,'.',1)+1)FROM libros;
+    ```
+10. A  partir  de  la  tabla  LIBROS,  realiza  una  sentencia  SELECT  que  visualice  una  columna, primero el nombre del autor y, luego, su apellido.
+    ```js
+    SELECT SUBSTR(autor,INSTR(autor,',',1)+1),SUBSTR(autor,0,INSTR(autor,',',1)-1 ) FROM libros;
+    ```
+11. A  partir  de  la  tabla  LIBROS,  realiza  una  sentencia  SELECT  para  que  aparezcan  los  títulos ordenados por su número de caracteres.
+    ```js
+    SELECT titulo FROM libros ORDER BY LENGTH (titulo);
+    ```
+12. Dada la tabla NACIMIENTOS, realiza una sentencia SELECT que obtenga la siguiente salida: NOMBRE,   FECHANAC,   FECHA_FORMATEADA,   donde   FECHA_FORMATEADA   tiene   el siguiente formato:“Nacido el 26 de abril de 1982”.
+    ```js
+    SELECT nombre,fechanac,TO_CHAR(fechanac,'"nadio el "dd" de "month" de "yyyy"')FROM nacimientos;
+    ```
+13. Dada la tabla LIBRERÍA, haz una sentencia SELECT que visualice el tema, el último carácter del tema que no se blanco y el número  de caracteres de tema (sin contar los blancos de la derecha) ordenados por tema.
+    ```js
+    SELECT tema,SUBSTR(tema,INSTR(tema,' ')-1),INSTR(tema,' ')-1 FROM libreria ORDER BY tema;
+    ```
+14. Apartir  de  la  tabla  NACIMIENDOS,  visualiza  en  una  columna  el  NOMBRE  seguido  de  su fecha de nacimiento formateada (quita blancos del nombre).
+    ```js
+    SELECT nombre,TO_CHAR(fechanac,'"nacio el,"DD" "MONTH" "YYYY"')FROM nacimientos;
+    ```
+15. Convierte la cadena ‘010712’ a fecha y visualiza su nombre de mes en mayúscula.
+    ```js
+    SELECT TO_CHAR (TO_DATE ('010712','DDMMYY'),'MONTH') FROM DUAL;
+    ```
+16. Visualiza  aquellos  temas  de  la  tabla  LIBRERÍA  cuyos ejemplares  sean  7 con  el  nombre  de tema  de  ‘SEVEN’;el  resto  de  temas  que  no  tengan  7  ejemplares  se  visualizarán  como están.
+    ```js
+    SELECT tema, DECODE(ejemplares,7,'SEVEN', ejemplares) FROM libreria;
+    ```
+17. A partir de la tabla EMPLE, obtén el apellido de los empleados que lleven más de 15 años trabajando.
+    ```js
+    SELECT apellido FROM emple WHERE (TO_CHAR (CURRENT_DATE,'YYYY') -TO_CHAR (FECHA_ALT,'YYYY') )> 15;
+    ```
