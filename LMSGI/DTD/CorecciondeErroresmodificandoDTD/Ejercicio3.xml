@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE elementos [
+   <!ELEMENT elementos (any, vacio)>
+   <!ELEMENT any (ANY)*>
+   <!ELEMENT vacio (ANY)*>
+]>
+
+<elementos>
+   <any/>
+   <vacio/>
+</elementos>

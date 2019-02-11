@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ciudades [
+   <!ELEMENT ciudades (ciudad)*>
+   <!ELEMENT ciudad (nombre, capital*)>
+   <!ELEMENT nombre (#PCDATA)>
+   <!ELEMENT capital EMPTY>
+]>
+
+<ciudades>
+   <ciudad>
+      <nombre>Buenos Aires</nombre>
+      <capital/>
+   </ciudad>
+   <ciudad>
+      <nombre>Liverpool</nombre>
+   </ciudad>
+   <ciudad>
+      <nombre>Osaka</nombre>
+   </ciudad>
+   <ciudad>
+      <nombre>Oslo</nombre>
+      <capital/>
+   </ciudad>
+</ciudades>

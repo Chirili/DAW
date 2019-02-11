@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lugares [
+   <!ELEMENT lugares ANY>
+   <!ELEMENT lugar (#PCDATA)>
+]>
+
+<lugares>En el <lugar>polo norte</lugar> hace mucho frío. Pero, en el <lugar>desierto del Sahara</lugar> hace mucho calor.</lugares>
+
