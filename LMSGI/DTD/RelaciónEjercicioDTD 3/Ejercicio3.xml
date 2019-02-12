@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE people_list SYSTEM "DTD/example2.dtd">
+
+<people_list>
+    <person idperson="p1">
+    <name></name>
+    <birthdate></birthdate>
+    <gender></gender>
+    <socialsecuritynumber></socialsecuritynumber>     
+    </person>
+</people_list>

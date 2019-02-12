@@ -1,0 +1,8 @@
+<!ELEMENT people_list (person)>
+<!ELEMENT person (name,age,gender)>
+<!ATTLIST person id CDATA #REQUIRED>
+<!ATTLIST person socialsecuritynumber CDATA #REQUIRED>
+<!ATTLIST person mentor CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>

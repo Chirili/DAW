@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE people_list SYSTEM "DTD/example.dtd">
+
+<people_list>
+    <person id="p1" socialsecuritynumber="286767575567" mentor="p245">
+        <name>Fred Bloggs</name><age>27</age>
+        <gender>Male</gender>
+    </person>
+</people_list>

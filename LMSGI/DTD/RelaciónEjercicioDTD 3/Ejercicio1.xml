@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libro[
+<!ELEMENT libro (capitulo)+>
+<!ELEMENT capitulo (parrafo+,seccion)>
+<!ELEMENT parrafo (#PCDATA)>
+<!ELEMENT seccion (num_seccion,titulo_seccion,contenido)>
+<!ELEMENT num_seccion (#PCDATA)>
+<!ELEMENT titulo_seccion (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+]>
+<libro>
+    <capitulo>
+        <parrafo>
+        </parrafo>
+        <seccion>
+            <num_seccion></num_seccion>
+            <titulo_seccion></titulo_seccion>
+            <contenido></contenido>
+        </seccion>
+    </capitulo>
+</libro>
