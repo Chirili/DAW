@@ -1,0 +1,10 @@
+<!DOCTYPE elementos [
+  <!ELEMENT elementos (any, vacio)>
+  <!ELEMENT any (ANY)*>
+  <!ELEMENT vacio (ANY)*>
+]>
+
+<elementos>
+  <any/>
+  <vacio/>
+</elementos>
