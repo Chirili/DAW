@@ -44,7 +44,7 @@
 
 #### Ejercicio 4
 
-1. Dada la tabla EMPLE, obtén el sueldo medio, el número de comisiones no nulas, el máximo sueldo y el mínimo sueldo de los empleados del departamento 30. Emplea el formato adecuado para la salida de las cantidades numéricas.
+- Dada la tabla EMPLE, obtén el sueldo medio, el número de comisiones no nulas, el máximo sueldo y el mínimo sueldo de los empleados del departamento 30. Emplea el formato adecuado para la salida de las cantidades numéricas.
 
     ```js
     SELECT AVG(salario),COUNT(comision),MAX(salario),MIN(salario) FROM emple WHERE dept_no=30;
@@ -52,7 +52,7 @@
 
 #### Ejercicio 5
 
-1. Visualiza los temas con mayor número de ejemplares de la tabla LIBRERÍA y que tenga, al menos, una ‘E’ (pueden ser un tema o varios).
+- Visualiza los temas con mayor número de ejemplares de la tabla LIBRERÍA y que tenga, al menos, una ‘E’ (pueden ser un tema o varios).
 
     ```js
     SELECT tema FROM libreria WHERE ejemplares =(SELECT MAX(ejemplares) FROM libreria) AND tema LIKE('%E%');
@@ -60,7 +60,7 @@
 
 #### Ejercicio 6
 
-1. Dada la table MISTEXTOS, ¿qué sentencia SELECT se debe ejecutar para tener este resultado?
+- Dada la table MISTEXTOS, ¿qué sentencia SELECT se debe ejecutar para tener este resultado?
 
     ```js
     NO RESUELTO
@@ -68,7 +68,7 @@
 
 #### Ejercicio 7
 
-1. Visualiza  los  títulos  de  la  tabla  MISTEXTOS  sin  los  caracteres  punto  y  comillas,  y  en minúscula, de dos formas distintas.
+- Visualiza  los  títulos  de  la  tabla  MISTEXTOS  sin  los  caracteres  punto  y  comillas,  y  en minúscula, de dos formas distintas.
 
     ```js
     SELECT LOWER (LTRIM(RTRIM(titulo,'.'''''),''''))FROM mistextos;
@@ -77,7 +77,7 @@
 
 #### Ejercicio 8
 
-1. Dada  la  tabla  LIBROS,  escribe  la  sentencia  SELECT  que  visualice  dos  columnas,  una  con  el AUTOR y otra con el apellido del autor.
+- Dada  la  tabla  LIBROS,  escribe  la  sentencia  SELECT  que  visualice  dos  columnas,  una  con  el AUTOR y otra con el apellido del autor.
 
     ```js
     SELECT autor, SUBSTR (autor,0,INSTR(autor, '.' , 1)-1)FROM libros
@@ -85,7 +85,7 @@
 
 #### Ejercicio 9
 
-1. Escribe  la  sentencia  SELECT  que  visualice  las  columnas  de  AUTOR  y  otra  columna  con el nombre del autor (sin el apellido) de la tabla LIBROS.
+- Escribe  la  sentencia  SELECT  que  visualice  las  columnas  de  AUTOR  y  otra  columna  con el nombre del autor (sin el apellido) de la tabla LIBROS.
 
     ```js
     SELECT autor,SUBSTR(autor,0,INSTR(autor,'.',1)+1)FROM libros;
@@ -93,7 +93,7 @@
 
 #### Ejercicio 10
 
-1. A  partir  de  la  tabla  LIBROS,  realiza  una  sentencia  SELECT  que  visualice  una  columna, primero el nombre del autor y, luego, su apellido.
+- A  partir  de  la  tabla  LIBROS,  realiza  una  sentencia  SELECT  que  visualice  una  columna, primero el nombre del autor y, luego, su apellido.
 
     ```js
     SELECT SUBSTR(autor,INSTR(autor,',',1)+1),SUBSTR(autor,0,INSTR(autor,',',1)-1 ) FROM libros;
@@ -101,7 +101,7 @@
 
 #### Ejercicio 11
 
-1. A  partir  de  la  tabla  LIBROS,  realiza  una  sentencia  SELECT  para  que  aparezcan  los  títulos ordenados por su número de caracteres.
+- A  partir  de  la  tabla  LIBROS,  realiza  una  sentencia  SELECT  para  que  aparezcan  los  títulos ordenados por su número de caracteres.
 
     ```js
     SELECT titulo FROM libros ORDER BY LENGTH (titulo);
@@ -109,7 +109,7 @@
 
 #### Ejercicio 12
 
-1. Dada la tabla NACIMIENTOS, realiza una sentencia SELECT que obtenga la siguiente salida: NOMBRE,   FECHANAC,   FECHA_FORMATEADA,   donde   FECHA_FORMATEADA   tiene   el siguiente formato:“Nacido el 26 de abril de 1982”.
+- Dada la tabla NACIMIENTOS, realiza una sentencia SELECT que obtenga la siguiente salida: NOMBRE,   FECHANAC,   FECHA_FORMATEADA,   donde   FECHA_FORMATEADA   tiene   el siguiente formato:“Nacido el 26 de abril de 1982”.
 
     ```js
 
@@ -118,7 +118,7 @@
 
 #### Ejercicio 13
 
-1. Dada la tabla LIBRERÍA, haz una sentencia SELECT que visualice el tema, el último carácter del tema que no se blanco y el número  de caracteres de tema (sin contar los blancos de la derecha) ordenados por tema.
+- Dada la tabla LIBRERÍA, haz una sentencia SELECT que visualice el tema, el último carácter del tema que no se blanco y el número  de caracteres de tema (sin contar los blancos de la derecha) ordenados por tema.
 
     ```js
     SELECT tema,SUBSTR(tema,INSTR(tema,' ')-1),INSTR(tema,' ')-1 FROM libreria ORDER BY tema;
@@ -126,7 +126,7 @@
 
 #### Ejercicio 14
 
-1. Apartir  de  la  tabla  NACIMIENDOS,  visualiza  en  una  columna  el  NOMBRE  seguido  de  su fecha de nacimiento formateada (quita blancos del nombre).
+- Apartir  de  la  tabla  NACIMIENDOS,  visualiza  en  una  columna  el  NOMBRE  seguido  de  su fecha de nacimiento formateada (quita blancos del nombre).
 
     ```js
     SELECT nombre,TO_CHAR(fechanac,'"nacio el,"DD" "MONTH" "YYYY"')FROM nacimientos;
@@ -134,7 +134,7 @@
 
 #### Ejercicio 15
 
-1. Convierte la cadena ‘010712’ a fecha y visualiza su nombre de mes en mayúscula.
+- Convierte la cadena ‘010712’ a fecha y visualiza su nombre de mes en mayúscula.
 
     ```js
     SELECT TO_CHAR (TO_DATE ('010712','DDMMYY'),'MONTH') FROM DUAL;
@@ -142,7 +142,7 @@
 
 #### Ejercicio 16
 
-1. Visualiza  aquellos  temas  de  la  tabla  LIBRERÍA  cuyos ejemplares  sean  7 con  el  nombre  de tema  de  ‘SEVEN’;el  resto  de  temas  que  no  tengan  7  ejemplares  se  visualizarán  como están.
+- Visualiza  aquellos  temas  de  la  tabla  LIBRERÍA  cuyos ejemplares  sean  7 con  el  nombre  de tema  de  ‘SEVEN’;el  resto  de  temas  que  no  tengan  7  ejemplares  se  visualizarán  como están.
 
     ```js
     SELECT tema, DECODE(ejemplares,7,'SEVEN', ejemplares) FROM libreria;
@@ -150,7 +150,7 @@
 
 #### Ejercicio 17
 
-1. A partir de la tabla EMPLE, obtén el apellido de los empleados que lleven más de 15 años trabajando.
+- A partir de la tabla EMPLE, obtén el apellido de los empleados que lleven más de 15 años trabajando.
 
     ```js
     SELECT apellido FROM emple WHERE (TO_CHAR (CURRENT_DATE,'YYYY') -TO_CHAR (FECHA_ALT,'YYYY') )> 15;
