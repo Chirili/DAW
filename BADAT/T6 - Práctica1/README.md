@@ -70,7 +70,7 @@
 
 #### Ejercicio 6
 
-5. Visualiza los nombres de las asignaturas que no tengan suspensos.
+- Visualiza los nombres de las asignaturas que no tengan suspensos.
 
 ``` js
  SELECT nombre FROM asignaturas, NOTAS WHERE NOTA IN (SELECT NOTA FROM NOTAS WHERE nota>5);
