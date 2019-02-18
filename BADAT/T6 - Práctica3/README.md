@@ -9,7 +9,8 @@
 ```js
 SELECT dept_no,AVG(salario)
     FROM emple
-        GROUP BY dept_no HAVING AVG(salario) >= (SELECT AVG(salario) FROM emple);
+        GROUP BY dept_no
+            HAVING AVG(salario) >= (SELECT AVG(salario) FROM emple);
 ```
 
 ### Ejercicio2
@@ -28,7 +29,11 @@ SELECT dnombre
 
 ### Ejercicio3
 
-- Analiza lo que ocurre si en lugar de COUNT(e.emp_no) ponemos COUNT(*) en la sentencia SELECT siguiente. Analiza también que ocurre si a la derecha de SELECT ponemos e.dept_no en lugar de d.dept_no:
+- Analiza lo que ocurre si en lugar de COUNT(e.emp_no) ponemos COUNT(*) en la sentencia SELECT siguiente.
+
+![Diferencia entre COUNT(e.emp_no) y COUNT(*)](https://user-images.githubusercontent.com/23047899/52965631-9097d200-33a5-11e9-896f-6b07bad2ba31.png)
+
+- Analiza también que ocurre si a la derecha de SELECT ponemos e.dept_no en lugar de d.dept_no:
 
 ```js
 SELECT d.dept_no, dnombre, COUNT(e.emp_no)
