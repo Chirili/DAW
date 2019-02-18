@@ -35,6 +35,8 @@ SELECT dnombre
 
 - Analiza también que ocurre si a la derecha de SELECT ponemos e.dept_no en lugar de d.dept_no:
 
+![Diferencia entre e.dept_no y d.dept_no](https://user-images.githubusercontent.com/23047899/52965958-5e3aa480-33a6-11e9-9cd8-eee710774d02.png)
+
 ```js
 SELECT d.dept_no, dnombre, COUNT(e.emp_no)
 FROM emple e, depart d
@@ -47,6 +49,7 @@ GROUP BY d.dept_no, dnombre;
 - Obtén los nombres de alumnos que están actualmente en el centro y que estuvieron en el centro hace ya un tiempo, es decir, necesitamos los nombres que están en la tabla ALUM y que, además, aparezcan en la tabla ANTIGUOS. Este es el ejercicio 4 de la relación complementaria pero esta vez debes realizar la consulta usando el operador IN.
 
 ```js
+
 ```
 
 ### Ejercicio5
