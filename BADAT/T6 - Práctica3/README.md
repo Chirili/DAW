@@ -125,7 +125,7 @@ tabla nuevos
 
 ```plain
 | Nombre de banco|Nº Sucursales|
-| Xxxxxx|xx|
+|     Xxxxxx     |     xx      |
 ```
 
 ### Ejercicio19
