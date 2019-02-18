@@ -7,6 +7,9 @@
 - Visualiza los departamentos en los que el salario medio es mayor o igual que la media de todos los salarios.
 
 ```js
+SELECT dept_no,AVG(salario)
+    FROM emple
+        GROUP BY dept_no HAVING AVG(salario) >= (SELECT AVG(salario) FROM emple);
 ```
 
 ### Ejercicio2
@@ -14,6 +17,13 @@
 - Obtén los nombres de departamentos que tengan más de 4 personas trabajando.
 
 ```js
+SELECT dnombre
+    FROM depart
+        WHERE dept_no IN (SELECT dept_no
+                            FROM emple
+                                GROUP BY dept_no
+                                    HAVING COUNT (*)>4);
+
 ```
 
 ### Ejercicio3
