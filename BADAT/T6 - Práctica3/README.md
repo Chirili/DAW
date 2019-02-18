@@ -122,8 +122,11 @@ tabla nuevos
 ### Ejercicio18
 
 - Obtén los bancos con más sucursales. Los datos a obtener son:
+
+```plain
 | Nombre de banco|Nº Sucursales|
 | Xxxxxx|xx|
+```
 
 ### Ejercicio19
 
