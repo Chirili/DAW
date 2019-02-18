@@ -1,6 +1,6 @@
 # DAW
 
-## Práctica 1 Tema 6 BBDD
+## Práctica 2 Tema 6 BBDD
 
 ### Consultas SQL
 

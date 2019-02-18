@@ -10,4 +10,3 @@ else
     chmod -x $script
     nano $script
 fi
-fi
