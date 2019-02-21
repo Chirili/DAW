@@ -7,10 +7,7 @@
 - Visualiza los departamentos en los que el salario medio es mayor o igual que la media de todos los salarios.
 
 ```js
-SELECT dept_no,AVG(salario)
-    FROM emple
-        GROUP BY dept_no
-            HAVING AVG(salario) >= (SELECT AVG(salario) FROM emple);
+SELECT dept_no,AVG(salario) FROM emple GROUP BY dept_no HAVING AVG(salario) >= (SELECT AVG(salario) FROM emple);
 ```
 
 ### Ejercicio2
@@ -18,12 +15,7 @@ SELECT dept_no,AVG(salario)
 - Obtén los nombres de departamentos que tengan más de 4 personas trabajando.
 
 ```js
-SELECT dnombre
-    FROM depart
-        WHERE dept_no IN (SELECT dept_no
-                            FROM emple
-                                GROUP BY dept_no
-                                    HAVING COUNT (*)>4);
+SELECT dnombre FROM depart WHERE dept_no IN (SELECT dept_no FROM emple  GROUP BY dept_no  HAVING COUNT (*)>4);
 
 ```
 
@@ -57,6 +49,7 @@ GROUP BY d.dept_no, dnombre;
 - Visualiza los nombres de los alumnos de la tabla ALUM que aparezcan en alguna de estas tablas: NUEVOS y ANTIGUOS.
 
 ```js
+SELECT nombre FROM alum INTERSECT (SELECT nombre FROM nuevos UNION SELECT nombre FROM antiguos);
 ```
 
 ## TABLAS EMPLE Y DEPART
@@ -66,6 +59,7 @@ GROUP BY d.dept_no, dnombre;
 - Partiendo de la tabla EMPLE, visualiza por cada oficio de los empleados del departamento ‘VENTAS’ la suma de salarios
 
 ```js
+SELECT SUM(salario),oficio FROM emple WHERE dept_no IN (SELECT dept_no FROM depart WHERE dnombre LIKE 'VENTAS') GROUP BY oficio; 
 ```
 
 ### Ejercicio7
@@ -73,6 +67,7 @@ GROUP BY d.dept_no, dnombre;
 - Selecciona aquellos apellidos de la tabla EMPLE cuyo salario sea igual a la media del salario en su departamento.
 
 ```js
+
 ```
 
 ### Ejercicio8
@@ -80,6 +75,7 @@ GROUP BY d.dept_no, dnombre;
 - A partir de la tabla EMPLE, visualiza el número de empleados de cada departamento cuyo oficio sea ‘EMPLEADO’.
 
 ```js
+SELECT dept_no,COUNT(*) FROM emple WHERE oficio LIKE 'EMPLEADO' GROUP BY dept_no;
 ```
 
 ### Ejercicio9
@@ -87,6 +83,7 @@ GROUP BY d.dept_no, dnombre;
 - Desde la tabla EMPLE, visualiza el departamento que tenga más empleados cuyo oficio sea ‘EMPLEADO’.
 
 ```js
+SELECT dept_no,COUNT(*) FROM emple WHERE oficio LIKE 'EMPLEADO' GROUP BY dept_no HAVING COUNT(*)=(SELECT MAX(COUNT(*)) FROM emple WHERE oficio LIKE 'EMPLEADO' GROUP BY dept_no);
 ```
 
 ### Ejercicio10
@@ -94,6 +91,7 @@ GROUP BY d.dept_no, dnombre;
 - A partir de la tabla EMPLE y DEPART, visualiza el número de departamento y el nombre de departamento que tenga más empleados cuyo oficio sea ‘EMPLEADO’
 
 ```js
+SELECT dept_no,dnombre FROM depart WHERE dept_no=(SELECT dept_no FROM emple WHERE oficio= 'EMPLEADO' GROUP BY dept_no HAVING COUNT(*)=(SELECT MAX(COUNT(*)) FROM emple WHERE oficio='EMPLEADO' GROUP BY dept_no));
 ```
 
 ### Ejercicio11
@@ -101,6 +99,7 @@ GROUP BY d.dept_no, dnombre;
 - Busca los departamentos que tienen más de dos personas trabajando en la misma profesión.
 
 ```js
+SELECT dept_no,COUNT(*) FROM emple GROUP BY dept_no HAVING COUNT(*)>2;
 ```
 
 ## TABLAS ALUM, ANTIGUOS Y NUEVOS
@@ -110,16 +109,25 @@ GROUP BY d.dept_no, dnombre;
 - Visualiza los nombre de los alumnos de la tabla ALUM que aparezcan en estas dos tablas: ANTIGUOS y NUEVOS.
 
 ```js
+SELECT nombre FROM alum INTERSECT (SELECT nombre FROM nuevos UNION SELECT nombre FROM antiguos);
 ```
 
 ### Ejercicio13
 
 - Escribe las distintas formas en las que se puede poner la consulta anterior llegando al mismo resultado.
 
+```js
+SELECT nombre FROM alum WHERE nombre IN (SELECT nombre FROM nuevos) OR nombre IN (SELECT nombre FROM antiguos);
+```
+
 ### Ejercicio14
 
 - Visualiza aquellos nombres de la tabla ALUM que no estén en la tabla antiguos ni en la
 tabla nuevos
+
+```js
+SELECT nombre FROM alum INTERSECT SELECT nombre FROM antiguos INTERSECT SELECT nombre FROM nuevos;
+```
 
 ## TABLA PERSONAL, PROFESORES Y CENTROS(hacer DESC en las tablas)
 
@@ -127,13 +135,25 @@ tabla nuevos
 
 - Realiza una consulta en la que aparezca por cada centro y en cada especialidad el número de profesores, Si el centro no tiene profesores, debe aparecer un 0 en la columna número de profesores. Las columnas a visualizar son: nombre de centro, especialidad y número de profesores.
 
+```js
+SELECT nombre,especialidad,COUNT(dni) FROM centros,profesores WHERE centros.cod_centro =profesores.cod_centro GROUP BY nombre,especialidad ORDER BY COUNT (dni);
+```
+
 ### Ejercicio16
 
 - Obtén por cada centro el número de empleados. Si el centro carece de empleados, ha de aparecer un 0 como número de empleados.
 
+```js
+ SELECT nombre,COUNT(DNI) FROM CENTROS,PERSONAL WHERE centros.cod_centro =personal.cod_centro GROUP BY nombre ORDER BY COUNT (DNI) DESC;
+```
+
 ### Ejercicio17
 
 - Obtén la especialidad con menos profesores.
+
+```js
+SELECT especialidad FROM profesores WHERE apellidos=(SELECT MAX(apellidos) FROM profesores);
+```
 
 ## TABLAS BANCOS, SUCURSALES, CUENTAS Y MOVIMIENTOS (hacer DESC de las tablas)
 
@@ -146,8 +166,42 @@ tabla nuevos
 |     Xxxxxx     |     xx      |
 ```
 
+```js
+ SELECT NOMBRE_BANC,COUNT(*) FROM bancos,sucursales WHERE bancos.cod_banco=sucursales.cod_banco GROUP BY nombre_banc HAVING COUNT(*)=(SELECT MAX(COUNT(*)) FROM bancos,sucursales WHERE bancos.cod_banco=sucursales.cod_banco GROUP BY nombre_banc);
+```
 ### Ejercicio19
 
+- El saldo actual de los bancos de GUADALAJARA, 1 fila por cada banco:
+
+```plain
+| Nombre de banco|Saldo debe|Saldo Haber|
+|     Xxxxxx     |  xx ,xx  |   xx,xx   |
+```
+
+```js
+ SELECT nombre_banc,SUM(saldo_debe),SUM(saldo_haber) FROM BANCOS,CUENTAS WHERE bancos.cod_banco=cuentas.cod_banco AND poblacion='GUADALAJARA' GROUP BY bancos.nombre_banc;
+```
 ### Ejercicio20
 
+- Datos de la cuenta o cuentas con más movimientos:
+
+```plain
+| Nombre Cta|Nº Movimientos|
+|   Xxxxxx  |      xx      |
+```
+
+```js
+
+```
 ### Ejercicio21
+
+- El nombre de la sucursal que haya tenido más suma de reintegros:
+
+```plain
+| Nombre Sucursal|Suma Reintegros|
+|     Xxxxxx     |         xx,xx |
+```
+
+```js
+    SELECT nombre_suc,SUM(importe) FROM sucursales,movimientos WHERE sucursales.cod_banco = movimientos.cod_banco AND sucursales.cod_sucur=movimientos.cod_sucur  AND movimientos.tipo_mov='R' GROUP BY nombre_suc HAVING SUM(importe)=(SELECT MAX(SUM(importe)) FROM movimientos WHERE movimientos.tipo_mov='R' GROUP BY cod_banco,cod_sucur);
+```
