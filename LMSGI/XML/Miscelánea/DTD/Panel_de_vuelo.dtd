@@ -1,0 +1,7 @@
+<!ELEMENT panel_de_vuelo (nombre_aeropuerto,vuelos,fecha_panel)>
+<!ELEMENT nombre_aeropuerto (#PCDATA)>
+<!ELEMENT fecha_panel (#PCDATA)>
+<!ELEMENT vuelos (vuelo)*>
+<!ELEMENT vuelo (#PCDATA)>
+<!ATTLIST vuelo codigo ID #REQUIRED>
+<!ATTLIST vuelo estado (C | R | E) "E">

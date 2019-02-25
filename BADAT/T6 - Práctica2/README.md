@@ -47,7 +47,7 @@
 - Dada la tabla EMPLE, obtén el sueldo medio, el número de comisiones no nulas, el máximo sueldo y el mínimo sueldo de los empleados del departamento 30. Emplea el formato adecuado para la salida de las cantidades numéricas.
 
     ```js
-    SELECT AVG(salario),COUNT(comision),MAX(salario),MIN(salario) FROM emple WHERE dept_no=30;
+    SELECT TO_CHAR(AVG(salario),'9G999D99'),COUNT(comision),MAX(salario),MIN(salario) FROM emple WHERE dept_no=30;
     ```
 
 #### Ejercicio 5
