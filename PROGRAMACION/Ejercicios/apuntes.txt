@@ -1,0 +1,4 @@
+2 clases: perro y gato
+Ambas con las propiedades de color y tamaño.
+Metodos de ladrar y maullar. Los metodos de ladrar y maullar consisten en imprimir por pantalla guau y miau. Va a ver otro metodo que se va llamar mostrar que pasandole como parametros color o tamaño nos muestro el color o el tamaño del objeto.
+Nos pedirá por teclado el tipo de animal: 1 sera perro y 2 sera gato. La siguiente linea de comando será pedir color y tamaño, y finalmente ejecutar maullar o ladrar y mostrar color y tamaño.
