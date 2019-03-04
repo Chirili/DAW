@@ -2,6 +2,11 @@
 <!ELEMENT nombre_aeropuerto (#PCDATA)>
 <!ELEMENT fecha_panel (#PCDATA)>
 <!ELEMENT vuelos (vuelo)*>
-<!ELEMENT vuelo (#PCDATA)>
+<!ELEMENT vuelo (origen,destino,hora_salida,hora_llegada,diario?)>
 <!ATTLIST vuelo codigo ID #REQUIRED>
 <!ATTLIST vuelo estado (C | R | E) "E">
+<!ELEMENT origen (#PCDATA)>
+<!ELEMENT destino (#PCDATA)>
+<!ELEMENT hora_salida (#PCDATA)>
+<!ELEMENT hora_llegada (#PCDATA)>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura SYSTEM "DTD/Factura.dtd">
+
+<factura numero="27" fecha="18/12/2013">
+    <datos_emisor>
+        <lugar>Librería Pérez</lugar>
+        <cif>44555666B</cif>
+        <telefono>777888999</telefono>
+    </datos_emisor>
+    <datos_cliente>
+        <lugar>Biblioteca Txantrea</lugar>
+        <cif>33111222A</cif>
+        <telefono>333999444</telefono>
+    </datos_cliente>
+    <detalle_factura importe="85">
+        <articulo codigo_articulo="AW7" tipo="Libro">
+            <descripcion>Analítica Web2.0</descripcion>
+            <cantidad>1</cantidad>
+            <oferta></oferta>
+            <pvp>25</pvp>
+        </articulo>
+        <articulo codigo_articulo="CP5" tipo="DVD">
+            <descripcion>Curso de HTML</descripcion>
+            <cantidad>2</cantidad>
+            <pvp>30</pvp>
+        </articulo>
+    </detalle_factura>
+</factura>
+<!-- Codigo del articulo y tipo como atributos-->
+<!--El codigo ha de ser unico y obligatorio-->
+<!--tipos son Libro, DVD  y Varios no permitiendose otro valor, y este es opcional-->
+<!--importe es un atributo obligatorio-->
