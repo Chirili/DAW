@@ -14,12 +14,17 @@ class Principal {
         tipoAnimal = entradaAnimal.nextLine();
         String perro = "2";
 
-        if (!tipoAnimal.equals(perro)) {
+        if (!tipoAnimal.equals(0)){
+            System.out.println("Error el numero no es 1 o 2");
+        } else if (tipoAnimal.compareTo(perro)>2){
+
+        } else if (!tipoAnimal.equals(perro)){
             animalCompañiaP.mostrarPerro();
             animalCompañiaP.animal1();
-        } else {
+        } else{
             animalCompañiaG.mostrarGato();
             animalCompañiaG.animal2();
         }
+
     }
 }
