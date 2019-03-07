@@ -43,7 +43,7 @@
 
 ## Ejercicio 5
 
-- El supermercado cerrar� todas las sucursales de la provincia de "Cordoba". Elimine los empleados que pertenezcan a sucursales de tal provincia empleando subconsulta.
+- El supermercado cerrará todas las sucursales de la provincia de "Cordoba". Elimine los empleados que pertenezcan a sucursales de tal provincia empleando subconsulta.
 
 ```js
     DELETE FROM empleados
