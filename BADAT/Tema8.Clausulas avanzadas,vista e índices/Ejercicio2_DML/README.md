@@ -13,7 +13,9 @@
 - Actualizamos la cuota ('s') de todas las inscripciones de un socio determinado (por documento) empleando subconsulta (3 registros)
 
 ```js
-
+    UPDATE inscriptos
+        SET matricula='s'
+            WHERE numerosocio=(SELECT numero FROM socios WHERE documento='25555555');
 ```
 
 ## Ejercicio 3

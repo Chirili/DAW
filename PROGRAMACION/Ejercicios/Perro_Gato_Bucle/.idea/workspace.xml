@@ -1,72 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b9f6c37-a05f-4fcc-925c-265b8e6b0f20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Perro_Gato_Bucle.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gato.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Perro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica2/T3 - Practica2.Realizado por Andrés, Carmona Lozano.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica2/departamento.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/T3 - Práctica3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub.dmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/ChangeRequests.local" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/businessinfo/Business Information.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/businessinfo/Objects.local" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/datatypes/DDLSelection.local" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/datatypes/DataTypes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/datatypes/Diagrams.local" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/datatypes/Objects.local" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/datatypes/structuredtype/seg_0/47E390DE-0671-C4B1-8428-0F45CBEE18F8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/datatypes/structuredtype/seg_0/F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/datatypes/subviews/7D35F373-7516-90F6-16FF-E9F769C60724.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/dl_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/logical/Diagrams.local" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/logical/Logical.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/logical/Objects.local" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/logical/subviews/0D7D3EB9-0165-1339-9D8C-1BF699447F54.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/mapping/DeletedMap_RM9FFB46EE-F8CF-7946-E753-415D99D0A942.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/mapping/ExtendedMap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/mapping/ExtendedMap_RM9FFB46EE-F8CF-7946-E753-415D99D0A942.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/pm/Objects.local" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/pm/Process Model.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/rdbms/videoclub_RDBMSSites.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/rel/9FFB46EE-415D99D0A942.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/rel/9FFB46EE-415D99D0A942/DDLSelection.local" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/rel/9FFB46EE-415D99D0A942/Diagrams.local" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/rel/9FFB46EE-415D99D0A942/Objects.local" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica3/videoclub/rel/9FFB46EE-415D99D0A942/subviews/A9BBA31A-54B5-22BB-1951-08E8F5B3B1AF.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica4/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica5/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica6/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica6/tema6.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T3 - Práctica7/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T6 - Práctica1/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T6 - Práctica1/tema6database.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T6 - Práctica2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BADAT/T6 - Práctica3/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloJava/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloJava/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloJava/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloJava/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloJava/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloJava/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloJava/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloJava/HelloJava.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloJava/out/production/HelloJava/Gato.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloJava/out/production/HelloJava/META-INF/HelloJava.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloJava/out/production/HelloJava/Perro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloJava/out/production/HelloJava/Principal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloJava/src/Gato.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloJava/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloJava/src/Perro.java" beforeDir="false" />
-    </list>
+    <list default="true" id="5b9f6c37-a05f-4fcc-925c-265b8e6b0f20" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -217,14 +152,13 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
@@ -235,6 +169,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
