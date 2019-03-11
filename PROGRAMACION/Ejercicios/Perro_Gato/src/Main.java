@@ -3,27 +3,29 @@ import java.util.Scanner;
 class Principal {
     public static void main(String[] args) {
 
+
         Perro animalCompañiaP = new Perro();
 
         Gato animalCompañiaG = new Gato();
 
         System.out.println("Elige si el animal es un perro o un gato recuerda 1=perro y 2=gato");
 
-        String tipoAnimal = "";
         Scanner entradaAnimal = new Scanner(System.in);
-        tipoAnimal = entradaAnimal.nextLine();
-        String perro = "2";
+        int tipoAnimal;
+        tipoAnimal = entradaAnimal.nextInt();
 
-        if (!tipoAnimal.equals(0)){
+        int perro = Integer.parseInt(("2"));
+
+        if ( tipoAnimal < --perro) {
             System.out.println("Error el numero no es 1 o 2");
-        } else if (tipoAnimal.compareTo(perro)>2){
-
-        } else if (!tipoAnimal.equals(perro)){
-            animalCompañiaP.mostrarPerro();
-            animalCompañiaP.animal1();
-        } else{
+        } else if (tipoAnimal > ++perro){
+            System.out.println(" Error el numero no es 1 o 2");
+        } else if (tipoAnimal == perro){
             animalCompañiaG.mostrarGato();
             animalCompañiaG.animal2();
+        } else {
+            animalCompañiaP.mostrarPerro();
+            animalCompañiaP.animal1();
         }
 
     }

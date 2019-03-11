@@ -1,22 +1,23 @@
 import java.util.Scanner;
 
 public class Gato {
-    public void animal2(){
-        System.out.println("Miau");
+
+    String color;
+    int size;
+
+    public Gato(){
+
     }
-    public void mostrarGato(){
-        System.out.println("!Has elegido un gato!");
-        String color;
-        Scanner entradaColor = new Scanner(System.in);
-        System.out.println("Elige el color del gato");
-        color = entradaColor.nextLine();
 
-        String tamaño;
-        Scanner entradaTamaño = new Scanner(System.in);
-        System.out.println("Elige el tamaño del gato");
-        tamaño = entradaTamaño.nextLine();
+    public Gato (String color, int size){
+        this.color = color;
+        this.size = size;
+    }
 
-        System.out.println("El color del gato es " + color);
-        System.out.println("El tamaño del gato es " + tamaño);
+    public void maullar(){
+        System.out.println("Miau Miau");
+    }
+    public void mostrarGato(String str){
+        System.out.println(str);
     }
 }
