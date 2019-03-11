@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="persona" type="tipoPersona"></xs:element>
+<xs:attribute name="nacimientos" type="Date"></xs:attribute>
+<xs:complexType name="tipoPersona">
+    <xs:sequence>
+        <xs:element name="info" type="datos"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="datos">
+    <xs:sequence>
+        <xs:element name="nombre" type="String"></xs:element>
+        <xs:element name="apellidos" type="String"></xs:element>
+        <xs:element name="dni" type="String"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+<xs:element name="comentario" type="String"></xs:element>
+</xs:schema>

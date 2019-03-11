@@ -30,3 +30,25 @@
                                                 FROM sucursales WHERE ciudad LIKE 'Carlos Paz') WHERE nombre LIKE 'Ana Acosta';
 
 ```
+
+## Ejercicio 4
+
+- El empleado "Carlos Caseros" se traslada a la sucursal de "La Plata". Se necesita actualizar el sueldo y sucursal de tal empleado con los mismos valores que la empleada "Maria Morales" (emplee subconsulta).
+
+```js
+   UPDATE empleados SET sueldo=(SELECT sueldo
+                                        FROM empleados WHERE nombre LIKE 'Maria Morales'),codigosucursal=(SELECT codigo
+                                                FROM sucursales WHERE ciudad LIKE 'La Plata') WHERE nombre LIKE 'Carlos Caseros';
+```
+
+## Ejercicio 5
+
+- El supermercado cerrará todas las sucursales de la provincia de "Cordoba". Elimine los empleados que pertenezcan a sucursales de tal provincia empleando subconsulta.
+
+```js
+    DELETE FROM empleados
+        WHERE codigosucursal IN (SELECT codigo
+                                            FROM sucursales
+                                                WHERE provincia LIKE 'Cordoba');
+
+```
