@@ -1,18 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<xs:element name="persona" type="tipoPersona"></xs:element>
-<xs:attribute name="nacimientos" type="Date"></xs:attribute>
-<xs:complexType name="tipoPersona">
-    <xs:sequence>
-        <xs:element name="info" type="datos"></xs:element>
-    </xs:sequence>
-</xs:complexType>
-<xs:complexType name="datos">
-    <xs:sequence>
-        <xs:element name="nombre" type="String"></xs:element>
-        <xs:element name="apellidos" type="String"></xs:element>
-        <xs:element name="dni" type="String"></xs:element>
-    </xs:sequence>
-</xs:complexType>
-<xs:element name="comentario" type="String"></xs:element>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="persona">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="datos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="nombre"/>
+              <xs:element type="xs:string" name="apellidos"/>
+              <xs:element type="xs:int" name="dni"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="comentario"/>
+      </xs:sequence>
+      <xs:attribute type="xs:date" name="nacimiento"/>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
