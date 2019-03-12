@@ -1,6 +1,6 @@
 # Tema 8 Clausulas avanzadas, vista e índices
 
-## Un supermercado almacena los datos de sus empleados en una tabla denominada "empleados" y en una tabla llamada "sucursales" los c�digos y ciudades de las diferentes sucursales
+## Un supermercado almacena los datos de sus empleados en una tabla denominada "empleados" y en una tabla llamada "sucursales" los códigos y ciudades de las diferentes sucursales
 
 ### Elimine las tablas "empleados" y "sucursales"
 
@@ -59,7 +59,7 @@
 1. Realice un join para mostrar todos los datos de "empleados" incluyendo la ciudad de la sucursal.
 
 ```js
-
+    SELECT * FROM empleados RIGHT JOIN sucursales ON sucursales.codigo=empleados.codigosucursal;
 ```
 
 ### Ejercicio 2
@@ -76,15 +76,15 @@
 
 ### Ejercicio 3
 
-1. Recupere la informaci�n de "secciones".
+1. Recupere la información de "secciones".
 
 ```js
-
+    SELECT nombre FROM secciones;
 ```
 
 ### Ejercicio 4
 
-1. Se necesita una nueva tabla llamada "sueldosxseccion" que contenga la suma de los sueldos de los empleados por secci�n (de todas las sucursales). Primero elimine la tabla.
+1. Se necesita una nueva tabla llamada "sueldosxseccion" que contenga la suma de los sueldos de los empleados por sección (de todas las sucursales). Primero elimine la tabla.
 
 ```js
 DROP TABLE sueldosxseccion;
@@ -101,15 +101,22 @@ DROP TABLE sueldosxseccion;
 1. Recupere los registros de la nueva tabla.
 
 ```js
-
+    SELECT total FROM sueldosxseccion;
 ```
 
 ### Ejercicio 6
 
-1. Se necesita una nueva tabla llamada "sucursalCordoba" que contenga los nombres y secci�n de los empleados de la ciudad de C�rdoba. En primer lugar, eliminamos la tabla. Luego, consulte las tablas "empleados" y "sucursales" y guarde el resultado en la nueva tabla.
+1. Se necesita una nueva tabla llamada "sucursalCordoba" que contenga los nombres y sección de los empleados de la ciudad de Córdoba. En primer lugar, eliminamos la tabla. Luego, consulte las tablas "empleados" y "sucursales" y guarde el resultado en la nueva tabla.
 
 ```js
+DROP TABLE  sucursalCordoba;
 
+CREATE TABLE sucursalCordoba AS
+(SELECT nombre,seccion
+        FROM empleados
+            WHERE codigosucursal IN (SELECT codigo
+                                            FROM sucursales
+                                                WHERE ciudad LIKE 'Cordoba'));
 ```
 
 ### Ejercicio 7
@@ -117,5 +124,5 @@ DROP TABLE sueldosxseccion;
 1. Consulte la nueva tabla.
 
 ```js
-
+    SELECT * FROM sucursalCordoba;
 ```
