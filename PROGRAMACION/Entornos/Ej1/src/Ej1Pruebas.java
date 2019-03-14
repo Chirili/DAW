@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class Ej1 {
+
+public class Ej1Pruebas {
 
     public static void main(String[] args) {
 
@@ -10,7 +11,7 @@ public class Ej1 {
         int num;
 
         do{
-            //Pedimos el primer número
+            //Pedimos el primer n�mero
             num=sn.nextInt();
 
             if(num<=1){
@@ -18,12 +19,12 @@ public class Ej1 {
                         + "Vuelve a intentarlo");
             }
 
-        }while(!(num>1)); //condición para salir
+        }while(!(num<=1)); //condici�n para salir
 
         int suma=0;
 
         //Realizamos la suma
-        for(int contador=1;contador<=num;contador++){
+        for(int contador=1;contador<num;contador++){
             suma+=contador;
         }
 
