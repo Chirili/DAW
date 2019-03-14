@@ -2,16 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4a9eec9-251c-4ed3-aa5b-08cfce387eda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Ej1/src/Ej1Pruebas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ej2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ej2/src/Ej2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ej3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ej5/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ej5/src/Ej5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej7/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej7/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej8/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej8/src/Ej8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/Ej9.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/src/Ej9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Prueba/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Prueba/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Prueba/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Prueba/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Prueba/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Prueba/Prueba.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Prueba/src/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Prueba/src/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Practica3.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Practica3.2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ejercicios/Perro_Gato_Bucle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ejercicios/Perro_Gato_Bucle/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ej1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ej1/out/production/Ej1/Ej1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej1/out/production/Ej1/Ej1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ej1/src/Ej1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej1/src/Ej1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ej4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej4/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Ej3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="41" selection-end-column="1" />
+            <state relative-caret-position="170">
+              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,10 +68,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="311" />
-    <option name="y" value="-28" />
-    <option name="width" value="1400" />
-    <option name="height" value="993" />
+    <option name="x" value="776" />
+    <option name="width" value="597" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -67,6 +80,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -83,8 +98,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -132,9 +145,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1860817" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -143,7 +157,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32733223" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3716143" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -178,8 +192,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Ej3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="41" selection-end-column="1" />
+        <state relative-caret-position="170">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
