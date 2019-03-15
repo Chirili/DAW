@@ -2,30 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b9f6c37-a05f-4fcc-925c-265b8e6b0f20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej7/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej7/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej8/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej8/src/Ej8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/Ej9.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/src/Ej9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Prueba/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Prueba/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Prueba/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Prueba/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Prueba/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Prueba/Prueba.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Prueba/src/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Prueba/src/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Practica3.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Practica3.2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Calculadora_ACL/src/Calculadora.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Calculadora_ACL/src/Formulario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Calculadora/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Calculadora/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Calculadora_ACL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Calculadora_ACL/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Calculadora_ACL/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/EJ1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Practica32/out/production/Practica32/Ej1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Entornos/Ej1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Entornos/Ej1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Entornos/Ej3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Entornos/Ej3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Entornos/Ej4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Entornos/Ej4/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +23,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Principal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
+            <state relative-caret-position="622">
               <caret line="126" selection-start-line="126" selection-end-line="126" />
             </state>
           </provider>
@@ -88,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="776" />
     <option name="width" value="597" />
     <option name="height" value="735" />
@@ -101,6 +85,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,7 +103,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -175,10 +159,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="776" y="0" width="597" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.05586592" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.023449318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -208,13 +192,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Gato.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Perro.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -226,9 +203,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gato.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Principal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
+        <state relative-caret-position="622">
           <caret line="126" selection-start-line="126" selection-end-line="126" />
         </state>
       </provider>
