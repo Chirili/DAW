@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 import static java.lang.String.*;
@@ -18,7 +17,8 @@ public class Main {
                 a = 0,
                 res = 0,
                 valor1 = 0,
-                valor2 = 0;
+                valor2 = 0,
+                inverso = 0;
 
 
         System.out.println("Introduzca el primer número: ");
@@ -57,13 +57,23 @@ public class Main {
                     res = res % 10;
                 } else {
                     a = 0;
-                }
+                }/* while (res == 10){
+                    res = 10;
+
+                    inverso = (inverso * 10)+10;
+                    res/=10;
+                    inverso=res;
+                }*/
             } else {
                 /*
                 * En esta linea la suma de a se hace porque si en la ultima iteraccion del bucle for es un numero mayor que 10
                 * al no volver al bucle for no puede sumar ese +1 por lo tanto se suma aqui despues del bucle
                 */
+
                 res = Integer.valueOf(String.valueOf(num1.charAt(i))) + a;
+
+
+                a=0;
             }
 
             String c = valueOf(res);
