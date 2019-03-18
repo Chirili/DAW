@@ -1,8 +1,9 @@
+package Calculadora_Eclipse;
 import java.util.Scanner;
 
 import static java.lang.String.*;
 
-public class Main {
+public class Ej1 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
@@ -17,13 +18,12 @@ public class Main {
                 a = 0,
                 res = 0,
                 valor1 = 0,
-                valor2 = 0,
-                inverso = 0;
+                valor2 = 0;
 
 
-        System.out.println("Introduzca el primer nÃºmero: ");
+        System.out.println("Introduzca el primer número: ");
         num1 = s.nextLine();
-        System.out.println("Introduzca el segundo nÃºmero: ");
+        System.out.println("Introduzca el segundo número: ");
         num2 = s.nextLine();
         //Bloque1
         if (num1.length() > num2.length()) {
@@ -57,13 +57,7 @@ public class Main {
                     res = res % 10;
                 } else {
                     a = 0;
-                }/* while (res == 10){
-                    res = 10;
-
-                    inverso = (inverso * 10)+10;
-                    res/=10;
-                    inverso=res;
-                }*/
+                }
             } else {
                 /*
                 * En esta linea la suma de a se hace porque si en la ultima iteraccion del bucle for es un numero mayor que 10

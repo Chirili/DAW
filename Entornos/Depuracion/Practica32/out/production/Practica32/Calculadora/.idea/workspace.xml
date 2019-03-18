@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e857a0d-0a36-4516-8fc6-de7472ec1dd4" name="Default Changelist" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/../../../PROGRAMACION/Entornos/Ej10/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PROGRAMACION/Entornos/Ej10/src/Ej10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_ACL/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_ACL/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_ACL/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_ACL/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_ACL/Calculadora_ACL.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ej7/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej7/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ej7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ej8/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej8/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ej8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej8/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ej9/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej9/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ej9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej9/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/Entornos/Ej4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROGRAMACION/Entornos/Ej4/.idea/workspace.xml" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculadora_ACL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculadora_ACL/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EJ1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practica32/out/production/Practica32/Ej1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/Ejercicios/Perro_Gato_Bucle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROGRAMACION/Ejercicios/Perro_Gato_Bucle/.idea/workspace.xml" afterDir="false" />
->>>>>>> 980075aa99c61d7f80b9c721cd03218f0862b1e2
+      <change beforePath="$PROJECT_DIR$/out/production/Calculadora/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculadora/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,13 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="374">
-              <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-=======
-            <state relative-caret-position="1428">
-              <caret line="84" column="60" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="60" />
->>>>>>> 980075aa99c61d7f80b9c721cd03218f0862b1e2
+            <state relative-caret-position="451">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,16 +65,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-<<<<<<< HEAD
-    <option name="x" value="500" />
-    <option name="width" value="1400" />
-    <option name="height" value="1047" />
-=======
     <option name="x" value="-11" />
     <option name="y" value="-18" />
     <option name="width" value="1386" />
     <option name="height" value="788" />
->>>>>>> 980075aa99c61d7f80b9c721cd03218f0862b1e2
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -115,13 +94,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552675328574" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Calculadora_ACL" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552656803996" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
@@ -172,15 +151,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14605543" />
-=======
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20347957" />
->>>>>>> 980075aa99c61d7f80b9c721cd03218f0862b1e2
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20045386" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -190,18 +163,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32906976" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.31914893" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.45662847" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.45662847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-<<<<<<< HEAD
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32822758" />
-=======
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32733223" />
->>>>>>> 980075aa99c61d7f80b9c721cd03218f0862b1e2
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -218,43 +187,43 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>78</line>
+          <line>79</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>28</line>
+          <line>29</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>42</line>
+          <line>43</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>43</line>
+          <line>44</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>54</line>
+          <line>55</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>84</line>
+          <line>85</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>59</line>
+          <line>60</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
@@ -354,13 +323,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="374">
-          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-=======
-        <state relative-caret-position="1428">
-          <caret line="84" column="60" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="60" />
->>>>>>> 980075aa99c61d7f80b9c721cd03218f0862b1e2
+        <state relative-caret-position="451">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

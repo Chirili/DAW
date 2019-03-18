@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="Practica3.2/src/|Ej9/src/|Ej7/src/|Calculadora_ACL/src/|Prueba/src/|Calculadora/src/|Practica32/src/|Ej8/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="Calculadora_ACL/src"/>
+	<classpathentry kind="src" path="Calculadora/src"/>
+	<classpathentry kind="src" path="Ej7/src"/>
+	<classpathentry kind="src" path="Ej8/src"/>
+	<classpathentry kind="src" path="Ej9/src"/>
+	<classpathentry kind="src" path="Practica3.2/src"/>
+	<classpathentry kind="src" path="Practica32/src"/>
+	<classpathentry kind="src" path="Prueba/src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="Practica32/out/production/Practica32"/>
+</classpath>

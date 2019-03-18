@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b9f6c37-a05f-4fcc-925c-265b8e6b0f20" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/../../Entornos/Calculadora_Ejercicio3.3/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Entornos/Calculadora_Ejercicio3.3/src/Calculadora.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Entornos/Calculadora_Ejercicio3.3/src/Interfaz.java" afterDir="false" />
@@ -16,6 +17,16 @@
       <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Entornos/Ej4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Entornos/Ej4/.idea/workspace.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Calculadora_ACL/src/Calculadora.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Calculadora_ACL/src/Formulario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Calculadora/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Calculadora/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Calculadora_ACL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Calculadora_ACL/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Calculadora_ACL/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/EJ1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Practica32/out/production/Practica32/Ej1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 980075aa99c61d7f80b9c721cd03218f0862b1e2
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +40,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Principal.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="399">
               <caret line="102" column="29" lean-forward="true" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
+=======
+            <state relative-caret-position="622">
+              <caret line="126" selection-start-line="126" selection-end-line="126" />
+>>>>>>> 980075aa99c61d7f80b9c721cd03218f0862b1e2
             </state>
           </provider>
         </entry>
@@ -79,8 +95,12 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
     <option name="x" value="602" />
     <option name="y" value="-16" />
+=======
+    <option name="x" value="776" />
+>>>>>>> 980075aa99c61d7f80b9c721cd03218f0862b1e2
     <option name="width" value="597" />
     <option name="height" value="735" />
   </component>
@@ -91,7 +111,30 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
+<<<<<<< HEAD
     <panes />
+=======
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Perro_Gato_Bucle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Perro_Gato_Bucle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Perro_Gato_Bucle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Perro_Gato_Bucle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+>>>>>>> 980075aa99c61d7f80b9c721cd03218f0862b1e2
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552056664113" />
@@ -147,10 +190,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.01652452" />
+=======
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.023449318" />
+>>>>>>> 980075aa99c61d7f80b9c721cd03218f0862b1e2
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -180,6 +230,7 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Gato.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -194,6 +245,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 980075aa99c61d7f80b9c721cd03218f0862b1e2
     <entry file="file://$PROJECT_DIR$/src/Perro.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -205,5 +258,22 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/Gato.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 980075aa99c61d7f80b9c721cd03218f0862b1e2
   </component>
 </project>
