@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
-
 public class Calculadora {
+    public MostrarTotal(){
+        Interfaz gui = new Interfaz();
+
+    }
 }

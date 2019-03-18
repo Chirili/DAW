@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd4ab1ea-8e69-4c60-8f2c-ef3cd8a38b7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../PROGRAMACION/Entornos/Ej10/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PROGRAMACION/Entornos/Ej10/src/Ej10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculadora/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculadora/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ej7/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej7/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ej7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ej9/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej9/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ej9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej9/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/Entornos/Ej4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROGRAMACION/Entornos/Ej4/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="459b3d32-3f89-40bb-a9ee-17b94f64640b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Calculadora/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Calculadora/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej7/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej7/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej8/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej8/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej9/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ej4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej4/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,10 +23,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Ej8.java">
+        <entry file="file://$PROJECT_DIR$/src/Ej10.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-line="35" selection-end-column="1" />
+              <caret selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -46,19 +46,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Ej8.java" />
+        <option value="$PROJECT_DIR$/src/Ej10.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="311" />
-    <option name="y" value="-28" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="483" />
     <option name="width" value="1400" />
-    <option name="height" value="993" />
+    <option name="height" value="1047" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -69,13 +66,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="Ej8" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ej8" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ej8" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ej8" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Ej10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ej10" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -85,8 +77,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552585976583" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Ej9" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552823730530" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Entornos/Depuracion/Ej8" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -101,16 +93,16 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Ej8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ej8" />
-      <module name="Ej8" />
+    <configuration name="Ej10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ej10" />
+      <module name="Ej10" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Ej8" />
+        <item itemvalue="Application.Ej10" />
       </list>
     </recent_temporary>
   </component>
@@ -119,18 +111,18 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bd4ab1ea-8e69-4c60-8f2c-ef3cd8a38b7b" name="Default Changelist" comment="" />
-      <created>1552579951936</created>
+      <changelist id="459b3d32-3f89-40bb-a9ee-17b94f64640b" name="Default Changelist" comment="" />
+      <created>1552822016512</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1552579951936</updated>
+      <updated>1552822016512</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="483" y="0" width="1400" height="1047" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3552239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -139,8 +131,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32932165" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4037199" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -163,19 +155,37 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Ej8.java</url>
-          <line>17</line>
+          <url>file://$PROJECT_DIR$/src/Ej10.java</url>
+          <line>22</line>
           <properties />
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Ej10.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Ej10.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Ej10.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Ej8.java">
+    <entry file="file://$PROJECT_DIR$/src/Ej10.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-line="35" selection-end-column="1" />
+          <caret selection-end-line="38" />
         </state>
       </provider>
     </entry>
