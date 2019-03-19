@@ -12,20 +12,7 @@
     color: #1883ba;
     background-color: #ffffff;
   }
-    .imagen {
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #1883ba;
-    border-radius: 6px;
-    border: 2px solid #0016b0;
-    width: 230px;}
-  .imagen:hover{
-    color: #1883ba;
-    background-color: #ffffff;
-  }
+  
   </style>
 
 # Tema 8 Clausulas avanzadas, vista e índices
@@ -249,9 +236,24 @@ DELETE FROM vista_inscriptos
 
 
 <details>
-  
-  <summary class="imagen">Imagen Ejercicio 14</summary>
 
+  <style>.imagen {
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #ffffff;
+        background-color: #1883ba;
+        border-radius: 6px;
+        border: 2px solid #0016b0;
+        width: 230px;}
+      .imagen:hover{
+        color: #1883ba;
+        background-color: #ffffff;
+      }</style>  
+  <summary class="imagen">Imagen Ejercicio 14</summary>
   
+    
+
 ![imagen](https://user-images.githubusercontent.com/23047899/54635794-40d02780-4a85-11e9-9162-b69fa9cadd06.png)
 </details>
