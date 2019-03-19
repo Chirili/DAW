@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Libro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Boletin1_Ejercicio4.xsd">
+    <Titulo>Java y XML</Titulo>
+    <Contenido>
+        <Capitulo materia="XML">
+            <Tema>Introducción</Tema>
+            <Seccion apartados="7">Qué es</Seccion>
+            <Seccion apartados="3">Cómo se usa</Seccion>
+        </Capitulo>
+        <Capitulo materia="XML">
+            <Tema>Creando XML</Tema>
+            <Seccion apartados="0">Un documento XML</Seccion>
+            <Seccion apartados="2">La cabecera</Seccion>
+            <Seccion apartados="6">El contenido</Seccion>
+        </Capitulo>
+        <Capitulo>
+            <Tema>Analizando XML</Tema>
+            <Seccion apartados="3">Preparación</Seccion>
+            <Seccion apartados="3" dificil="true">SAX</Seccion>
+            <Seccion apartados="9" dificil="true">Manejadores</Seccion>
+            <Seccion apartados="0">Una forma mejor de cargar el
+                analizador</Seccion>
+        </Capitulo>
+        <Separacion />
+        <Capitulo materia="Java">
+            <Tema>JDOM</Tema>
+            <Seccion apartados="2">Introducción</Seccion>
+            <Seccion apartados="4" dificil="true">DOM&amp;JDOM</Seccion>
+        </Capitulo>
+    </Contenido>
+    <Copyright>&OReillyCopyright;</Copyright>
+</Libro>
