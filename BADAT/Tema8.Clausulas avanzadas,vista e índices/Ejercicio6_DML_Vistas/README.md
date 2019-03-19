@@ -1,20 +1,3 @@
-<style>
-    summary {
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #1883ba;
-    border-radius: 6px;
-    border: 2px solid #0016b0;}
-  summary:hover{
-    color: #1883ba;
-    background-color: #ffffff;
-  }
-  
-  </style>
-
 # Tema 8 Clausulas avanzadas, vista e índices
 
 ## Un club dicta cursos de distintos deportes. Almacena la información en CHARias tablas
@@ -151,6 +134,7 @@ Si que afecta a cursos el insertar registros en una vista.
   UPDATE vista_cursos SET deporte='golf' WHERE deporte LIKE 'tenis';
 ```
 Si que afecta a la tabla cursos:
+
 ![imagen](https://user-images.githubusercontent.com/23047899/54628084-14141400-4a75-11e9-9d7c-494b5c2ca9ce.png)
 
 ### Ejercicio 8
@@ -161,6 +145,7 @@ Si que afecta a la tabla cursos:
   DELETE FROM vista_cursos WHERE numero=8;
 ```
 Si que afecta a la tabla cursos:
+
 ![imagen](https://user-images.githubusercontent.com/23047899/54628528-0743f000-4a76-11e9-9515-b96c5a578663.png)
 ### Ejercicio 9
 
@@ -236,24 +221,7 @@ DELETE FROM vista_inscriptos
 
 
 <details>
-
-  <style>.imagen {
-        text-decoration: none;
-        padding: 10px;
-        font-weight: 600;
-        font-size: 20px;
-        color: #ffffff;
-        background-color: #1883ba;
-        border-radius: 6px;
-        border: 2px solid #0016b0;
-        width: 230px;}
-      .imagen:hover{
-        color: #1883ba;
-        background-color: #ffffff;
-      }</style>  
   <summary class="imagen">Imagen Ejercicio 14</summary>
-  
-    
 
 ![imagen](https://user-images.githubusercontent.com/23047899/54635794-40d02780-4a85-11e9-9162-b69fa9cadd06.png)
 </details>
