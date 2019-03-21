@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pedido fecha="2018-11-20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="pedidos.xsd">
+    <destino>
+        <nombre></nombre>
+        <direccion></direccion>
+        <ciudad></ciudad>
+        <codpostal>1001</codpostal>
+    </destino>
+    <ordenante>
+        <nombre></nombre>
+        <direccion></direccion>
+        <ciudad></ciudad>
+        <codpostal>10001</codpostal>
+    </ordenante>
+    <observaciones></observaciones>
+    <contenido>
+        <producto>
+            <nombre></nombre>
+            <cantidad>5</cantidad>
+            <precio>100</precio>
+            <observaciones></observaciones>
+        </producto>
+    </contenido>
+</pedido>

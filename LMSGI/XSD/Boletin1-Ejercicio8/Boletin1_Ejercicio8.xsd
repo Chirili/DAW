@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="cancion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="titulo" type="xs:string"></xs:element>
+                <xs:element ref="compositores"></xs:element>
+                <xs:element ref="productores"></xs:element>
+                <xs:element name="sello" type="xs:string"></xs:element>
+                <xs:element name="artista" type="xs:string"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="duracion"></xs:attribute>
+            <xs:attribute name="anio"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="compositores">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="compositor"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="compositor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombres" type="xs:string"></xs:element>
+                <xs:element name="apellidos" type="xs:string"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="productores">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="productor"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="productor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombres" type="xs:string"></xs:element>
+                <xs:element name="apellidos" type="xs:string"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

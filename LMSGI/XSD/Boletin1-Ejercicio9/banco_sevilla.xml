@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<banco  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="banco_sevilla.xsd">
+    <sucursal id="">
+        <cuenta_corriente id="">
+            <cliente nif="">
+                <operaciones>
+                    <operacion></operacion>
+                </operaciones>
+                <cuentas>
+                    <cuenta>
+                        <privilegios></privilegios>
+                        <domiciliaciones></domiciliaciones>
+                    </cuenta>
+                </cuentas>
+                <prestamo></prestamo>
+            </cliente>
+        </cuenta_corriente>
+    </sucursal>
+</banco>
