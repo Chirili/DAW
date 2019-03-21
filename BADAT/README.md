@@ -4,6 +4,7 @@
 
 ### Indice
 1. [La sentencia SELECT:](#1.0) 
+
   1.1 [Concepto](#1.1)
     1.2 [Sintaxis sentencia SELECT básica](#1.2)
     1.3 [Ejemplos de uso sentencia SELECT](#1.3)
