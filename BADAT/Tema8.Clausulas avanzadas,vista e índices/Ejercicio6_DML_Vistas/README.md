@@ -1,6 +1,6 @@
 # Tema 8 Clausulas avanzadas, vista e índices
 
-## Un club dicta cursos de distintos deportes. Almacena la información en CHARias tablas
+## Un club dicta cursos de distintos deportes. Almacena la información en varias tablas
 
 ### Elimine las tabla "inscriptos", "socios" y "cursos"
 

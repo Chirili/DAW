@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="prestamo_libro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="bibliotecario"></xs:element>
+                <xs:element ref="datos_lector"></xs:element>
+                <xs:element ref="en_prestamo" type="maximo_prestamo"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="fecha_prestamo"></xs:attribute>
+            <xs:attribute name="fecha_devolucion"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="bibliotecario">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"></xs:element>
+                <xs:element name="apellidos" type="xs:string"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="datos_lector">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id"></xs:element>
+                <xs:element name="nombre" type="xs:string"></xs:element>
+                <xs:element name="apellidos" type="xs:string"></xs:element>
+                <xs:element name="telefono"></xs:element>
+                <xs:element ref="calle"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="calle">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tipo"></xs:element>
+                <xs:element name="nombre" type="xs:string"></xs:element>
+                <xs:element name="localidad" type="xs:string"></xs:element>
+                <xs:element name="provincia" type="xs:string"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="numero"></xs:attribute>
+            <xs:attribute name="piso" type="xs:string"></xs:attribute>
+            <xs:attribute name="letra" type="xs:string"></xs:attribute>
+            <xs:attribute name="CP"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="tipo">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element name="calle"></xs:element>
+                <xs:element name="avenida"></xs:element>
+                <xs:element name="plaza"></xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="maximo_prestamo">
+        <xs:restriction base="xs:integer">
+            <xs:minExclusive value="0"></xs:minExclusive>
+            <xs:maxExclusive value="3"></xs:maxExclusive>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="en_prestamo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="numero_registro"></xs:element>
+                <xs:element name="titulo" type="xs:string"></xs:element>
+                <xs:element name="autor" type="xs:string"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="id"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
