@@ -35,7 +35,7 @@ public class Interfaz {
     /**
      * Initialize the contents of the frame.
      */
-    public void initialize() {
+    private void initialize() {
         frame = new JFrame();
         frame.setBounds(100, 100, 384, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
