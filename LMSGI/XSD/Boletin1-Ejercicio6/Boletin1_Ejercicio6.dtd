@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--DTD para un documento XML que contiene una lista de editoriales
+con información opcional-->
+<!ELEMENT editoriales (titulo, editorial+)>
+<!ELEMENT editorial (nombre, email?, homepage?, direccion, tfno?,fax?)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT homepage (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT tfno (#PCDATA)>

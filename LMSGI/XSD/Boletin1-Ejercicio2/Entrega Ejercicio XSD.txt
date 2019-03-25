@@ -1,0 +1,59 @@
+<?xml version = "1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd = "http://www.w3.org/2001/XMLSchema">
+  <xsd:element name = "vehiculos">
+   <xsd:complexType>
+    <xsd:sequence>
+     <xsd:element ref = "vehiculo" maxOccurs = "unbounded"/>
+    </xsd:sequence>
+   </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name = "vehiculo">
+   <xsd:complexType>
+    <xsd:sequence>
+     <xsd:element name = "nombre" type = "xsd:string" maxOccurs = "unbounded"/>
+     <xsd:element name = "modelo" type = "xsd:string"/>
+     <xsd:element name = "fabricacion">
+      <xsd:complexType>
+       <xsd:sequence>
+        <xsd:element ref = "inicio"/>
+        <xsd:element ref = "fin"/>
+       </xsd:sequence>
+      </xsd:complexType>
+     </xsd:element>
+     <xsd:element name = "modificaciones">
+      <xsd:complexType>
+       <xsd:sequence>
+        <xsd:element name = "modificacion" type = "xsd:string" maxOccurs = "unbounded"/>
+       </xsd:sequence>
+      </xsd:complexType>
+     </xsd:element>
+    </xsd:sequence>
+   </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name = "inicio">
+   <xsd:complexType>
+    <xsd:sequence>
+     <xsd:element ref = "dia"/>
+     <xsd:element ref = "mes"/>
+     <xsd:element ref = "anyo"/>
+    </xsd:sequence>
+   </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name = "fin">
+   <xsd:complexType>
+    <xsd:sequence>
+     <xsd:element ref = "dia"/>
+     <xsd:element ref = "mes"/>
+     <xsd:element ref = "anyo"/>
+    </xsd:sequence>
+   </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name = "dia" type = "xsd:string"/>
+  <xsd:element name = "mes" type = "xsd:string"/>
+  <xsd:element name = "anyo" type = "xsd:string"/>
+
+</xsd:schema>

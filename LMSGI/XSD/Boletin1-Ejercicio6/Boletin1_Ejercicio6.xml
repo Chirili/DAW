@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<editoriales xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Boletin1_Ejercicio6.xsd">
+    <titulo></titulo>
+    <editorial>
+        <titulo></titulo>
+        <nombre></nombre>
+        <email></email>
+        <homepage></homepage>
+        <direccion></direccion>
+        <tfno></tfno>
+    </editorial>
+</editoriales>

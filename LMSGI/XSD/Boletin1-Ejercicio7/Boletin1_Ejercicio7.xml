@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<prestamo_libro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Boletin1_Ejercicio7.xsd" fecha_prestamo="" fecha_devolucion="">
+    <bibliotecario>
+        <nombre></nombre>
+        <apellidos></apellidos>
+    </bibliotecario>
+    <datos_lector>
+        <id></id>
+        <nombre></nombre>
+        <apellidos></apellidos>
+        <telefono></telefono>
+        <calle  numero="" piso="" letra="" CP="">
+            <tipo>
+                <calle></calle>
+                <plaza></plaza>
+                <avenida></avenida>
+            </tipo>
+            <nombre></nombre>
+            <localidad></localidad>
+            <provincia></provincia>
+        </calle>
+    </datos_lector>
+    <en_prestamo id="">
+        <numero_registro></numero_registro>
+        <titulo></titulo>
+        <autor></autor>
+    </en_prestamo>
+    
+</prestamo_libro>
