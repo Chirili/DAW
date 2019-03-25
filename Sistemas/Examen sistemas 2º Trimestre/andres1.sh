@@ -5,7 +5,7 @@ read -p "Escribe una letra: " letra
 maximo=aa
 if [ $letra \< $maximo ];then
     resultado=`grep -c "^$letra" /etc/group  resultado`
-    Hay $resultado grupos que empiecen por la letra $letra
+    echo "Hay $resultado grupos que empiecen por la letra $letra"
 else
 echo "Error: solo se permite una letra"
 fi
