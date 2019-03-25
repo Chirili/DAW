@@ -97,67 +97,37 @@ public class Interfaz{
         JButton button3 = new JButton("3");
         button3.setBounds(183, 178, 89, 37);
         frame.getContentPane().add(button3);
-        
+
 
         JButton button4 = new JButton("4");
         button4.setBounds(10, 143, 89, 37);
         frame.getContentPane().add(button4);
-        button4.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent button4) {
-                screen.setText("4");
-            }
-        });
+
 
         JButton button5 = new JButton("5");
         button5.setBounds(96, 143, 89, 37);
         frame.getContentPane().add(button5);
-        button5.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent button5) {
-                screen.setText("5");
-            }
-        });
+
 
         JButton button6 = new JButton("6");
         button6.setBounds(183, 143, 89, 37);
         frame.getContentPane().add(button6);
-        button6.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent button6) {
-                screen.setText("6");
-            }
-        });
+
 
         JButton button7 = new JButton("7");
         button7.setBounds(10, 108, 89, 37);
         frame.getContentPane().add(button7);
-        button7.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent button7) {
-                screen.setText("7");
-            }
-        });
+
 
         JButton button8 = new JButton("8");
         button8.setBounds(96, 108, 89, 37);
         frame.getContentPane().add(button8);
-        button8.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent button8) {
-                screen.setText("8");
-            }
-        });
+
 
         JButton button9 = new JButton("9");
         button9.setBounds(183, 108, 89, 37);
         frame.getContentPane().add(button9);
-        button9.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent button9) {
-                screen.setText("9");
-            }
-        });
+
 
         JButton button10 = new JButton("X");
         button10.setBounds(269, 108, 89, 37);

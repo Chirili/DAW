@@ -84,8 +84,8 @@
 1. Realice un join para mostrar todos los datos de todas las tablas, sin repetirlos (7 registros).
 
 ```js
-SELECT * FROM socios 
-  INNER JOIN inscriptos ON socios.documento=inscriptos.documentosocio 
+SELECT * FROM socios
+  INNER JOIN inscriptos ON socios.documento=inscriptos.documentosocio
     INNER JOIN cursos ON cursos.numero=inscriptos.numero;
 ```
 
