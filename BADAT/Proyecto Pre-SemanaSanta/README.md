@@ -71,11 +71,11 @@ ALTER TABLE vuelo ADD CONSTRAINT pk_vuelo PRIMARY KEY(cod,mat,fecha);
 
 ## 3. Inserción de datos
 
-### 3.1 Realiza la inserció de valores de forma que las tablas queden como se muestra a continuación. Realiza la inserción de tuplas para cada tabla de manera independiente, ya que de esta forma es más sencillo detectar errores:
+### 3.1 Realiza la inserció de valores de forma que las tablas queden como se muestra a continuación. Realiza la inserción de tuplas para cada tabla de manera independiente, ya que de esta forma es más sencillo detectar errores
 
 ### Inserción tabla RUTA
 
-- Filas a insertar:
+Filas a insertar:
 
 <details>
   <summary class="imagen">Tabla RUTA filas a insertar</summary>
@@ -91,7 +91,7 @@ INSERT INTO ruta VALUES (333,'SPA','MADRID','BARCELONA',1);
 INSERT INTO ruta VALUES (444,'AIR','MADRID','BARCELONA',1);
 ```
 
-- Filas ya insertadas:
+Filas ya insertadas:
 
 <details>
   <summary class="imagen">Tabla RUTA filas ya insertadas</summary>
@@ -101,7 +101,7 @@ INSERT INTO ruta VALUES (444,'AIR','MADRID','BARCELONA',1);
 
 ### Inserción tabla AVION
 
-- Filas a inserta:
+Filas a inserta:
 
 <details>
   <summary class="imagen">Tabla AVION filas a insertar</summary>
@@ -112,5 +112,46 @@ INSERT INTO ruta VALUES (444,'AIR','MADRID','BARCELONA',1);
 - Código:
 
 ```js
-
+INSERT INTO avion VALUES ('AAA','ABUS-200',280,'10-JUN-2018');
+INSERT INTO avion VALUES ('BBB','ABUS-280',300,'');
+INSERT INTO avion VALUES ('CCC','B-747',250,'');
+INSERT INTO avion VALUES ('DDD','B-777',200,'10-OCT-2019');
 ```
+
+Filas ya insertadas:
+
+<details>
+  <summary class="imagen">Tabla AVION filas ya insertadas</summary>
+
+![image](https://user-images.githubusercontent.com/23047899/55026006-5ce24480-5002-11e9-8557-74b1a5077263.png)
+</details>
+
+### Inserción tala VUELO
+
+Filas a insertar:
+
+<details>
+  <summary class="imagen">Tabla VUELO filas a insertar</summary>
+
+![image](https://user-images.githubusercontent.com/23047899/55026939-5654cc80-5004-11e9-9de3-936973742bc5.png)
+</details>
+
+- Codigo:
+```js
+INSERT INTO vuelo VALUES(111,'BBB',250,'10-FEB-2018');
+INSERT INTO vuelo VALUES(222,'CCC',200,'10-FEB-2018');
+INSERT INTO vuelo VALUES(333,'AAA',200,'10-FEB-2018');
+INSERT INTO vuelo VALUES(444,'DDD',250,'10-FEB-2018');
+INSERT INTO vuelo VALUES(333,'AAA',100,'10-MAY-2018');
+INSERT INTO vuelo VALUES(444,'DDD',150,'10-MAY-2018');
+INSERT INTO vuelo VALUES(333,'AAA',50,'10-JUN-2018');
+INSERT INTO vuelo VALUES(444,'DDD',75,'10-JUN-2018');
+```
+
+Filas ya insertadas:
+
+<details>
+  <summary class="imagen">Tabla VUELO filas ya insertadas</summary>
+
+![image](https://user-images.githubusercontent.com/23047899/55027186-f90d4b00-5004-11e9-9918-511480182368.png)
+</details>
