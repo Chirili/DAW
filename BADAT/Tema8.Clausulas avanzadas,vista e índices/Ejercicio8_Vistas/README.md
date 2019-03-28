@@ -84,7 +84,11 @@
 - Cree o reemplace la vista "vista_inscriptos" que muestre el documento y nombre del socio, el deporte, el día y la matrícula, de todas las inscripciones no pagas.
 
 ```js
+<<<<<<< HEAD
 CREATE VIEW vista_inscriptos
+=======
+CREATE VIEW
+>>>>>>> fa3adeb4dcee624e4444ab8cf44afa9b5819ed0b
 SELECT documento,nombre,deporte,dia,matricula FROM socios 
     JOIN inscriptos ON inscriptos.documentosocio=socios.documento 
         JOIN cursos ON cursos.numero=inscriptos.numero AND matricula LIKE 'n';
