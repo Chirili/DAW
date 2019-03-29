@@ -84,7 +84,11 @@
 - Cree o reemplace la vista "vista_inscriptos" que muestre el documento y nombre del socio, el deporte, el día y la matrícula, de todas las inscripciones no pagas.
 
 ```js
+<<<<<<< HEAD
+CREATE VIEW vista_inscriptos
+=======
 CREATE VIEW
+>>>>>>> fa3adeb4dcee624e4444ab8cf44afa9b5819ed0b
 SELECT documento,nombre,deporte,dia,matricula FROM socios 
     JOIN inscriptos ON inscriptos.documentosocio=socios.documento 
         JOIN cursos ON cursos.numero=inscriptos.numero AND matricula LIKE 'n';
@@ -111,3 +115,19 @@ SELECT * FROM vista_inscriptos;
 
 ### Ejercicio 4
 
+- Modifique la vista para que muestre el domicilio
+
+```js
+  CREATE OR REPLACE VIEW vista_inscriptos AS
+SELECT documento,nombre,deporte,dia,matricula,domicilio FROM socios 
+    JOIN inscriptos ON inscriptos.documentosocio=socios.documento 
+        JOIN cursos ON cursos.numero=inscriptos.numero AND matricula LIKE 'n';
+```
+
+### Ejercicio 5
+
+- Consulte la vista para ver si se modifico
+
+```js
+  SELECT * FROM vista_inscriptos;
+```
