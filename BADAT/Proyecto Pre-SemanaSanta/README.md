@@ -155,3 +155,7 @@ Filas ya insertadas:
 
 ![image](https://user-images.githubusercontent.com/23047899/55027186-f90d4b00-5004-11e9-9918-511480182368.png)
 </details>
+
+## Modificaciones en las tablas
+
+### Realiza de una en una las siguientes modificaciones sobre la base de datos. Estudiar los posibles errores que aparezcan, comentando su significado (los comentarios se insertan utilizando /* ...comentario...*/). 
