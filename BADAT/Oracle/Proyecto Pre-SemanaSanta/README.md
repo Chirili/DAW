@@ -47,26 +47,34 @@ ALTER TABLE vuelo ADD CONSTRAINT ck_ocupacion CHECK(ocupacion <= 300);
 ### 2.1 Añade a la tabla VUELO el atributo: FECHA:fecha de vuelo
 
 ```js
-ALTER TABLE vuelo ADD fecha DATE;
+ALTER TABLE vuelo 
+  ADD fecha DATE;
 ```
 
 ### 2.2 Añade el atributo FECHA, anteriormente introducido, la restricción de integridad correspondiente para que no admita valores nulos.
 
 ```js
-ALTER TABLE vuelo MODIFY fecha DATE NOT NULL;
+ALTER TABLE vuelo
+   MODIFY fecha DATE NOT NULL;
 ```
 
 ### 2.3 Establece el atributo COD de la tabla VUELO como llave externa respecto de RUTA
 
 ```js
-ALTER TABLE vuelo ADD CONSTRAINT fk_vuelo_ruta FOREIGN KEY(cod) REFERENCES ruta(cod);
+ALTER TABLE vuelo
+   ADD CONSTRAINT fk_vuelo_ruta
+     FOREIGN KEY(cod) 
+      REFERENCES ruta(cod);
 ```
 
 ### 2.4  Establece el conjunto de atributos formado por COD, MAT y FECHA como llave primaria de la tabla VUELO.
 
 ```js
-ALTER TABLE vuelo DROP CONSTRAINT pk_vuelo;
-ALTER TABLE vuelo ADD CONSTRAINT pk_vuelo PRIMARY KEY(cod,mat,fecha);
+ALTER TABLE vuelo
+   DROP CONSTRAINT pk_vuelo;
+ALTER TABLE vuelo
+   ADD CONSTRAINT pk_vuelo 
+    PRIMARY KEY(cod,mat,fecha);
 ```
 
 ## 3. Inserción de datos
@@ -78,23 +86,32 @@ ALTER TABLE vuelo ADD CONSTRAINT pk_vuelo PRIMARY KEY(cod,mat,fecha);
 Filas a insertar:
 
 <details>
-  <summary class="imagen">Tabla RUTA filas a insertar</summary>
+  <summary>Tabla RUTA filas a insertar</summary>
 
  ![image](https://user-images.githubusercontent.com/23047899/54935552-d30e7a80-4f20-11e9-880e-46da923dc3f7.png)
 </details>
 
 - Codigo:
-```js
-INSERT INTO ruta VALUES (111,'IBE','MADRID','LONDRES',3);
-INSERT INTO ruta VALUES (222,'IBE','MADRID','PARIS',1);
-INSERT INTO ruta VALUES (333,'SPA','MADRID','BARCELONA',1);
-INSERT INTO ruta VALUES (444,'AIR','MADRID','BARCELONA',1);
+<details>
+  <summary>Insert realizados a la tabla ruta</summary>
+
+  ```js
+INSERT INTO ruta 
+  VALUES (111,'IBE','MADRID','LONDRES',3);
+INSERT INTO ruta 
+  VALUES (222,'IBE','MADRID','PARIS',1);
+INSERT INTO ruta 
+  VALUES (333,'SPA','MADRID','BARCELONA',1);
+INSERT INTO ruta 
+  VALUES (444,'AIR','MADRID','BARCELONA',1);
 ```
+</details>
+
 
 Filas ya insertadas:
 
 <details>
-  <summary class="imagen">Tabla RUTA filas ya insertadas</summary>
+  <summary>Tabla RUTA filas ya insertadas</summary>
 
 ![image](https://user-images.githubusercontent.com/23047899/54935823-66e04680-4f21-11e9-8c79-f57e3e49aa50.png)
 </details>
@@ -104,24 +121,34 @@ Filas ya insertadas:
 Filas a inserta:
 
 <details>
-  <summary class="imagen">Tabla AVION filas a insertar</summary>
+  <summary>Tabla AVION filas a insertar</summary>
 
 ![image](https://user-images.githubusercontent.com/23047899/54937613-08b56280-4f25-11e9-9e29-e76d50011d93.png)
 </details>
 
 - Código:
 
+<details>
+<summary>Insert realizados a la tabla avion</summary>
+
 ```js
-INSERT INTO avion VALUES ('AAA','ABUS-200',280,'10-JUN-2018');
-INSERT INTO avion VALUES ('BBB','ABUS-280',300,'');
-INSERT INTO avion VALUES ('CCC','B-747',250,'');
-INSERT INTO avion VALUES ('DDD','B-777',200,'10-OCT-2019');
+INSERT INTO avion 
+  VALUES ('AAA','ABUS-200',280,'10-JUN-2018');
+INSERT INTO avion 
+  VALUES ('BBB','ABUS-280',300,'');
+INSERT INTO avion 
+  VALUES ('CCC','B-747',250,'');
+INSERT INTO avion 
+  VALUES ('DDD','B-777',200,'10-OCT-2019');
 ```
+</details>
+
+
 
 Filas ya insertadas:
 
 <details>
-  <summary class="imagen">Tabla AVION filas ya insertadas</summary>
+  <summary>Tabla AVION filas ya insertadas</summary>
 
 ![image](https://user-images.githubusercontent.com/23047899/55026006-5ce24480-5002-11e9-8557-74b1a5077263.png)
 </details>
@@ -131,27 +158,40 @@ Filas ya insertadas:
 Filas a insertar:
 
 <details>
-  <summary class="imagen">Tabla VUELO filas a insertar</summary>
+  <summary >Tabla VUELO filas a insertar</summary>
 
 ![image](https://user-images.githubusercontent.com/23047899/55026939-5654cc80-5004-11e9-9de3-936973742bc5.png)
 </details>
 
-- Codigo:
+<details>
+<summary>Filas a insertar en la tabla vuelo</summary>
+
 ```js
-INSERT INTO vuelo VALUES(111,'BBB',250,'10-FEB-2018');
-INSERT INTO vuelo VALUES(222,'CCC',200,'10-FEB-2018');
-INSERT INTO vuelo VALUES(333,'AAA',200,'10-FEB-2018');
-INSERT INTO vuelo VALUES(444,'DDD',250,'10-FEB-2018');
-INSERT INTO vuelo VALUES(333,'AAA',100,'10-MAY-2018');
-INSERT INTO vuelo VALUES(444,'DDD',150,'10-MAY-2018');
-INSERT INTO vuelo VALUES(333,'AAA',50,'10-JUN-2018');
-INSERT INTO vuelo VALUES(444,'DDD',75,'10-JUN-2018');
+INSERT INTO vuelo 
+  VALUES(111,'BBB',250,'10-FEB-2018');
+INSERT INTO vuelo 
+  VALUES(222,'CCC',200,'10-FEB-2018');
+INSERT INTO vuelo 
+  VALUES(333,'AAA',200,'10-FEB-2018');
+INSERT INTO vuelo 
+  VALUES(444,'DDD',250,'10-FEB-2018');
+INSERT INTO vuelo 
+  VALUES(333,'AAA',100,'10-MAY-2018');
+INSERT INTO vuelo 
+  VALUES(444,'DDD',150,'10-MAY-2018');
+INSERT INTO vuelo 
+  VALUES(333,'AAA',50,'10-JUN-2018');
+INSERT INTO vuelo 
+  VALUES(444,'DDD',75,'10-JUN-2018');
 ```
+</details>
+- Codigo:
+
 
 Filas ya insertadas:
 
 <details>
-  <summary class="imagen">Tabla VUELO filas ya insertadas</summary>
+  <summary >Tabla VUELO filas ya insertadas</summary>
 
 ![image](https://user-images.githubusercontent.com/23047899/55027186-f90d4b00-5004-11e9-9918-511480182368.png)
 </details>
@@ -159,3 +199,13 @@ Filas ya insertadas:
 ## Modificaciones en las tablas
 
 ### Realiza de una en una las siguientes modificaciones sobre la base de datos. Estudiar los posibles errores que aparezcan, comentando su significado (los comentarios se insertan utilizando /* ...comentario...*/). 
+
+## 4. Update a las tablas
+
+### 4.1 Retrasa un día la fecha de los vuelos del '10-MAY-2018'
+
+```js
+UPDATE vuelo 
+SET fecha = '09-MAY-2018'
+WHERE fecha = '10-MAY-2018';
+```
