@@ -1,10 +1,17 @@
 # Proyecto Pre-Semana Santa
+## Indice
+1. [Creación de las tablas:](#1)
 
-## 1. Creacion de las tablas
+    1.1 [Creación tabla ruta](#1.1)
 
-### Tabla RUTA
+    1.1 [Creación tabla avion](#1.2)
+    
+    1.1 [Creación tabla vuelo](#1.3)
+## 1. Creación de las tablas {#1}
 
-```js
+### 1.1 Create table RUTA {#1.1}
+
+```sql
 CREATE TABLE ruta(
     cod NUMBER(3),
     compan VARCHAR2(3) NOT NULL,
@@ -16,9 +23,9 @@ CREATE TABLE ruta(
 ALTER TABLE ruta ADD CONSTRAINT ck_compan CHECK(compan IN('IBE','SPA','AIR'));
 ```
 
-### Tabla avion
+### 1.2 Create table avion {#1.2}
 
-```js
+```sql
 CREATE TABLE avion(
     mat VARCHAR2(3),
     modelo VARCHAR2(10) NOT NULL,
@@ -29,9 +36,9 @@ CREATE TABLE avion(
 ALTER TABLE avion ADD CONSTRAINT ck_avion CHECK(plazas >=5 AND plazas <=300);
 ```
 
-### Tabla vuelo
+### 1.3 Create table vuelo {#1.3}
 
-```js
+```sql
 CREATE TABLE vuelo(
     cod NUMBER(3),
     mat VARCHAR2(3),
@@ -46,21 +53,21 @@ ALTER TABLE vuelo ADD CONSTRAINT ck_ocupacion CHECK(ocupacion <= 300);
 
 ### 2.1 Añade a la tabla VUELO el atributo: FECHA:fecha de vuelo
 
-```js
+```sql
 ALTER TABLE vuelo 
   ADD fecha DATE;
 ```
 
 ### 2.2 Añade el atributo FECHA, anteriormente introducido, la restricción de integridad correspondiente para que no admita valores nulos.
 
-```js
+```sql
 ALTER TABLE vuelo
    MODIFY fecha DATE NOT NULL;
 ```
 
 ### 2.3 Establece el atributo COD de la tabla VUELO como llave externa respecto de RUTA
 
-```js
+```sql
 ALTER TABLE vuelo
    ADD CONSTRAINT fk_vuelo_ruta
      FOREIGN KEY(cod) 
@@ -69,7 +76,7 @@ ALTER TABLE vuelo
 
 ### 2.4  Establece el conjunto de atributos formado por COD, MAT y FECHA como llave primaria de la tabla VUELO.
 
-```js
+```sql
 ALTER TABLE vuelo
    DROP CONSTRAINT pk_vuelo;
 ALTER TABLE vuelo
@@ -95,7 +102,7 @@ Filas a insertar:
 <details>
   <summary>Insert realizados a la tabla ruta</summary>
 
-  ```js
+```sql
 INSERT INTO ruta 
   VALUES (111,'IBE','MADRID','LONDRES',3);
 INSERT INTO ruta 
@@ -131,7 +138,7 @@ Filas a inserta:
 <details>
 <summary>Insert realizados a la tabla avion</summary>
 
-```js
+```sql
 INSERT INTO avion 
   VALUES ('AAA','ABUS-200',280,'10-JUN-2018');
 INSERT INTO avion 
@@ -166,7 +173,7 @@ Filas a insertar:
 <details>
 <summary>Filas a insertar en la tabla vuelo</summary>
 
-```js
+```sql
 INSERT INTO vuelo 
   VALUES(111,'BBB',250,'10-FEB-2018');
 INSERT INTO vuelo 
@@ -194,18 +201,51 @@ Filas ya insertadas:
   <summary >Tabla VUELO filas ya insertadas</summary>
 
 ![image](https://user-images.githubusercontent.com/23047899/55027186-f90d4b00-5004-11e9-9918-511480182368.png)
+[ ![image](https://user-images.githubusercontent.com/23047899/55027186-f90d4b00-5004-11e9-9918-511480182368.png) ](https://user-images.githubusercontent.com/23047899/55027186-f90d4b00-5004-11e9-9918-511480182368.png)
 </details>
 
 ## Modificaciones en las tablas
 
-### Realiza de una en una las siguientes modificaciones sobre la base de datos. Estudiar los posibles errores que aparezcan, comentando su significado (los comentarios se insertan utilizando /* ...comentario...*/). 
+#### Realiza de una en una las siguientes modificaciones sobre la base de datos. Estudiar los posibles errores que aparezcan, comentando su significado (los comentarios se insertan utilizando /* ...comentario...*/). 
 
 ## 4. Update a las tablas
 
 ### 4.1 Retrasa un día la fecha de los vuelos del '10-MAY-2018'
 
-```js
+```sql
 UPDATE vuelo 
-SET fecha = '09-MAY-2018'
-WHERE fecha = '10-MAY-2018';
+  SET fecha = '09-MAY-2018'
+    WHERE fecha = '10-MAY-2018';
+```
+
+### 4.2 Aumenta en 1 hroa la duración de las rutas con destino 'PARIS'
+
+```sql
+UPDATE ruta 
+  SET num_horas = num_horas+1
+    WHERE destino LIKE 'PARIS';
+```
+
+### 4.3 Insert las siguientes tuplas en la tabla VUELO:
+
+- Codigo a introducir:
+
+```sql
+INSERT INTO vuelo
+  VALUES (111, 'EEE', 220, '10-MAY-2019'); /*No se pueden insertar datos ya que la clave primaria que se está intentando insertar no se encuentra en la tabla avion*/
+INSERT INTO vuelo
+  VALUES (111, 'BBB', 220, '10-MAY-2019');
+```
+Comenta que ha sucedido y cual es el motivo
+
+Lo que ha sucecido es que al intentar insertar un valor en la clave primaria de avion y este no existir en dicha tabla ya que está como clave foránea salta un error diciendo que se a violado la **PRIMARY KEY** de avión:
+
+![image](https://user-images.githubusercontent.com/23047899/55558503-82e7a300-56ec-11e9-9ba1-e2f0096d4fe9.png)
+
+## 5. Consultas Select
+
+### Muestra todos los aviones
+
+```sql
+
 ```
