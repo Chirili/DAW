@@ -516,5 +516,42 @@ SELECT c1.compan
 
 ![image](https://user-images.githubusercontent.com/23047899/55673849-c9383000-58ad-11e9-9b6c-d82575caba23.png)
 
+- Consulta SQL:
+```sql
+INSERT INTO vuelo(cod,mat,ocupacion,fecha)
+  SELECT DISTINCT cod,mat,0,'10/07/2019'
+    FROM vuelo
+      wHERE fecha='10/02/2018';
+```
+- Resultado:
 
+![Captura](https://user-images.githubusercontent.com/23047899/55674128-cb4fbe00-58b0-11e9-8ee1-7367cceaf50b.PNG)
 
+#### 7.1.2 Actualiza con un único comando UPDATE e independientemente de los datos que se tengan almacenados en la base de datos, la ocupación de los vuelos realizados por el modelo 'ABUS200', de tal manera que se establezca al máximo permitido por ese avión.
+
+![image](https://user-images.githubusercontent.com/23047899/55674161-0b16a580-58b1-11e9-9284-88152fb48dd8.png)
+
+- Consulta SQL:
+
+```sql
+UPDATE vuelo
+  SET ocupacion = 200
+    WHERE mat=(SELECT mat
+                  FROM avion
+                    WHERE avion.modelo
+                      LIKE 'ABUS-200');
+```
+
+- Resultado:
+
+![Captura](https://user-images.githubusercontent.com/23047899/55674392-65fdcc00-58b4-11e9-8862-e846f71387a3.PNG)
+
+#### 7.1.3  Actualiza con un único comando UPDATE e independientemente de los datos que se tengan almacenados, la ocupación de todos los vuelos, de tal manera que seestablezca al máximo permitido por el avión que los realiza. Ten en cuenta que en la subconsulta se puede utilizar como variable de tupla el alias de la tabla que aparece en la cláusula UPDATE. Tras la actualización la tabla debe quedar:
+
+![image](https://user-images.githubusercontent.com/23047899/55674411-9f363c00-58b4-11e9-9738-5dc3abe8505e.png)
+
+- Consulta SQL:
+
+```sql
+
+```
