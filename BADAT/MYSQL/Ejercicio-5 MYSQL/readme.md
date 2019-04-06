@@ -194,3 +194,5 @@ SELECT nombre,fecha_inicio FROM asignacion,trabajador WHERE trabajador.id_t=asig
 ```js
 
 ```
+
+

@@ -1,15 +1,21 @@
 # Proyecto Pre-Semana Santa
 ## Indice
-1. [Creación de las tablas:](#1)
+* [Creación de las tablas:](#1.-Creación-de-las-tablas)
 
-    1.1 [Creación tabla ruta](#1.1)
+  * [Creación tabla ruta](#1.1-Create-table-RUTA)
 
-    1.1 [Creación tabla avion](#1.2)
-    
-    1.1 [Creación tabla vuelo](#1.3)
-## 1. Creación de las tablas {#1}
+  * [Creación tabla avion](#1.-Create-table-avion)
 
-### 1.1 Create table RUTA {#1.1}
+  * [Creación tabla vuelo](#1.3-Create-table-vuelo)
+
+* [Modificaciones en las tablas](#2.-Modificaciones-en-las-tablas)
+
+  * [Añadir atributo fecha_de_vuelo a la tabla vuelo](#2.1-Añade-a-la-tabla-VUELO-el-atributo:-FECHA:fecha-de-vuelo)
+
+  * [Añadir restricción al atributo fecha anteriormente introducido](2.2-Añade-el-atributo-FECHA,-anteriormente-introducido,-la-restricción-de-integridad-correspondiente-para-que-no-admita-valores-nulos.)
+## 1. Creación de las tablas
+
+### 1.1 Create table RUTA
 
 ```sql
 CREATE TABLE ruta(
@@ -23,7 +29,7 @@ CREATE TABLE ruta(
 ALTER TABLE ruta ADD CONSTRAINT ck_compan CHECK(compan IN('IBE','SPA','AIR'));
 ```
 
-### 1.2 Create table avion {#1.2}
+### 1.2 Create table avion
 
 ```sql
 CREATE TABLE avion(
@@ -36,7 +42,7 @@ CREATE TABLE avion(
 ALTER TABLE avion ADD CONSTRAINT ck_avion CHECK(plazas >=5 AND plazas <=300);
 ```
 
-### 1.3 Create table vuelo {#1.3}
+### 1.3 Create table vuelo
 
 ```sql
 CREATE TABLE vuelo(
@@ -140,13 +146,13 @@ Filas a inserta:
 
 ```sql
 INSERT INTO avion 
-  VALUES ('AAA','ABUS-200',280,'10-JUN-2018');
+  VALUES ('AAA','ABUS-200',200,'10-JUN-2018');
 INSERT INTO avion 
-  VALUES ('BBB','ABUS-280',300,'');
+  VALUES ('BBB','ABUS-280',280,'');
 INSERT INTO avion 
-  VALUES ('CCC','B-747',250,'');
+  VALUES ('CCC','B-747',300,'');
 INSERT INTO avion 
-  VALUES ('DDD','B-777',200,'10-OCT-2019');
+  VALUES ('DDD','B-777',250,'10-OCT-2019');
 ```
 </details>
 
@@ -242,10 +248,273 @@ Lo que ha sucecido es que al intentar insertar un valor en la clave primaria de 
 
 ![image](https://user-images.githubusercontent.com/23047899/55558503-82e7a300-56ec-11e9-9ba1-e2f0096d4fe9.png)
 
-## 5. Consultas Select
+## 5. Consultas Select(I)
 
-### Muestra todos los aviones
+### 5.1 Muestra todos los aviones
 
 ```sql
+SELECT * 
+  FROM avion;
+```
+- Salida de la consulta SQL:
+![image](https://user-images.githubusercontent.com/23047899/55559916-757fe800-56ef-11e9-8471-aedca0c2a71c.png)
+
+### 5.2 Muestra el origen y destino de todas las rutas
+
+```sql
+SELECT origen,destino 
+  FROM ruta;
+```
+
+- Salida de la consulta SQL:
+
+![image](https://user-images.githubusercontent.com/23047899/55560073-bf68ce00-56ef-11e9-8abd-310b20cbd95d.png)
+
+### 5.3 Muestra el origen y el destino de todas las rutas que sean distintas
+
+```sql
+SELECT DISTINCT destino, origen
+  FROM ruta;
+```
+- Salida de la consulta SQL:
+
+![image](https://user-images.githubusercontent.com/23047899/55561878-35226900-56f3-11e9-9069-ae9799af1883.png)
+
+### 5.4  Muestra la ocupación y la fecha de todos los vuelos. La información debe aparecer tal y como aparece abajo, ordenada por la fecha en orden inverso y con cuatro dígitos para el año.
+
+```sql
+SELECT ocupacion,to_char(fecha,'DD-MONTH-YYYY') AS FECHA2
+  FROM vuelo
+    ORDER BY fecha ASC;
+```
+- Salida de la consulta SQL:
+![image](https://user-images.githubusercontent.com/23047899/55563883-04443300-56f7-11e9-9de3-d0cf84aa6474.png)
+
+### 5.5 Muestra cómo quedarían las plazas de los aviones si fuera posible incrementarlas en un 10%.
+
+```sql
+SELECT modelo, plazas, plazas+plazas* 0.1
+  AS plazas_definitivas
+    FROM avion
+      ORDER BY plazas_definitivas ASC;
+```
+- Salida de la consulta SQL:
+
+![image](https://user-images.githubusercontent.com/23047899/55563932-1cb44d80-56f7-11e9-87d1-b5274e0d38f2.png)
+
+### 5.6 ¿Qué compañías tiene como destino BARCELONA?
+
+```sql
+SELECT compan
+  FROM ruta
+    WHERE destino LIKE 'BARCELONA';
+```
+
+- Salida de la consulta SQL:
+
+![image](https://user-images.githubusercontent.com/23047899/55564194-9f3d0d00-56f7-11e9-851d-336652da8af1.png)
+
+### 5.7 ¿Qué aviones no tienen todavía fecha de revisión?
+
+```sql
+SELECT *
+  FROM avion
+    WHERE fechaa_rev IS NULL;
+```
+
+- Salida de la consulta SQL:
+
+![image](https://user-images.githubusercontent.com/23047899/55564405-183c6480-56f8-11e9-8571-70d93a64207c.png)
+
+### 5.8 Obtener un listado de los vuelos donde figure el origen y el destino de cada uno.
+
+```sql
+SELECT v.cod,mat,ocupacion,r.destino,fecha,r.origen
+  FROM vuelo v, ruta r
+    WHERE v.cod = r.cod;
+```
+
+- Salida de la consulta SQL:
+
+![image](https://user-images.githubusercontent.com/23047899/55566934-f5607f00-56fc-11e9-94db-bd97594f2307.png)
+
+### 5.9 Muestra el origen, destino, compañía y ocupación de aquellos vuelos que van llenos.
+
+```sql
+SELECT origen,destino,compan,ocupacion,plazas
+  FROM ruta r,vuelo v,avion a
+    WHERE r.cod=v.cod
+      AND a.mat=v.mat
+        AND ocupacion=plazas;
+```
+
+- Salida de la consulta SQL:
+
+![image](https://user-images.githubusercontent.com/23047899/55568764-9997f500-5700-11e9-9c0e-bafe5e2d6d14.png)
+
+### 5.10 Obtener las parejas de compañías aéreas que vuelan al mismo destino
+
+```sql
+SELECT compan,destino
+  FROM ruta
+    WHERE destino=(SELECT destino
+                      FROM ruta
+                        GROUP BY destino
+                          HAVING COUNT(destino)>1);
+```
+
+- Salida de la consulta SQL:
+
+![image](https://user-images.githubusercontent.com/23047899/55581427-1a64ea00-571d-11e9-88fa-c3faf1fbd090.png)
+
+## 6. Consultas SELECT(II)
+
+### 6.1 ¿Cuál es la ocupación media y la suma total de pasajeros de los vuelos del 10-FEB-2018?
+
+```sql
+SELECT AVG(ocupacion) AS ocupacion_media,
+  SUM(ocupacion) AS total_pasajeros
+    FROM vuelo
+      WHERE fecha = '10-FEB-2018';
+```
+- Salida de la consulta SQL:
+
+![image](https://user-images.githubusercontent.com/23047899/55581755-f81f9c00-571d-11e9-937e-cee1528db915.png)
+### 6.2  Muestra el número de compañias que vuelan a cada destino:
+
+```sql
+SELECT destino,COUNT(compan) AS num_compañias
+  FROM ruta
+    GROUP BY destino;
+```
+- Salida de la consulta SQL:
+
+![image](https://user-images.githubusercontent.com/23047899/55582834-bcd29c80-5720-11e9-984e-6e9f6d0b2b42.png)
+
+### 6.3  Calcula el número de horas de vuelo de cada compañía
+
+```sql
+SELECT compan,SUM(num_horas) AS horas_de_vuelo
+  FROM ruta r , vuelo v
+    WHERE v.cod=r.cod
+      GROUP BY compan;
+```
+- Salida de la consulta SQL:
+
+![image](https://user-images.githubusercontent.com/23047899/55592045-91a77780-5737-11e9-8113-aca80897a1ea.png)
+
+### 6.4 Muestra los aviones que tienen 3 o más horas de vuelo
+
+```sql
+SELECT MAX(modelo),SUM(num_horas)
+  FROM ruta r, vuelo v, avion a
+    WHERE v.cod=r.cod
+      AND v.mat=a.mat
+        GROUP BY modelo;
+```
+
+- Salida de la consulta SQL:
+
+![image](https://user-images.githubusercontent.com/23047899/55593907-e51cc400-573d-11e9-8b63-7fe854649d69.png)
+
+### 6.5 ¿Cuáles son las matrículas de los aviones que vuelan en las mismas fechas que el avión de matrícula AAA? 
+```sql
+SELECT v.mat,v.fecha
+  FROM vuelo v
+    JOIN vuelo v2
+      ON v.fecha=v2.fecha
+        GROUP BY v.mat,v.fecha
+          HAVING v.mat<>'AAA'
+            ORDER BY mat ASC;
+```
+
+### 6.6  ¿Qué devuelve la siguiente consulta? Razona tu respuesta.
+
+- Consulta:
+
+```sql
+SELECT modelo
+  FROM avion av
+    WHERE 3<=(SELECT sum(num_horas)
+                FROM vuelo vu, ruta ru
+                  WHERE vu.cod = ru.cod and vu.mat = av.mat);
+```
+- Resultado:
+
+![image](https://user-images.githubusercontent.com/23047899/55613490-17084780-578b-11e9-8b52-73f88bf55cd3.png)
+
+- Razonamiento
 
 ```
+Esta consulta devuelve el modelo del avion cuando la suma de las horas de dicho avion sea menor o igual que 3
+```
+
+### 6.7  ¿Qué pareja de aviones tienen el mismo número de horas de vuelo? (Nivel: Alto) TERMINAR
+
+- Consulta SQL:
+
+```sql
+SELECT m1.modelo, m2.modelo
+  FROM avion m1, avion m2, vuelo v1
+    JOIN vuelo v2
+      ON v1.mat<>v2.mat
+        JOIN ruta r1
+          ON r1.cod=v1.cod
+            JOIN ruta r2
+              ON r2.cod=v2.cod
+                WHERE r1.num_horas=r2.num_horas
+                  AND m1.modelo<>m2.modelo
+                    AND v1.mat<>v2.mat
+                      AND m1.fechaa_revIS NOT NULL
+                        AND m2.fechaa_rev IS NOT NULL
+                          AND rownum < 2;
+```
+- Resultado:
+
+![image](https://user-images.githubusercontent.com/23047899/55671223-068cc580-588e-11e9-9be2-c451fff4866f.png)
+
+### 6.8 Inserta en la tabla RUTA la tupla (555,'IBE','MADRID','BARCELONA',1) ¿Qué pareja de compañias tienen en común algún destino?
+
+- Insert a la tabla ruta:
+```sql
+INSERT INTO ruta
+  VALUES(555,'IBE','MADRID','BARCELONA',1);
+```
+- Fila insertada en la columna:
+
+![image](https://user-images.githubusercontent.com/23047899/55615265-3bfeb980-578f-11e9-9389-16ee3e67528a.png)
+
+- Consulta SQL:
+
+```sql
+SELECT c1.compan, c2.compan
+  FROM ruta c1
+    JOIN ruta c2
+      ON c1.destino=c2.destino
+        WHERE c1.compan<>c2.compan
+          GROUP BY c1.compan, c2.compan
+            ORDER BY c1.compan;
+```
+
+### 6.9 Muestra aquellas compañías que hacen todas las rutas
+
+- Consulta SQL:
+```sql
+SELECT c1.compan
+  FROM ruta c1
+    JOIN ruta
+      ON c1.destino=ruta.destino
+        GROUP BY c1.compan
+          HAVING COUNT(c1.compan)>3;
+```
+
+## 7 Subconsultas DDL
+
+### 7.1 Subconsultas en las sentencias INSERT, DELETE y UPDATE
+
+####  7.1.1 Inserta para el día '10-JUL-2019' los mismo vuelos del día '10-FEB-2018' pero con una ocupación inicial de 0 pasajeros. Esta inserción se tiene que realizar con un único comando INSERT INTO e independientemente de los datos que se tengan almacenados en la base de datos, para ello utiliza la clausula subconsulta del comando INSERT INTO. Después de ejecutar la sentencia INSERT INTO, la información que debe mostrar la tabla es:
+
+![image](https://user-images.githubusercontent.com/23047899/55673849-c9383000-58ad-11e9-9b6c-d82575caba23.png)
+
+
+
