@@ -27,9 +27,13 @@
 
   * [3.3 Inserción tala **VUELO**](###3.3-Inserción-tala-VUELO)
 * [4. Update a las tablas con **UPDATE**](##4.-Update-a-las-tablas)
+
   * [4.1 Retrasa un día la fecha de los vuelos del **'10-MAY-2018'**](###4.1-Retrasa-un-día-la-fecha-de-los-vuelos-del-'10-MAY-2018')
+
   * [4.2 Aumenta en 1 hora la duración de las rutas con destino **'PARIS'**](###4.2-Aumenta-en-1-hora-la-duración-de-las-rutas-con-destino-'PARIS')
-  * [4.3 Insert las siguientes tuplas en la tabla **VUELO**:](###4.3-Insert-las-siguientes-tuplas-en-la-tabla-VUELO:)
+
+  * [4.3 Insert las siguientes tuplas en la tabla **VUELO**:](###4.3-Insert-las-siguientes-tuplas-en-la-tabla-VUELO)
+
 * [5. Consultas Select(I)](##5.-Consultas-Select(I))
   * [5.1 Mostrar todos los **aviones**](###5.1-Muestra-todos-los-aviones)
   * [5.2 Mostrar el origen y destino de todas las rutas](###5.2-Muestra-el-origen-y-destino-de-todas-las-rutas)
@@ -67,7 +71,7 @@
 
   * [8.1 Crear una vista actualizable, llamada **RUTA_LARGA**, que contenga aquellas rutas cuya duración sea **igual o mayor a 2 horas**.](####8.1-Crear-una-vista-actualizable,-llamada-RUTA_LARGA,-que-contenga-aquellas-rutas-cuya-duración-sea-igual-o-mayor-a-2-horas.-La-vista-debe-controlar-la-validez-de-las-inserciones-y-las-actualizaciones.-Comprueba-el-buen-funcionamiento-de-la-vista-consultando-todas-sus-tuplas.)
   * [8.2 Insertar en la vista anterior las siguientes tuplas, comentando la causa de los posibles errores que pudieran aparecer.](####8.2-Inserta-en-la-vista-anterior-las-siguientes-tuplas,-comentando-la-causa-de-los-posibles-errores-que-pudieran-aparecer.-Comprueba-que-las-inserciones-correctas-se-han-realizado,-consultando-tanto-la-vista-como-la-tabla-base-de-la-que-toma-los-datos.)
-  
+
   * [8.3 Crea una vista llamada **HORAS_VUELO_AVION** que muestre, para cada avión, el número de horas de vuelo que tiene.](####8.3-Crea-una-vista-llamada-HORAS_VUELO_AVION-que-muestre,-para-cada-avión,-el-número-de-horas-de-vuelo-que-tiene.-Al-mostrar-todas-la-tuplas-de-la-vista-debe-aparecer:)
 
   * [8.4  Utilizando la vista anterior, resuelve con un select la consulta que muestre el avión que tiene más horas de vuelo.](####8.4-Utilizando-la-vista-anterior,-resuelve-con-un-select-la-consulta-que-muestre-el-avión-que-tiene-más-horas-de-vuelo.)
