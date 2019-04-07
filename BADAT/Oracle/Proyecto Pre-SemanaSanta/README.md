@@ -56,15 +56,20 @@
 * [7. Subconsultas DDL](##7.-Subconsultas-DDL)
 
   * [7.1 Insertar para el día '10-JUL-2019' los mismo vuelos del día '10-FEB-2018' pero con una ocupación inicial de 0 pasajeros.](####7.1-Inserta-para-el-día-'10-JUL-2019'-los-mismo-vuelos-del-día-'10-FEB-2018'-pero-con-una-ocupación-inicial-de-0-pasajeros.-Esta-inserción-se-tiene-que-realizar-con-un-único-comando-INSERT-INTO-e-independientemente-de-los-datos-que-se-tengan-almacenados-en-la-base-de-datos,-para-ello-utiliza-la-clausula-subconsulta-del-comando-INSERT-INTO.-Después-de-ejecutar-la-sentencia-INSERT-INTO,-la-información-que-debe-mostrar-la-tabla-es:)
+
   * [7.2 Actualizar con un único comando **UPDATE** e independientemente de los datos que se tengan almacenados en la base de datos, la ocupación de los vuelos realizados por el modelo **'ABUS200'**.](####7.2-Actualiza-con-un-único-comando-UPDATE-e-independientemente-de-los-datos-que-se-tengan-almacenados-en-la-base-de-datos,-la-ocupación-de-los-vuelos-realizados-por-el-modelo-'ABUS200',-de-tal-manera-que-se-establezca-al-máximo-permitido-por-ese-avión.)
+
   * [7.3  Actualizar con un único comando **UPDATE** e independientemente de los datos que se tengan almacenados, la ocupación de todos los vuelos, de tal manera que seestablezca al máximo permitido por el avión que los realiza.](####7.3-Actualiza-con-un-único-comando-UPDATE-e-independientemente-de-los-datos-que-se-tengan-almacenados,-la-ocupación-de-todos-los-vuelos,-de-tal-manera-que-se-establezca-al-máximo-permitido-por-el-avión-que-los-realiza.-Ten-en-cuenta-que-en-la-subconsulta-se-puede-utilizar-como-variable-de-tupla-el-alias-de-la-tabla-que-aparece-en-la-cláusula-UPDATE.-Tras-la-actualización-la-tabla-debe-quedar:)
+
   * [7.4  Actualiza a **'20-JUL-2019'** la **fecha de revisión** de aquellos aviones que tienen **5 o más horas de vuelo**.](####7.4-Actualiza-a-'20-JUL-2019'-la-fecha-de-revisión-de-aquellos-aviones-que-tienen-5-o-más-horas-de-vuelo.)
   * [7.5  Teniendo en cuenta que en la clausula **WHERE** del comando **DELETE** se pueden utilizar también subconsultas y variables de tupla, borra los vuelos cuya fecha es posterior a la fecha actual y estrictamente anterior a la fecha de revisión del avión que debería realizarlo.](####7.5-Teniendo-en-cuenta-que-en-la-clausula-WHERE-del-comando-DELETE-se-pueden-utilizar-también-subconsultas-y-variables-de-tupla,-borra-los-vuelos-cuya-fecha-es-posterior-a-la-fecha-actual-y-estrictamente-anterior-a-la-fecha-de-revisión-del-avión-que-debería-realizarlo.)
 * [8. Vista](##8.-Vista)
 
   * [8.1 Crear una vista actualizable, llamada **RUTA_LARGA**, que contenga aquellas rutas cuya duración sea **igual o mayor a 2 horas**.](####8.1-Crear-una-vista-actualizable,-llamada-RUTA_LARGA,-que-contenga-aquellas-rutas-cuya-duración-sea-igual-o-mayor-a-2-horas.-La-vista-debe-controlar-la-validez-de-las-inserciones-y-las-actualizaciones.-Comprueba-el-buen-funcionamiento-de-la-vista-consultando-todas-sus-tuplas.)
   * [8.2 Insertar en la vista anterior las siguientes tuplas, comentando la causa de los posibles errores que pudieran aparecer.](####8.2-Inserta-en-la-vista-anterior-las-siguientes-tuplas,-comentando-la-causa-de-los-posibles-errores-que-pudieran-aparecer.-Comprueba-que-las-inserciones-correctas-se-han-realizado,-consultando-tanto-la-vista-como-la-tabla-base-de-la-que-toma-los-datos.)
+  
   * [8.3 Crea una vista llamada **HORAS_VUELO_AVION** que muestre, para cada avión, el número de horas de vuelo que tiene.](####8.3-Crea-una-vista-llamada-HORAS_VUELO_AVION-que-muestre,-para-cada-avión,-el-número-de-horas-de-vuelo-que-tiene.-Al-mostrar-todas-la-tuplas-de-la-vista-debe-aparecer:)
+
   * [8.4  Utilizando la vista anterior, resuelve con un select la consulta que muestre el avión que tiene más horas de vuelo.](####8.4-Utilizando-la-vista-anterior,-resuelve-con-un-select-la-consulta-que-muestre-el-avión-que-tiene-más-horas-de-vuelo.)
 
 ## 1. Creación de las tablas
@@ -555,7 +560,7 @@ SELECT c1.compan
 
 >Subconsultas en las sentencias INSERT, DELETE y UPDATE
 
-####  7.1 Inserta para el día '10-JUL-2019' los mismo vuelos del día '10-FEB-2018' pero con una ocupación inicial de 0 pasajeros. Esta inserción se tiene que realizar con un único comando INSERT INTO e independientemente de los datos que se tengan almacenados en la base de datos, para ello utiliza la clausula subconsulta del comando INSERT INTO. Después de ejecutar la sentencia INSERT INTO, la información que debe mostrar la tabla es:
+#### 7.1 Inserta para el día '10-JUL-2019' los mismo vuelos del día '10-FEB-2018' pero con una ocupación inicial de 0 pasajeros. Esta inserción se tiene que realizar con un único comando INSERT INTO e independientemente de los datos que se tengan almacenados en la base de datos, para ello utiliza la clausula subconsulta del comando INSERT INTO. Después de ejecutar la sentencia INSERT INTO, la información que debe mostrar la tabla es:
 
 ![image](https://user-images.githubusercontent.com/23047899/55673849-c9383000-58ad-11e9-9b6c-d82575caba23.png)
 
