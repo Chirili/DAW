@@ -1,18 +1,72 @@
 # Proyecto Pre-Semana Santa
 ## Indice
-* [Creación de las tablas:](#1.-Creación-de-las-tablas)
+* [1. Creación de las tablas:](#1.-Creación-de-las-tablas)
 
-  * [Creación tabla ruta](#1.1-Create-table-RUTA)
+  * [1.1 Creación tabla **RUTA**](#1.1-Create-table-RUTA)
 
-  * [Creación tabla avion](#1.-Create-table-avion)
+  * [1.2 Creación tabla **AVION**](#1.-Create-table-avion)
 
-  * [Creación tabla vuelo](#1.3-Create-table-vuelo)
+  * [1.3 Creación tabla **VUELO**](#1.3-Create-table-vuelo)
 
-* [Modificaciones en las tablas](#2.-Modificaciones-en-las-tablas)
+* [2. Modificaciones en las tablas](##2.-Modificaciones-en-las-tablas)
 
-  * [Añadir atributo fecha_de_vuelo a la tabla vuelo](#2.1-Añade-a-la-tabla-VUELO-el-atributo:-FECHA:fecha-de-vuelo)
+  * [2.1 Añadir atributo **fecha_de_vuelo** a la tabla vuelo.](###2.1-Añade-a-la-tabla-VUELO-el-atributo:-FECHA:fecha-de-vuelo)
 
-  * [Añadir restricción al atributo fecha anteriormente introducido](2.2-Añade-el-atributo-FECHA,-anteriormente-introducido,-la-restricción-de-integridad-correspondiente-para-que-no-admita-valores-nulos.)
+
+
+  * [2.2 Añadir restricción al atributo **fecha** anteriormente introducido](###2.2-Añade-el-atributo-FECHA,-anteriormente-introducido,-la-restricción-de-integridad-correspondiente-para-que-no-admita-valores-nulos.)
+
+  * [2.3 Establecer el atributo **COD** de la tabla **VUELO** como llave externa respecto de **RUTA**](###2.3-Establece-el-atributo-COD-de-la-tabla-VUELO-como-llave-externa-respecto-de-RUTA.)
+
+  * [2.4 Establece el conjunto de atributos formado por **COD, MAT y FECHA** como llave primaria de la tabla **VUELO**.](###2.4-Establece-el-conjunto-de-atributos-formado-por-COD,-MAT-y-FECHA-como-llave-primaria-de-la-tabla-VUELO.)
+* [3. Inserción de datos con **INSERT**](##3.-Inserción-de-datos)
+  
+  * [3.1 Inserción tabla **RUTA**](###3.1-Inserción-tabla-RUTA)
+
+  * [3.2 Inserción tabla **AVION**](###3.2-Inserción-tabla-AVION)
+
+  * [3.3 Inserción tala **VUELO**](###3.3-Inserción-tala-VUELO)
+* [4. Update a las tablas con **UPDATE**](##4.-Update-a-las-tablas)
+  * [4.1 Retrasa un día la fecha de los vuelos del **'10-MAY-2018'**](###4.1-Retrasa-un-día-la-fecha-de-los-vuelos-del-'10-MAY-2018')
+  * [4.2 Aumenta en 1 hora la duración de las rutas con destino **'PARIS'**](###4.2-Aumenta-en-1-hora-la-duración-de-las-rutas-con-destino-'PARIS')
+  * [4.3 Insert las siguientes tuplas en la tabla **VUELO**:](###4.3-Insert-las-siguientes-tuplas-en-la-tabla-VUELO:)
+* [5. Consultas Select(I)](##5.-Consultas-Select(I))
+  * [5.1 Mostrar todos los **aviones**](###5.1-Muestra-todos-los-aviones)
+  * [5.2 Mostrar el origen y destino de todas las rutas](###5.2-Muestra-el-origen-y-destino-de-todas-las-rutas)
+  * [5.3 Mostrar el origen y el destino de todas las rutas que sean distintas](###5.3-Muestra-el-origen-y-el-destino-de-todas-las-rutas-que-sean-distintas)
+  * [5.4 Mostrar la ocupación y la fecha de todos los vuelos. La información debe aparecer tal y como aparece abajo, ordenada por la fecha en orden inverso y con cuatro dígitos para el año.](###5.4-Muestra-la-ocupación-y-la-fecha-de-todos-los-vuelos.-La-información-debe-aparecer-tal-y-como-aparece-abajo,-ordenada-por-la-fecha-en-orden-inverso-y-con-cuatro-dígitos-para-el-año.)
+  * [5.5 Mostrar cómo quedarían las plazas de los aviones si fuera posible incrementarlas en un **10%**.](###5.5-Muestra-cómo-quedarían-las-plazas-de-los-aviones-si-fuera-posible-incrementarlas-en-un-10%.)
+  * [5.6 ¿Qué compañías tiene como destino **BARCELONA**?](###5.6-¿Qué-compañías-tiene-como-destino-BARCELONA?)
+  * [5.7 ¿Qué aviones no tienen todavía **fecha de revisión**?](###5.7-¿Qué-aviones-no-tienen-todavía-fecha-de-revisión?)
+  * [5.8 Obtener un listado de los vuelos donde figure el origen y el destino de cada uno.](###5.8-Obtener-un-listado-de-los-vuelos-donde-figure-el-origen-y-el-destino-de-cada-uno.)
+  * [5.9 Mostrar el **origen, destino, compañía y ocupación** de aquellos vuelos que van llenos.](###5.9-Muestra-el-origen,-destino,-compañía-y-ocupación-de-aquellos-vuelos-que-van-llenos.)
+  * [5.10 Obtener las parejas de compañías aéreas que vuelan al mismo destino](###5.10-Obtener-las-parejas-de-compañías-aéreas-que-vuelan-al-mismo-destino)
+* [6. Consultas SELECT(II)](##6.-Consultas-SELECT(II))
+  * [6.1 ¿Cuál es la **ocupación media** y la **suma total** de pasajeros de los vuelos del **10-FEB-2018**?](###6.1-¿Cuál-es-la-ocupación-media-y-la-suma-total-de-pasajeros-de-los-vuelos-del-10-FEB-2018?)
+  * [6.2 Mostrar el número de compañias que vuelan a cada destino](###6.2-Muestra-el-número-de-compañias-que-vuelan-a-cada-destino)
+  * [6.3 Calcular el número de horas de vuelo de cada compañía](###6.3-Calcula-el-número-de-horas-de-vuelo-de-cada-compañía)
+  * [6.4 Mostrar los aviones que tienen **3 o más horas de vuelo**](###6.4-Muestra-los-aviones-que-tienen-3-o-más-horas-de-vuelo)
+
+  * [6.5 ¿Cuáles son las matrículas de los aviones que vuelan en las mismas fechas que el avión de matrícula **AAA**?](###6.5-¿Cuáles-son-las-matrículas-de-los-aviones-que-vuelan-en-las-mismas-fechas-que-el-avión-de-matrícula-AAA?)
+  * [6.6 ¿Qué devuelve la siguiente consulta? Razona tu respuesta.](###6.6-¿Qué-devuelve-la-siguiente-consulta?-Razona-tu-respuesta.)
+
+  * [6.7 ¿Qué pareja de aviones tienen el mismo número de horas de vuelo? (Nivel: Alto)](###6.7-¿Qué-pareja-de-aviones-tienen-el-mismo-número-de-horas-de-vuelo? (Nivel: Alto))
+  * [6.8 Insertar en la tabla RUTA la tupla **(555,'IBE','MADRID','BARCELONA',1)** ¿Qué pareja de compañias tienen en común algún destino?](###-6.8-Inserta-en-la-tabla-RUTA-la-tupla-(555,'IBE','MADRID','BARCELONA',1)-¿Qué-pareja-de-compañias-tienen-en-común-algún-destino?)
+  * [6.9 Muestra aquellas compañías que hacen todas las rutas](###6.9-Muestra-aquellas-compañías-que-hacen-todas-las-rutas)
+* [## 7. Subconsultas DDL](##7.-Subconsultas-DDL)
+
+  * [7.1 Insertar para el día '10-JUL-2019' los mismo vuelos del día '10-FEB-2018' pero con una ocupación inicial de 0 pasajeros.](####7.1-Inserta-para-el-día-'10-JUL-2019'-los-mismo-vuelos-del-día-'10-FEB-2018'-pero-con-una-ocupación-inicial-de-0-pasajeros.-Esta-inserción-se-tiene-que-realizar-con-un-único-comando-INSERT-INTO-e-independientemente-de-los-datos-que-se-tengan-almacenados-en-la-base-de-datos,-para-ello-utiliza-la-clausula-subconsulta-del-comando-INSERT-INTO.-Después-de-ejecutar-la-sentencia-INSERT-INTO,-la-información-que-debe-mostrar-la-tabla-es:)
+  * [7.2 Actualizar con un único comando **UPDATE** e independientemente de los datos que se tengan almacenados en la base de datos, la ocupación de los vuelos realizados por el modelo **'ABUS200'**.](####7.2-Actualiza-con-un-único-comando-UPDATE-e-independientemente-de-los-datos-que-se-tengan-almacenados-en-la-base-de-datos,-la-ocupación-de-los-vuelos-realizados-por-el-modelo-'ABUS200',-de-tal-manera-que-se-establezca-al-máximo-permitido-por-ese-avión.)
+  * [7.3  Actualizar con un único comando **UPDATE** e independientemente de los datos que se tengan almacenados, la ocupación de todos los vuelos, de tal manera que seestablezca al máximo permitido por el avión que los realiza.](####7.3-Actualiza-con-un-único-comando-UPDATE-e-independientemente-de-los-datos-que-se-tengan-almacenados,-la-ocupación-de-todos-los-vuelos,-de-tal-manera-que-se-establezca-al-máximo-permitido-por-el-avión-que-los-realiza.-Ten-en-cuenta-que-en-la-subconsulta-se-puede-utilizar-como-variable-de-tupla-el-alias-de-la-tabla-que-aparece-en-la-cláusula-UPDATE.-Tras-la-actualización-la-tabla-debe-quedar:)
+  * [7.4  Actualiza a **'20-JUL-2019'** la **fecha de revisión** de aquellos aviones que tienen **5 o más horas de vuelo**.](####7.4-Actualiza-a-'20-JUL-2019'-la-fecha-de-revisión-de-aquellos-aviones-que-tienen-5-o-más-horas-de-vuelo.)
+  * [7.5  Teniendo en cuenta que en la clausula **WHERE** del comando **DELETE** se pueden utilizar también subconsultas y variables de tupla, borra los vuelos cuya fecha es posterior a la fecha actual y estrictamente anterior a la fecha de revisión del avión que debería realizarlo.](####7.5- Teniendo-en-cuenta-que-en-la-clausula-WHERE-del-comando-DELETE-se-pueden-utilizar-también-subconsultas-y-variables-de-tupla,-borra-los-vuelos-cuya-fecha-es-posterior-a-la-fecha-actual-y-estrictamente-anterior-a-la-fecha-de-revisión-del-avión-que-debería-realizarlo.)
+* [8. Vista](##8.-Vista)
+
+  * [8.1 Crear una vista actualizable, llamada **RUTA_LARGA**, que contenga aquellas rutas cuya duración sea **igual o mayor a 2 horas**.](####8.1-Crear-una-vista-actualizable,-llamada-RUTA_LARGA,-que-contenga-aquellas-rutas-cuya-duración-sea-igual-o-mayor-a-2-horas.-La-vista-debe-controlar-la-validez-de-las-inserciones-y-las-actualizaciones.-Comprueba-el-buen-funcionamiento-de-la-vista-consultando-todas-sus-tuplas.)
+  * [8.2 Insertar en la vista anterior las siguientes tuplas, comentando la causa de los posibles errores que pudieran aparecer.](####8.2-Inserta-en-la-vista-anterior-las-siguientes-tuplas,-comentando-la-causa-de-los-posibles-errores-que-pudieran-aparecer.-Comprueba-que-las-inserciones-correctas-se-han-realizado,-consultando-tanto-la-vista-como-la-tabla-base-de-la-que-toma-los-datos.)
+  * [8.3 Crea una vista llamada **HORAS_VUELO_AVION** que muestre, para cada avión, el número de horas de vuelo que tiene.](####8.3-Crea-una-vista-llamada-HORAS_VUELO_AVION-que-muestre,-para-cada-avión,-el-número-de-horas-de-vuelo-que-tiene.-Al-mostrar-todas-la-tuplas-de-la-vista-debe-aparecer:)
+  * [8.4  Utilizando la vista anterior, resuelve con un select la consulta que muestre el avión que tiene más horas de vuelo.](####8.4-Utilizando-la-vista-anterior,-resuelve-con-un-select-la-consulta-que-muestre-el-avión-que-tiene-más-horas-de-vuelo.)
+
 ## 1. Creación de las tablas
 
 ### 1.1 Create table RUTA
@@ -59,10 +113,10 @@ ALTER TABLE vuelo ADD CONSTRAINT ck_ocupacion CHECK(ocupacion <= 300);
 
 ### 2.1 Añade a la tabla VUELO el atributo: FECHA:fecha de vuelo
 
-```sql
-ALTER TABLE vuelo 
-  ADD fecha DATE;
-```
+  ```sql
+  ALTER TABLE vuelo 
+    ADD fecha DATE;
+  ```
 
 ### 2.2 Añade el atributo FECHA, anteriormente introducido, la restricción de integridad correspondiente para que no admita valores nulos.
 
@@ -71,7 +125,7 @@ ALTER TABLE vuelo
    MODIFY fecha DATE NOT NULL;
 ```
 
-### 2.3 Establece el atributo COD de la tabla VUELO como llave externa respecto de RUTA
+### 2.3 Establece el atributo COD de la tabla VUELO como llave externa respecto de RUTA.
 
 ```sql
 ALTER TABLE vuelo
@@ -80,7 +134,7 @@ ALTER TABLE vuelo
       REFERENCES ruta(cod);
 ```
 
-### 2.4  Establece el conjunto de atributos formado por COD, MAT y FECHA como llave primaria de la tabla VUELO.
+### 2.4 Establece el conjunto de atributos formado por COD, MAT y FECHA como llave primaria de la tabla VUELO.
 
 ```sql
 ALTER TABLE vuelo
@@ -92,129 +146,120 @@ ALTER TABLE vuelo
 
 ## 3. Inserción de datos
 
-### 3.1 Realiza la inserció de valores de forma que las tablas queden como se muestra a continuación. Realiza la inserción de tuplas para cada tabla de manera independiente, ya que de esta forma es más sencillo detectar errores
+  >Realiza la inserción de valores de forma que las tablas queden como se muestra a continuación. Realiza la inserción de tuplas para cada tabla de manera independiente, ya que de esta forma es más sencillo detectar errores
 
-### Inserción tabla RUTA
+### 3.1 Inserción tabla RUTA
 
-Filas a insertar:
+- Filas a insertar:
 
-<details>
-  <summary>Tabla RUTA filas a insertar</summary>
+  <details>
+    <summary>Tabla RUTA filas a insertar</summary>
 
- ![image](https://user-images.githubusercontent.com/23047899/54935552-d30e7a80-4f20-11e9-880e-46da923dc3f7.png)
-</details>
+   ![image](https://user-images.githubusercontent.com/23047899/ 54935552-d30e7a80-4f20-11e9-880e-46da923dc3f7.png)
+  </details>
 
-- Codigo:
-<details>
-  <summary>Insert realizados a la tabla ruta</summary>
+- Sentencia SQL:
+  <details>
+    <summary>Insert realizados a la tabla ruta</summary>
 
-```sql
-INSERT INTO ruta 
-  VALUES (111,'IBE','MADRID','LONDRES',3);
-INSERT INTO ruta 
-  VALUES (222,'IBE','MADRID','PARIS',1);
-INSERT INTO ruta 
-  VALUES (333,'SPA','MADRID','BARCELONA',1);
-INSERT INTO ruta 
-  VALUES (444,'AIR','MADRID','BARCELONA',1);
-```
-</details>
+  ```sql
+  INSERT INTO ruta 
+    VALUES (111,'IBE','MADRID','LONDRES',3);
+  INSERT INTO ruta 
+    VALUES (222,'IBE','MADRID','PARIS',1);
+  INSERT INTO ruta 
+    VALUES (333,'SPA','MADRID','BARCELONA',1);
+  INSERT INTO ruta 
+    VALUES (444,'AIR','MADRID','BARCELONA',1);
+  ```
+  </details>
+- Filas ya insertadas:
+  <details>
+    <summary>Tabla RUTA filas ya insertadas</summary>
 
+  ![image](https://user-images.githubusercontent.com/23047899/  54935823-66e04680-4f21-11e9-8c79-f57e3e49aa50.png)
+  </details>
 
-Filas ya insertadas:
+### 3.2 Inserción tabla AVION
 
-<details>
-  <summary>Tabla RUTA filas ya insertadas</summary>
+- Filas a inserta:
 
-![image](https://user-images.githubusercontent.com/23047899/54935823-66e04680-4f21-11e9-8c79-f57e3e49aa50.png)
-</details>
+  <details>
+    <summary>Tabla AVION filas a insertar</summary>
 
-### Inserción tabla AVION
-
-Filas a inserta:
-
-<details>
-  <summary>Tabla AVION filas a insertar</summary>
-
-![image](https://user-images.githubusercontent.com/23047899/54937613-08b56280-4f25-11e9-9e29-e76d50011d93.png)
-</details>
+  ![image](https://user-images.githubusercontent.com/23047899/  54937613-08b56280-4f25-11e9-9e29-e76d50011d93.png)
+  </details>
 
 - Código:
+  <details>
+  <summary>Insert realizados a la tabla avion</summary>
 
-<details>
-<summary>Insert realizados a la tabla avion</summary>
+  ```sql
+  INSERT INTO avion 
+    VALUES ('AAA','ABUS-200',200,'10-JUN-2018');
+  INSERT INTO avion 
+    VALUES ('BBB','ABUS-280',280,'');
+  INSERT INTO avion 
+    VALUES ('CCC','B-747',300,'');
+  INSERT INTO avion 
+    VALUES ('DDD','B-777',250,'10-OCT-2019');
+  ```
+  </details>
 
-```sql
-INSERT INTO avion 
-  VALUES ('AAA','ABUS-200',200,'10-JUN-2018');
-INSERT INTO avion 
-  VALUES ('BBB','ABUS-280',280,'');
-INSERT INTO avion 
-  VALUES ('CCC','B-747',300,'');
-INSERT INTO avion 
-  VALUES ('DDD','B-777',250,'10-OCT-2019');
-```
-</details>
+- Filas ya insertadas:
+
+  <details>
+    <summary>Tabla AVION filas ya insertadas</summary>
+
+  ![image](https://user-images.githubusercontent.com/23047899/  55026006-5ce24480-5002-11e9-8557-74b1a5077263.png)
+  </details>
+
+### 3.3 Inserción tala VUELO
+
+- Filas a insertar:
+  <details>
+    <summary >Tabla VUELO filas a insertar</summary>
+
+  ![image](https://user-images.githubusercontent.com/23047899/  55026939-5654cc80-5004-11e9-9de3-936973742bc5.png)
+  </details>
+- Sentencias SQL:
+  <details>
+  <summary>Insert realizados a la tabla VUELO</summary>
+
+  ```sql
+  INSERT INTO vuelo 
+    VALUES(111,'BBB',250,'10-FEB-2018');
+  INSERT INTO vuelo 
+    VALUES(222,'CCC',200,'10-FEB-2018');
+  INSERT INTO vuelo 
+    VALUES(333,'AAA',200,'10-FEB-2018');
+  INSERT INTO vuelo 
+    VALUES(444,'DDD',250,'10-FEB-2018');
+  INSERT INTO vuelo 
+    VALUES(333,'AAA',100,'10-MAY-2018');
+  INSERT INTO vuelo 
+    VALUES(444,'DDD',150,'10-MAY-2018');
+  INSERT INTO vuelo 
+    VALUES(333,'AAA',50,'10-JUN-2018');
+  INSERT INTO vuelo 
+    VALUES(444,'DDD',75,'10-JUN-2018');
+  ```
+  </details>
+- Filas ya insertadas:
+  <details>
+    <summary >Tabla VUELO filas ya insertadas</summary>
+
+  ![image](https://user-images.githubusercontent.com/23047899/  55027186-f90d4b00-5004-11e9-9918-511480182368.png)
+  [ ![image](https://user-images.githubusercontent.com/23047899/  55027186-f90d4b00-5004-11e9-9918-511480182368.png) ](https:// user-images.githubusercontent.com/23047899/  55027186-f90d4b00-5004-11e9-9918-511480182368.png)
+  </details>
 
 
-
-Filas ya insertadas:
-
-<details>
-  <summary>Tabla AVION filas ya insertadas</summary>
-
-![image](https://user-images.githubusercontent.com/23047899/55026006-5ce24480-5002-11e9-8557-74b1a5077263.png)
-</details>
-
-### Inserción tala VUELO
-
-Filas a insertar:
-
-<details>
-  <summary >Tabla VUELO filas a insertar</summary>
-
-![image](https://user-images.githubusercontent.com/23047899/55026939-5654cc80-5004-11e9-9de3-936973742bc5.png)
-</details>
-
-<details>
-<summary>Filas a insertar en la tabla vuelo</summary>
-
-```sql
-INSERT INTO vuelo 
-  VALUES(111,'BBB',250,'10-FEB-2018');
-INSERT INTO vuelo 
-  VALUES(222,'CCC',200,'10-FEB-2018');
-INSERT INTO vuelo 
-  VALUES(333,'AAA',200,'10-FEB-2018');
-INSERT INTO vuelo 
-  VALUES(444,'DDD',250,'10-FEB-2018');
-INSERT INTO vuelo 
-  VALUES(333,'AAA',100,'10-MAY-2018');
-INSERT INTO vuelo 
-  VALUES(444,'DDD',150,'10-MAY-2018');
-INSERT INTO vuelo 
-  VALUES(333,'AAA',50,'10-JUN-2018');
-INSERT INTO vuelo 
-  VALUES(444,'DDD',75,'10-JUN-2018');
-```
-</details>
-- Codigo:
-
-
-Filas ya insertadas:
-
-<details>
-  <summary >Tabla VUELO filas ya insertadas</summary>
-
-![image](https://user-images.githubusercontent.com/23047899/55027186-f90d4b00-5004-11e9-9918-511480182368.png)
-[ ![image](https://user-images.githubusercontent.com/23047899/55027186-f90d4b00-5004-11e9-9918-511480182368.png) ](https://user-images.githubusercontent.com/23047899/55027186-f90d4b00-5004-11e9-9918-511480182368.png)
-</details>
-
-## Modificaciones en las tablas
-
-#### Realiza de una en una las siguientes modificaciones sobre la base de datos. Estudiar los posibles errores que aparezcan, comentando su significado (los comentarios se insertan utilizando /* ...comentario...*/). 
 
 ## 4. Update a las tablas
+
+> Modificaciones en las tablas
+
+  >Realiza de una en una las siguientes modificaciones sobre la base de datos. Estudiar los posibles errores que aparezcan, comentando su significado (los comentarios se insertan utilizando /* ...comentario...*/). 
 
 ### 4.1 Retrasa un día la fecha de los vuelos del '10-MAY-2018'
 
@@ -224,7 +269,7 @@ UPDATE vuelo
     WHERE fecha = '10-MAY-2018';
 ```
 
-### 4.2 Aumenta en 1 hroa la duración de las rutas con destino 'PARIS'
+### 4.2 Aumenta en 1 hora la duración de las rutas con destino 'PARIS'
 
 ```sql
 UPDATE ruta 
@@ -232,9 +277,7 @@ UPDATE ruta
     WHERE destino LIKE 'PARIS';
 ```
 
-### 4.3 Insert las siguientes tuplas en la tabla VUELO:
-
-- Codigo a introducir:
+### 4.3 Insert las siguientes tuplas en la tabla VUELO
 
 ```sql
 INSERT INTO vuelo
@@ -242,9 +285,9 @@ INSERT INTO vuelo
 INSERT INTO vuelo
   VALUES (111, 'BBB', 220, '10-MAY-2019');
 ```
-Comenta que ha sucedido y cual es el motivo
+- Comenta que ha sucedido y cual es el motivo
 
-Lo que ha sucecido es que al intentar insertar un valor en la clave primaria de avion y este no existir en dicha tabla ya que está como clave foránea salta un error diciendo que se a violado la **PRIMARY KEY** de avión:
+  >Lo que ha sucecido es que al intentar insertar un valor en la clave primaria   de avion y este no existir en dicha tabla ya que está como clave foránea salta  un error diciendo que se a violado la **PRIMARY KEY** de avión:
 
 ![image](https://user-images.githubusercontent.com/23047899/55558503-82e7a300-56ec-11e9-9ba1-e2f0096d4fe9.png)
 
@@ -257,6 +300,7 @@ SELECT *
   FROM avion;
 ```
 - Salida de la consulta SQL:
+
 ![image](https://user-images.githubusercontent.com/23047899/55559916-757fe800-56ef-11e9-8471-aedca0c2a71c.png)
 
 ### 5.2 Muestra el origen y destino de todas las rutas
@@ -288,6 +332,7 @@ SELECT ocupacion,to_char(fecha,'DD-MONTH-YYYY') AS FECHA2
     ORDER BY fecha ASC;
 ```
 - Salida de la consulta SQL:
+
 ![image](https://user-images.githubusercontent.com/23047899/55563883-04443300-56f7-11e9-9de3-d0cf84aa6474.png)
 
 ### 5.5 Muestra cómo quedarían las plazas de los aviones si fuera posible incrementarlas en un 10%.
@@ -380,7 +425,7 @@ SELECT AVG(ocupacion) AS ocupacion_media,
 - Salida de la consulta SQL:
 
 ![image](https://user-images.githubusercontent.com/23047899/55581755-f81f9c00-571d-11e9-937e-cee1528db915.png)
-### 6.2  Muestra el número de compañias que vuelan a cada destino:
+### 6.2 Muestra el número de compañias que vuelan a cada destino
 
 ```sql
 SELECT destino,COUNT(compan) AS num_compañias
@@ -391,7 +436,7 @@ SELECT destino,COUNT(compan) AS num_compañias
 
 ![image](https://user-images.githubusercontent.com/23047899/55582834-bcd29c80-5720-11e9-984e-6e9f6d0b2b42.png)
 
-### 6.3  Calcula el número de horas de vuelo de cada compañía
+### 6.3 Calcula el número de horas de vuelo de cada compañía
 
 ```sql
 SELECT compan,SUM(num_horas) AS horas_de_vuelo
@@ -417,7 +462,7 @@ SELECT MAX(modelo),SUM(num_horas)
 
 ![image](https://user-images.githubusercontent.com/23047899/55593907-e51cc400-573d-11e9-8b63-7fe854649d69.png)
 
-### 6.5 ¿Cuáles son las matrículas de los aviones que vuelan en las mismas fechas que el avión de matrícula AAA? 
+### 6.5 ¿Cuáles son las matrículas de los aviones que vuelan en las mismas fechas que el avión de matrícula AAA?
 ```sql
 SELECT v.mat,v.fecha
   FROM vuelo v
@@ -428,7 +473,7 @@ SELECT v.mat,v.fecha
             ORDER BY mat ASC;
 ```
 
-### 6.6  ¿Qué devuelve la siguiente consulta? Razona tu respuesta.
+### 6.6 ¿Qué devuelve la siguiente consulta? Razona tu respuesta.
 
 - Consulta:
 
@@ -444,12 +489,10 @@ SELECT modelo
 ![image](https://user-images.githubusercontent.com/23047899/55613490-17084780-578b-11e9-8b52-73f88bf55cd3.png)
 
 - Razonamiento
+  >Esta consulta devuelve el modelo del avion   cuando la suma de las horas de dicho avion sea  menor o igual que 3
 
-```
-Esta consulta devuelve el modelo del avion cuando la suma de las horas de dicho avion sea menor o igual que 3
-```
 
-### 6.7  ¿Qué pareja de aviones tienen el mismo número de horas de vuelo? (Nivel: Alto) TERMINAR
+### 6.7 ¿Qué pareja de aviones tienen el mismo número de horas de vuelo? (Nivel: Alto)
 
 - Consulta SQL:
 
@@ -508,11 +551,11 @@ SELECT c1.compan
           HAVING COUNT(c1.compan)>3;
 ```
 
-## 7 Subconsultas DDL
+## 7. Subconsultas DDL
 
-### 7.1 Subconsultas en las sentencias INSERT, DELETE y UPDATE
+>Subconsultas en las sentencias INSERT, DELETE y UPDATE
 
-####  7.1.1 Inserta para el día '10-JUL-2019' los mismo vuelos del día '10-FEB-2018' pero con una ocupación inicial de 0 pasajeros. Esta inserción se tiene que realizar con un único comando INSERT INTO e independientemente de los datos que se tengan almacenados en la base de datos, para ello utiliza la clausula subconsulta del comando INSERT INTO. Después de ejecutar la sentencia INSERT INTO, la información que debe mostrar la tabla es:
+####  7.1 Inserta para el día '10-JUL-2019' los mismo vuelos del día '10-FEB-2018' pero con una ocupación inicial de 0 pasajeros. Esta inserción se tiene que realizar con un único comando INSERT INTO e independientemente de los datos que se tengan almacenados en la base de datos, para ello utiliza la clausula subconsulta del comando INSERT INTO. Después de ejecutar la sentencia INSERT INTO, la información que debe mostrar la tabla es:
 
 ![image](https://user-images.githubusercontent.com/23047899/55673849-c9383000-58ad-11e9-9b6c-d82575caba23.png)
 
@@ -527,7 +570,7 @@ INSERT INTO vuelo(cod,mat,ocupacion,fecha)
 
 ![Captura](https://user-images.githubusercontent.com/23047899/55674128-cb4fbe00-58b0-11e9-8ee1-7367cceaf50b.PNG)
 
-#### 7.1.2 Actualiza con un único comando UPDATE e independientemente de los datos que se tengan almacenados en la base de datos, la ocupación de los vuelos realizados por el modelo 'ABUS200', de tal manera que se establezca al máximo permitido por ese avión.
+#### 7.2 Actualiza con un único comando UPDATE e independientemente de los datos que se tengan almacenados en la base de datos, la ocupación de los vuelos realizados por el modelo 'ABUS200', de tal manera que se establezca al máximo permitido por ese avión.
 
 ![image](https://user-images.githubusercontent.com/23047899/55674161-0b16a580-58b1-11e9-9284-88152fb48dd8.png)
 
@@ -546,12 +589,175 @@ UPDATE vuelo
 
 ![Captura](https://user-images.githubusercontent.com/23047899/55674392-65fdcc00-58b4-11e9-8862-e846f71387a3.PNG)
 
-#### 7.1.3  Actualiza con un único comando UPDATE e independientemente de los datos que se tengan almacenados, la ocupación de todos los vuelos, de tal manera que seestablezca al máximo permitido por el avión que los realiza. Ten en cuenta que en la subconsulta se puede utilizar como variable de tupla el alias de la tabla que aparece en la cláusula UPDATE. Tras la actualización la tabla debe quedar:
+#### 7.3 Actualiza con un único comando UPDATE e independientemente de los datos que se tengan almacenados, la ocupación de todos los vuelos, de tal manera que seestablezca al máximo permitido por el avión que los realiza. Ten en cuenta que en la subconsulta se puede utilizar como variable de tupla el alias de la tabla que aparece en la cláusula UPDATE. Tras la actualización la tabla debe quedar:
 
 ![image](https://user-images.githubusercontent.com/23047899/55674411-9f363c00-58b4-11e9-9738-5dc3abe8505e.png)
 
 - Consulta SQL:
+```sql
+UPDATE vuelo v
+SET ocupacion = (
+    SELECT a.plazas
+      FROM avion a
+        WHERE v.mat = a.mat);
+```
+- Otra manera de hacerlo con merge:
+```sql
+MERGE INTO vuelo 
+  USING 
+      (
+        SELECT mat,
+         plazas
+          FROM avion
+      ) v1 ON (v1.mat = vuelo.mat)
+            WHEN MATCHED THEN UPDATE 
+              SET vuelo.ocupacion = v1.plazas;
+```
+- Resultado: 
+
+![Captura](https://user-images.githubusercontent.com/23047899/55683851-a9a01680-5944-11e9-8715-c9d2ab02799d.PNG)
+
+
+#### 7.4 Actualiza a '20-JUL-2019' la fecha de revisión de aquellos aviones que tienen 5 o más horas de vuelo.
+
+![image](https://user-images.githubusercontent.com/23047899/55682047-35f30f00-592e-11e9-8f41-aae814e10148.png)
+
+- Consulta SQL:
 
 ```sql
+UPDATE avion a
+  SET fechaa_rev = '20/06/2019'
+    WHERE a.modelo=(SELECT a.modelo
+                      FROM avion a,ruta r,vuelo v
+                        WHERE v.mat=a.mat AND v.cod=r.cod
+                          GROUP BY a.modelo
+                            HAVING SUM(num_horas)>=5);
 
 ```
+- Resultado:
+
+![Captura](https://user-images.githubusercontent.com/23047899/55683875-f388fc80-5944-11e9-9730-bc622dc00577.PNG)
+
+#### 7.5  Teniendo en cuenta que en la clausula WHERE del comando DELETE se pueden utilizar también subconsultas y variables de tupla, borra los vuelos cuya fecha es posterior a la fecha actual y estrictamente anterior a la fecha de revisión del avión que debería realizarlo.
+
+![image](https://user-images.githubusercontent.com/23047899/55683889-3054f380-5945-11e9-8a41-139ccc638251.png)
+
+- Consulta SQL:
+```sql
+DELETE FROM vuelo v
+  WHERE v.mat=(SELECT mat
+                  FROM avion
+                    WHERE v.mat=avion.mat
+                      AND v.fecha<avion.fechaa_rev
+                        AND v.fecha>SYSDATE);
+```
+- Resultado:
+
+![image](https://user-images.githubusercontent.com/23047899/55684012-b160ba80-5946-11e9-952a-c12951b4d492.png)
+
+## 8. Vista
+
+>Crear los ficheros de comandos SQL que resuelvan las siguientes cuestiones y se muestren los resultados como se indica.
+
+#### 8.1 Crear una vista actualizable, llamada RUTA_LARGA, que contenga aquellas rutas cuya duración sea igual o mayor a 2 horas. La vista debe controlar la validez de las inserciones y las actualizaciones. Comprueba el buen funcionamiento de la vista consultando todas sus tuplas.
+
+![image](https://user-images.githubusercontent.com/23047899/55688436-ceae7c80-5978-11e9-9813-2d5e70228d10.png)
+
+- Sentencia SQL:
+  ```sql
+  CREATE VIEW RUTA_LARGA  AS 
+    SELECT cod,compan,origen,destino,num_horas
+      FROM ruta
+        GROUP BY cod,compan,origen,destino,num_horas
+          HAVING SUM(num_horas)>=2;
+  ```
+#### 8.2 Inserta en la vista anterior las siguientes tuplas, comentando la causa de los posibles errores que pudieran aparecer. Comprueba que las inserciones correctas se han realizado, consultando tanto la vista como la tabla base de la que toma los datos.
+
+- Datos a insertar:
+
+![image](https://user-images.githubusercontent.com/23047899/55688477-31a01380-5979-11e9-96a4-28f6191e9915.png)
+
+- Sentencias SQL:
+
+  ```sql
+  INSERT INTO RUTA_LARGA 
+    VALUES (555,'SPA','MADRID','PARIS',2);
+  INSERT INTO RUTA_LARGA 
+    VALUES (666,'TAW','MADRID','NEWYORK',8);
+  INSERT INTO RUTA_LARGA 
+    VALUES (666,'IBE','MADRID','GRANADA',1);
+  INSERT INTO RUTA_LARGA 
+    VALUES (666,'IBE','MADRID','NEWYORK',8);
+  ```
+
+- Fila insertada en la tabla:
+  ```sql
+  INSERT INTO RUTA_LARGA 
+    VALUES (666,'IBE','MADRID','GRANADA',1);
+  ```
+![Captura](https://user-images.githubusercontent.com/23047899/55688751-9ad55600-597c-11e9-89d9-ec7f97c4925f.PNG)
+
+- Error 1:
+  >Explicación: el error está en la tabla de la que proviene la vista ya que existe un dato con elnumero de clave que se está intentando insertar por eso no es posible insertar los datos.
+
+  ```sql
+  INSERT INTO RUTA_LARGA 
+    VALUES (555,'SPA','MADRID','PARIS',2);
+  ```
+- Imagen del error:
+
+![Captura](https://user-images.githubusercontent.com/23047899/55688631-e38c0f80-597a-11e9-8625-a2e329e60418.PNG)
+
+- Error 2:
+  >Explicación: el error está en en que se esta intentando insertar un nombre de compañia que no está dentro de la restricción **CHECK** anteriormente hecha la cual especifica que los unicos nombres de compañia que se pueden introducir son **IBE,SPA,AIR**.
+
+  ```sql
+    INSERT INTO RUTA_LARGA 
+      VALUES (666,'TAW','MADRID','NEWYORK',8);
+  ````
+- Imagen del error:
+![Captura](https://user-images.githubusercontent.com/23047899/55688699-b7bd5980-597b-11e9-9a99-fe96695c7c54.PNG)
+
+- Error 3:
+  >Explicación: el error está en que se esta insertado un numero de clave que ya existe en la tabla por lo tanto tira error diciendo que la clave primaria ha sido violated.
+
+  ```sql
+  INSERT INTO RUTA_LARGA 
+    VALUES (666,'IBE','MADRID','NEWYORK',8);
+  ```
+- Imagen del error
+![Captura](https://user-images.githubusercontent.com/23047899/55688775-fa336600-597c-11e9-91b9-ef1e2aebe5f3.PNG)
+
+#### 8.3 Crea una vista llamada HORAS_VUELO_AVION que muestre, para cada avión, el número de horas de vuelo que tiene. Al mostrar todas la tuplas de la vista debe aparecer:
+
+![image](https://user-images.githubusercontent.com/23047899/55688791-1800cb00-597d-11e9-8bb7-a8327d54f7c3.png)
+
+- Sentencia SQL:
+
+```sql
+CREATE VIEW HORAS_VUELO_AVION AS
+  SELECT v.mat,a.modelo,SUM(r.num_horas) AS HORAS
+    FROM vuelo v, avion a, ruta r
+      WHERE v.mat=a.mat
+        AND v.cod=r.cod
+          GROUP BY v.mat, a.modelo;
+```
+
+- Resultado:
+
+![image](https://user-images.githubusercontent.com/23047899/55689038-37e5be00-5980-11e9-9631-031c67782da1.png)
+
+#### 8.4 Utilizando la vista anterior, resuelve con un select la consulta que muestre el avión que tiene más horas de vuelo.
+
+![image](https://user-images.githubusercontent.com/23047899/55689049-68c5f300-5980-11e9-89a0-b38de1074f15.png)
+
+- Sentencia SQL:
+```sql
+SELECT mat,modelo,HORAS AS HORAS
+  FROM HORAS_VUELO_AVION
+    WHERE horas=(SELECT MAX(horas)
+                    FROM HORAS_VUELO_AVION);
+```
+- Resultado:
+
+![image](https://user-images.githubusercontent.com/23047899/55689158-995a5c80-5981-11e9-9fed-c03a17fe8649.png)
