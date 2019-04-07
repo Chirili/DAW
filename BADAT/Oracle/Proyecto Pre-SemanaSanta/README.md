@@ -19,6 +19,7 @@
   * [2.3 Establecer el atributo **COD** de la tabla **VUELO** como llave externa respecto de **RUTA**](###2.3-Establece-el-atributo-COD-de-la-tabla-VUELO-como-llave-externa-respecto-de-RUTA.)
 
   * [2.4 Establece el conjunto de atributos formado por **COD, MAT y FECHA** como llave primaria de la tabla **VUELO**.](###2.4-Establece-el-conjunto-de-atributos-formado-por-COD,-MAT-y-FECHA-como-llave-primaria-de-la-tabla-VUELO.)
+
 * [3. Inserción de datos con **INSERT**](##3.-Inserción-de-datos)
   
   * [3.1 Inserción tabla **RUTA**](###3.1-Inserción-tabla-RUTA)
@@ -35,20 +36,35 @@
   * [4.3 Insert las siguientes tuplas en la tabla **VUELO**:](###4.3-Insert-las-siguientes-tuplas-en-la-tabla-VUELO)
 
 * [5. Consultas Select(I)](##5.-Consultas-Select(I))
+
   * [5.1 Mostrar todos los **aviones**](###5.1-Muestra-todos-los-aviones)
+
   * [5.2 Mostrar el origen y destino de todas las rutas](###5.2-Muestra-el-origen-y-destino-de-todas-las-rutas)
+
   * [5.3 Mostrar el origen y el destino de todas las rutas que sean distintas](###5.3-Muestra-el-origen-y-el-destino-de-todas-las-rutas-que-sean-distintas)
+
   * [5.4 Mostrar la ocupación y la fecha de todos los vuelos. La información debe aparecer tal y como aparece abajo, ordenada por la fecha en orden inverso y con cuatro dígitos para el año.](###5.4-Muestra-la-ocupación-y-la-fecha-de-todos-los-vuelos.-La-información-debe-aparecer-tal-y-como-aparece-abajo,-ordenada-por-la-fecha-en-orden-inverso-y-con-cuatro-dígitos-para-el-año.)
+
   * [5.5 Mostrar cómo quedarían las plazas de los aviones si fuera posible incrementarlas en un **10%**.](###5.5-Muestra-cómo-quedarían-las-plazas-de-los-aviones-si-fuera-posible-incrementarlas-en-un-10%.)
+
   * [5.6 ¿Qué compañías tiene como destino **BARCELONA**?](###5.6-¿Qué-compañías-tiene-como-destino-BARCELONA?)
+
   * [5.7 ¿Qué aviones no tienen todavía **fecha de revisión**?](###5.7-¿Qué-aviones-no-tienen-todavía-fecha-de-revisión?)
+
   * [5.8 Obtener un listado de los vuelos donde figure el origen y el destino de cada uno.](###5.8-Obtener-un-listado-de-los-vuelos-donde-figure-el-origen-y-el-destino-de-cada-uno.)
+
   * [5.9 Mostrar el **origen, destino, compañía y ocupación** de aquellos vuelos que van llenos.](###5.9-Muestra-el-origen,-destino,-compañía-y-ocupación-de-aquellos-vuelos-que-van-llenos.)
+
   * [5.10 Obtener las parejas de compañías aéreas que vuelan al mismo destino](###5.10-Obtener-las-parejas-de-compañías-aéreas-que-vuelan-al-mismo-destino)
+
 * [6. Consultas SELECT(II)](##6.-Consultas-SELECT(II))
+
   * [6.1 ¿Cuál es la **ocupación media** y la **suma total** de pasajeros de los vuelos del **10-FEB-2018**?](###6.1-¿Cuál-es-la-ocupación-media-y-la-suma-total-de-pasajeros-de-los-vuelos-del-10-FEB-2018?)
+
   * [6.2 Mostrar el número de compañias que vuelan a cada destino](###6.2-Muestra-el-número-de-compañias-que-vuelan-a-cada-destino)
+
   * [6.3 Calcular el número de horas de vuelo de cada compañía](###6.3-Calcula-el-número-de-horas-de-vuelo-de-cada-compañía)
+
   * [6.4 Mostrar los aviones que tienen **3 o más horas de vuelo**](###6.4-Muestra-los-aviones-que-tienen-3-o-más-horas-de-vuelo)
 
   * [6.5 ¿Cuáles son las matrículas de los aviones que vuelan en las mismas fechas que el avión de matrícula **AAA**?](###6.5-¿Cuáles-son-las-matrículas-de-los-aviones-que-vuelan-en-las-mismas-fechas-que-el-avión-de-matrícula-AAA?)
@@ -598,7 +614,7 @@ UPDATE vuelo
 
 ![Captura](https://user-images.githubusercontent.com/23047899/55674392-65fdcc00-58b4-11e9-8862-e846f71387a3.PNG)
 
-#### 7.3 Actualiza con un único comando UPDATE e independientemente de los datos que se tengan almacenados, la ocupación de todos los vuelos, de tal manera que seestablezca al máximo permitido por el avión que los realiza. Ten en cuenta que en la subconsulta se puede utilizar como variable de tupla el alias de la tabla que aparece en la cláusula UPDATE. Tras la actualización la tabla debe quedar:
+#### 7.3 Actualiza con un único comando UPDATE e independientemente de los datos que se tengan almacenados, la ocupación de todos los vuelos, de tal manera que se establezca al máximo permitido por el avión que los realiza. Ten en cuenta que en la subconsulta se puede utilizar como variable de tupla el alias de la tabla que aparece en la cláusula UPDATE. Tras la actualización la tabla debe quedar:
 
 ![image](https://user-images.githubusercontent.com/23047899/55674411-9f363c00-58b4-11e9-9738-5dc3abe8505e.png)
 
