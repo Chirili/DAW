@@ -3,7 +3,7 @@
 ## Tema 8 Clausulas avanzadas, vistas e índices
 
 ### Indice
-1. [La sentencia SELECT:](#La-sentencia-SELECT) 
+1. [La sentencia SELECT:](#1.-La-sentencia-SELECT) 
 
   1.1 [Concepto](#1.1)
     1.2 [Sintaxis sentencia SELECT básica](#1.2)
@@ -16,7 +16,7 @@
     1.9 [Filas duplicada](#1.9)
 
 
-#### La sentencia SELECT
+#### 1. La sentencia SELECT
 
 #### Concepto {#1.1}
 La sentencia **SELECT** recupera información de la base de datos.
