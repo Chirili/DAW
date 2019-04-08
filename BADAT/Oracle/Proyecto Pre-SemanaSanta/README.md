@@ -43,7 +43,7 @@
 
   * [5.3 Mostrar el origen y el destino de todas las rutas que sean distintas](#Muestra-el-origen-y-el-destino-de-todas-las-rutas-que-sean-distintas)
 
-  * [5.4 Mostrar la ocupación y la fecha de todos los vuelos. La información debe aparecer tal y como aparece abajo, ordenada por la fecha en orden inverso y con cuatro dígitos para el año.](#Muestra-la-ocupación-y-la-fecha-de-todos-los-vuelos)
+  * [5.4 Mostrar la ocupación y la fecha de todos los vuelos. La información debe aparecer tal y como aparece abajo, ordenada por la fecha en orden inverso y con cuatro dígitos para el año.](#Muestra-la-ocupación-y-la-fecha-de-todos-los-vuelos-la-información-debe-aparecer-tal-y-como-aparece-abajo-ordenada-por-la-fecha-en-orden-inverso-y-con-cuatro-dígitos-para-el-año)
 
   * [5.5 Mostrar cómo quedarían las plazas de los aviones si fuera posible incrementarlas en un **10%**.](#Muestra-cómo-quedarían-las-plazas-de-los-aviones-si-fuera-posible-incrementarlas-en-un-10-por-ciento)
 
