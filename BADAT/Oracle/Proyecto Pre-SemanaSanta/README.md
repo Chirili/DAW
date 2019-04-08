@@ -43,7 +43,7 @@
 
   * [5.4 Mostrar la ocupación y la fecha de todos los vuelos. La información debe aparecer tal y como aparece abajo, ordenada por la fecha en orden inverso y con cuatro dígitos para el año.](#Muestra-la-ocupación-y-la-fecha-de-todos-los-vuelos)
 
-  * [5.5 Mostrar cómo quedarían las plazas de los aviones si fuera posible incrementarlas en un **10%**.](#Muestra-cómo-quedarían-las-plazas-de-los-aviones-si-fuera-posible-incrementarlas-en-un-10%)
+  * [5.5 Mostrar cómo quedarían las plazas de los aviones si fuera posible incrementarlas en un **10%**.](#Muestra-cómo-quedarían-las-plazas-de-los-aviones-si-fuera-posible-incrementarlas-en-un-10-por-ciento)
 
   * [5.6 ¿Qué compañías tiene como destino **BARCELONA**?](#Qué-compañías-tiene-como-destino-BARCELONA)
 
@@ -358,7 +358,7 @@ SELECT ocupacion,to_char(fecha,'DD-MONTH-YYYY') AS FECHA2
 
 ![image](https://user-images.githubusercontent.com/23047899/55563883-04443300-56f7-11e9-9de3-d0cf84aa6474.png)
 
-### Muestra cómo quedarían las plazas de los aviones si fuera posible incrementarlas en un 10%
+### Muestra cómo quedarían las plazas de los aviones si fuera posible incrementarlas en un 10 por ciento
 
 ```sql
 SELECT modelo, plazas, plazas+plazas* 0.1
