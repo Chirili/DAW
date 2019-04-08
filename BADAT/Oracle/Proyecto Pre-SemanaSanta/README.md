@@ -29,9 +29,9 @@
   * [3.3 Inserción tala **VUELO**](#Inserción-tala-VUELO)
 * [4. Update a las tablas con **UPDATE**](#Update-a-las-tablas)
 
-  * [4.1 Retrasa un día la fecha de los vuelos del **'10-MAY-2018'**](#Retrasa-un-día-la-fecha-de-los-vuelos-del-'10-MAY-2018')
+  * [4.1 Retrasa un día la fecha de los vuelos del **'10-MAY-2018'**](#Retrasa-un-día-la-fecha-de-los-vuelos-del-10-MAY-2018)
 
-  * [4.2 Aumenta en 1 hora la duración de las rutas con destino **'PARIS'**](#Aumenta-en-1-hora-la-duración-de-las-rutas-con-destino-'PARIS')
+  * [4.2 Aumenta en 1 hora la duración de las rutas con destino **'PARIS'**](#Aumenta-en-1-hora-la-duración-de-las-rutas-con-destino-PARIS)
 
   * [4.3 Insert las siguientes tuplas en la tabla **VUELO**:](#Insert-las-siguientes-tuplas-en-la-tabla-VUELO)
 
