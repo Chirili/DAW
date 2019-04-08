@@ -75,14 +75,14 @@
   * [6.9 Muestra aquellas compañías que hacen todas las rutas](#Muestra-aquellas-compañías-que-hacen-todas-las-rutas)
 * [7. Subconsultas DDL](#Subconsultas-DDL)
 
-  * [7.1 Insertar para el día '10-JUL-2019' los mismo vuelos del día '10-FEB-2018' pero con una ocupación inicial de 0 pasajeros.](#Inserta-para-el-día-10-JUL-2019-los-mismo-vuelos-del-día-'10-FEB-2018'-pero-con-una-ocupación-inicial-de-0-pasajeros)
+  * [7.1 Insertar para el día '10-JUL-2019' los mismo vuelos del día '10-FEB-2018' pero con una ocupación inicial de 0 pasajeros.](#Inserta-para-el-día-10-JUL-2019-los-mismo-vuelos-del-día-10-FEB-2018-pero-con-una-ocupación-inicial-de-0-pasajeros)
 
   * [7.2 Actualizar con un único comando **UPDATE** e independientemente de los datos que se tengan almacenados en la base de datos, la ocupación de los vuelos realizados por el modelo **'ABUS200'**.](#Actualiza-con-un-único-comando-UPDATE-e-independientemente-de-los-datos-que-se-tengan-almacenados-en-la-base-de-datos-la-ocupación-de-los-vuelos-realizados-por-el-modelo-ABUS200-de-tal-manera-que-se-establezca-al-máximo-permitido-por-ese-avión)
 
   * [7.3  Actualizar con un único comando **UPDATE** e independientemente de los datos que se tengan almacenados, la ocupación de todos los vuelos, de tal manera que seestablezca al máximo permitido por el avión que los realiza.](#Actualiza-con-un-único-comando-UPDATE-e-independientemente-de-los-datos-que-se-tengan-almacenados-la-ocupación-de-todos-los-vuelos-de-tal-manera-que-se-establezca-al-máximo-permitido-por-el-avión-que-los-realiza)
 
   * [7.4  Actualiza a **'20-JUL-2019'** la **fecha de revisión** de aquellos aviones que tienen **5 o más horas de vuelo**.](#Actualiza-a-20-JUL-2019-la-fecha-de-revisión-de-aquellos-aviones-que-tienen-5-o-más-horas-de-vuelo)
-  * [7.5  Teniendo en cuenta que en la clausula **WHERE** del comando **DELETE** se pueden utilizar también subconsultas y variables de tupla, borra los vuelos cuya fecha es posterior a la fecha actual y estrictamente anterior a la fecha de revisión del avión que debería realizarlo.](#Teniendo-en-cuenta-que-en-la-clausula-WHERE-del-comando-DELETE-se-pueden-utilizar-también-subconsultas-y-variables-de-tupla)
+  * [7.5  Teniendo en cuenta que en la clausula **WHERE** del comando **DELETE** se pueden utilizar también subconsultas y variables de tupla, borra los vuelos cuya fecha es posterior a la fecha actual y estrictamente anterior a la fecha de revisión del avión que debería realizarlo.](#Teniendo-en-cuenta-que-en-la-clausula-WHERE-del-comando-DELETE-se-pueden-utilizar-también-subconsultas-y-variables-de-tupla-borra-los-vuelos-cuya-fecha-es-posterior-a-la-fecha actual-y-estrictamente-anterior-a-la-fecha-de-revisión-del-avión-que-debería-realizarlo)
 * [8. Vista](#Vista)
 
   * [8.1 Crear una vista actualizable, llamada **RUTA_LARGA**, que contenga aquellas rutas cuya duración sea **igual o mayor a 2 horas**.](#Crear-una-vista-actualizable-llamada-RUTA_LARGA-que-contenga-aquellas-rutas-cuya-duración-sea-igual-o-mayor-a-2-horas)
