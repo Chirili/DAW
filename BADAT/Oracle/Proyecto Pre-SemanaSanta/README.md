@@ -79,16 +79,16 @@
 
   * [7.2 Actualizar con un único comando **UPDATE** e independientemente de los datos que se tengan almacenados en la base de datos, la ocupación de los vuelos realizados por el modelo **'ABUS200'**.](#Actualiza-con-un-único-comando-UPDATE-e-independientemente-de-los-datos-que-se-tengan-almacenados-en-la-base-de-datos-la-ocupación-de-los-vuelos-realizados-por-el-modelo-ABUS200-de-tal-manera-que-se-establezca-al-máximo-permitido-por-ese-avión)
 
-  * [7.3  Actualizar con un único comando **UPDATE** e independientemente de los datos que se tengan almacenados, la ocupación de todos los vuelos, de tal manera que seestablezca al máximo permitido por el avión que los realiza.](#Actualiza-con-un-único-comando-UPDATE-e-independientemente-de-los-datos-que-se-tengan-almacenados-la-ocupación-de-todos-los-vuelos-de-tal-manera-que-se-establezca-al-máximo-permitido-por-el-avión-que-los-realiza)
+  * [7.3 Actualizar con un único comando **UPDATE** e independientemente de los datos que se tengan almacenados, la ocupación de todos los vuelos, de tal manera que seestablezca al máximo permitido por el avión que los realiza.](#Actualiza-con-un-único-comando-UPDATE-e-independientemente-de-los-datos-que-se-tengan-almacenados-la-ocupación-de-todos-los-vuelos-de-tal-manera-que-se-establezca-al-máximo-permitido-por-el-avión-que-los-realiza)
 
-  * [7.4  Actualiza a **'20-JUL-2019'** la **fecha de revisión** de aquellos aviones que tienen **5 o más horas de vuelo**.](#Actualiza-a-20-JUL-2019-la-fecha-de-revisión-de-aquellos-aviones-que-tienen-5-o-más-horas-de-vuelo)
-  * [7.5  Teniendo en cuenta que en la clausula **WHERE** del comando **DELETE** se pueden utilizar también subconsultas y variables de tupla, borra los vuelos cuya fecha es posterior a la fecha actual y estrictamente anterior a la fecha de revisión del avión que debería realizarlo.](#Teniendo-en-cuenta-que-en-la-clausula-WHERE-del-comando-DELETE-se-pueden-utilizar-también-subconsultas-y-variables-de-tupla-borra-los-vuelos-cuya-fecha-es-posterior-a-la-fecha actual-y-estrictamente-anterior-a-la-fecha-de-revisión-del-avión-que-debería-realizarlo)
+  * [7.4 Actualiza a **'20-JUL-2019'** la **fecha de revisión** de aquellos aviones que tienen **5 o más horas de vuelo**.](#Actualiza-a-20-JUL-2019-la-fecha-de-revisión-de-aquellos-aviones-que-tienen-5-o-más-horas-de-vuelo)
+  * [7.5 Teniendo en cuenta que en la clausula **WHERE** del comando **DELETE** se pueden utilizar también subconsultas y variables de tupla, borra los vuelos cuya fecha es posterior a la fecha actual y estrictamente anterior a la fecha de revisión del avión que debería realizarlo.](#Teniendo-en-cuenta-que-en-la-clausula-WHERE-del-comando-DELETE-se-pueden-utilizar-también-subconsultas-y-variables-de-tupla-borra-los-vuelos-cuya-fecha-es-posterior-a-la-fecha-actual-y-estrictamente-anterior-a-la-fecha-de-revisión-del-avión-que-debería-realizarlo)
 * [8. Vista](#Vista)
 
   * [8.1 Crear una vista actualizable, llamada **RUTA_LARGA**, que contenga aquellas rutas cuya duración sea **igual o mayor a 2 horas**.](#Crear-una-vista-actualizable-llamada-RUTA_LARGA-que-contenga-aquellas-rutas-cuya-duración-sea-igual-o-mayor-a-2-horas)
   * [8.2 Insertar en la vista anterior las siguientes tuplas, comentando la causa de los posibles errores que pudieran aparecer.](#Inserta-en-la-vista-anterior-las-siguientes-tuplas-comentando-la-causa-de-los-posibles-errores-que-pudieran-aparecer)
 
-  * [8.3 Crea una vista llamada **HORAS_VUELO_AVION** que muestre, para cada avión, el número de horas de vuelo que tiene.](#Crea-una-vista-llamada-HORAS_VUELO_AVION-que-muestre-para-cada-avión-el-número-de-horas-de-vuelo-que-tien)
+  * [8.3 Crea una vista llamada **HORAS_VUELO_AVION** que muestre, para cada avión, el número de horas de vuelo que tiene.](#Crea-una-vista-llamada-HORAS_VUELO_AVION-que-muestre-para-cada-avión-el-número-de-horas-de-vuelo-que-tiene)
 
   * [8.4  Utilizando la vista anterior, resuelve con un select la consulta que muestre el avión que tiene más horas de vuelo.](#Utilizando-la-vista-anterior-resuelve-con-un-select-la-consulta-que-muestre-el-avión-que-tiene-más-horas-de-vuelo)
 
@@ -120,7 +120,7 @@ CREATE TABLE avion(
 );
 ALTER TABLE avion ADD CONSTRAINT ck_avion CHECK(plazas >=5 AND plazas <=300);
 ```
-
+[Volver al Índice](#Indice)
 ### Create table vuelo
 
 ```sql
@@ -133,7 +133,7 @@ CREATE TABLE vuelo(
 );
 ALTER TABLE vuelo ADD CONSTRAINT ck_ocupacion CHECK(ocupacion <= 300);
 ```
-
+[Volver al Índice](#Indice)
 ## Modificaciones en las tablas
 
 ### Añade a la tabla VUELO el atributo FECHA fecha de vuelo
@@ -142,14 +142,14 @@ ALTER TABLE vuelo ADD CONSTRAINT ck_ocupacion CHECK(ocupacion <= 300);
   ALTER TABLE vuelo 
     ADD fecha DATE;
   ```
-
+[Volver al Índice](#Indice)
 ### Añade el atributo FECHA anteriormente introducido la restricción de integridad correspondiente para que no admita valores nulos
 
 ```sql
 ALTER TABLE vuelo
    MODIFY fecha DATE NOT NULL;
 ```
-
+[Volver al Índice](#Indice)
 ### Establece el atributo COD de la tabla VUELO como llave externa respecto de RUTA
 
 ```sql
@@ -158,7 +158,7 @@ ALTER TABLE vuelo
      FOREIGN KEY(cod) 
       REFERENCES ruta(cod);
 ```
-
+[Volver al Índice](#Indice)
 ### Establece el conjunto de atributos formado por COD MAT y FECHA como llave primaria de la tabla VUELO
 
 ```sql
@@ -168,7 +168,7 @@ ALTER TABLE vuelo
    ADD CONSTRAINT pk_vuelo 
     PRIMARY KEY(cod,mat,fecha);
 ```
-
+[Volver al Índice](#Indice)
 ## Inserción de datos
 
   >Realiza la inserción de valores de forma que las tablas queden como se muestra a continuación. Realiza la inserción de tuplas para cada tabla de manera independiente, ya que de esta forma es más sencillo detectar errores
@@ -205,6 +205,7 @@ ALTER TABLE vuelo
   ![image](https://user-images.githubusercontent.com/23047899/  54935823-66e04680-4f21-11e9-8c79-f57e3e49aa50.png)
   </details>
 
+[Volver al Índice](#Indice)
 ### Inserción tabla AVION
 
 - Filas a inserta:
@@ -239,6 +240,7 @@ ALTER TABLE vuelo
   ![image](https://user-images.githubusercontent.com/23047899/  55026006-5ce24480-5002-11e9-8557-74b1a5077263.png)
   </details>
 
+[Volver al Índice](#Indice)
 ### Inserción tala VUELO
 
 - Filas a insertar:
@@ -278,8 +280,7 @@ ALTER TABLE vuelo
   [ ![image](https://user-images.githubusercontent.com/23047899/  55027186-f90d4b00-5004-11e9-9918-511480182368.png) ](https:// user-images.githubusercontent.com/23047899/  55027186-f90d4b00-5004-11e9-9918-511480182368.png)
   </details>
 
-
-
+[Volver al Índice](#Indice)
 ## Update a las tablas
 
 > Modificaciones en las tablas
@@ -293,7 +294,7 @@ UPDATE vuelo
   SET fecha = '09-MAY-2018'
     WHERE fecha = '10-MAY-2018';
 ```
-
+[Volver al Índice](#Indice)
 ### Aumenta en 1 hora la duración de las rutas con destino PARIS
 
 ```sql
@@ -301,7 +302,7 @@ UPDATE ruta
   SET num_horas = num_horas+1
     WHERE destino LIKE 'PARIS';
 ```
-
+[Volver al Índice](#Indice)
 ### Insert las siguientes tuplas en la tabla VUELO
 
 ```sql
@@ -310,12 +311,14 @@ INSERT INTO vuelo
 INSERT INTO vuelo
   VALUES (111, 'BBB', 220, '10-MAY-2019');
 ```
+
 - Comenta que ha sucedido y cual es el motivo
 
   >Lo que ha sucecido es que al intentar insertar un valor en la clave primaria   de avion y este no existir en dicha tabla ya que está como clave foránea salta  un error diciendo que se a violado la **PRIMARY KEY** de avión:
 
 ![image](https://user-images.githubusercontent.com/23047899/55558503-82e7a300-56ec-11e9-9ba1-e2f0096d4fe9.png)
 
+[Volver al Índice](#Indice)
 ## Consultas Select I
 
 ### Muestra todos los aviones
@@ -327,7 +330,7 @@ SELECT *
 - Salida de la consulta SQL:
 
 ![image](https://user-images.githubusercontent.com/23047899/55559916-757fe800-56ef-11e9-8471-aedca0c2a71c.png)
-
+[Volver al Índice](#Indice)
 ### Muestra el origen y destino de todas las rutas
 
 ```sql
@@ -338,7 +341,7 @@ SELECT origen,destino
 - Salida de la consulta SQL:
 
 ![image](https://user-images.githubusercontent.com/23047899/55560073-bf68ce00-56ef-11e9-8abd-310b20cbd95d.png)
-
+[Volver al Índice](#Indice)
 ### Muestra el origen y el destino de todas las rutas que sean distintas
 
 ```sql
@@ -348,7 +351,7 @@ SELECT DISTINCT destino, origen
 - Salida de la consulta SQL:
 
 ![image](https://user-images.githubusercontent.com/23047899/55561878-35226900-56f3-11e9-9069-ae9799af1883.png)
-
+[Volver al Índice](#Indice)
 ### Muestra la ocupación y la fecha de todos los vuelos la información debe aparecer tal y como aparece abajo ordenada por la fecha en orden inverso y con cuatro dígitos para el año
 
 ```sql
@@ -359,7 +362,7 @@ SELECT ocupacion,to_char(fecha,'DD-MONTH-YYYY') AS FECHA2
 - Salida de la consulta SQL:
 
 ![image](https://user-images.githubusercontent.com/23047899/55563883-04443300-56f7-11e9-9de3-d0cf84aa6474.png)
-
+[Volver al Índice](#Indice)
 ### Muestra cómo quedarían las plazas de los aviones si fuera posible incrementarlas en un 10 por ciento
 
 ```sql
@@ -371,7 +374,7 @@ SELECT modelo, plazas, plazas+plazas* 0.1
 - Salida de la consulta SQL:
 
 ![image](https://user-images.githubusercontent.com/23047899/55563932-1cb44d80-56f7-11e9-87d1-b5274e0d38f2.png)
-
+[Volver al Índice](#Indice)
 ### Qué compañías tiene como destino BARCELONA
 
 ```sql
@@ -383,7 +386,7 @@ SELECT compan
 - Salida de la consulta SQL:
 
 ![image](https://user-images.githubusercontent.com/23047899/55564194-9f3d0d00-56f7-11e9-851d-336652da8af1.png)
-
+[Volver al Índice](#Indice)
 ### Qué aviones no tienen todavía fecha de revisión
 
 ```sql
@@ -395,7 +398,7 @@ SELECT *
 - Salida de la consulta SQL:
 
 ![image](https://user-images.githubusercontent.com/23047899/55564405-183c6480-56f8-11e9-8571-70d93a64207c.png)
-
+[Volver al Índice](#Indice)
 ### Obtener un listado de los vuelos donde figure el origen y el destino de cada uno
 
 ```sql
@@ -407,7 +410,7 @@ SELECT v.cod,mat,ocupacion,r.destino,fecha,r.origen
 - Salida de la consulta SQL:
 
 ![image](https://user-images.githubusercontent.com/23047899/55566934-f5607f00-56fc-11e9-94db-bd97594f2307.png)
-
+[Volver al Índice](#Indice)
 ### Muestra el origen, destino, compañía y ocupación de aquellos vuelos que van llenos
 
 ```sql
@@ -421,7 +424,7 @@ SELECT origen,destino,compan,ocupacion,plazas
 - Salida de la consulta SQL:
 
 ![image](https://user-images.githubusercontent.com/23047899/55568764-9997f500-5700-11e9-9c0e-bafe5e2d6d14.png)
-
+[Volver al Índice](#Indice)
 ### Obtener las parejas de compañías aéreas que vuelan al mismo destino
 
 ```sql
@@ -436,7 +439,7 @@ SELECT compan,destino
 - Salida de la consulta SQL:
 
 ![image](https://user-images.githubusercontent.com/23047899/55581427-1a64ea00-571d-11e9-88fa-c3faf1fbd090.png)
-
+[Volver al Índice](#Indice)
 ## Consultas SELECT II
 
 ### Cuál es la ocupación media y la suma total de pasajeros de los vuelos del 10-FEB-2018
@@ -450,6 +453,8 @@ SELECT AVG(ocupacion) AS ocupacion_media,
 - Salida de la consulta SQL:
 
 ![image](https://user-images.githubusercontent.com/23047899/55581755-f81f9c00-571d-11e9-937e-cee1528db915.png)
+
+[Volver al Índice](#Indice)
 ### Muestra el número de compañias que vuelan a cada destino
 
 ```sql
@@ -460,7 +465,7 @@ SELECT destino,COUNT(compan) AS num_compañias
 - Salida de la consulta SQL:
 
 ![image](https://user-images.githubusercontent.com/23047899/55582834-bcd29c80-5720-11e9-984e-6e9f6d0b2b42.png)
-
+[Volver al Índice](#Indice)
 ### Calcula el número de horas de vuelo de cada compañía
 
 ```sql
@@ -472,7 +477,7 @@ SELECT compan,SUM(num_horas) AS horas_de_vuelo
 - Salida de la consulta SQL:
 
 ![image](https://user-images.githubusercontent.com/23047899/55592045-91a77780-5737-11e9-8113-aca80897a1ea.png)
-
+[Volver al Índice](#Indice)
 ### Muestra los aviones que tienen 3 o más horas de vuelo
 
 ```sql
@@ -486,7 +491,7 @@ SELECT MAX(modelo),SUM(num_horas)
 - Salida de la consulta SQL:
 
 ![image](https://user-images.githubusercontent.com/23047899/55593907-e51cc400-573d-11e9-8b63-7fe854649d69.png)
-
+[Volver al Índice](#Indice)
 ### Cuáles son las matrículas de los aviones que vuelan en las mismas fechas que el avión de matrícula AAA
 ```sql
 SELECT v.mat,v.fecha
@@ -497,7 +502,7 @@ SELECT v.mat,v.fecha
           HAVING v.mat<>'AAA'
             ORDER BY mat ASC;
 ```
-
+[Volver al Índice](#Indice)
 ### Qué devuelve la siguiente consulta
 
 - Consulta:
@@ -516,7 +521,7 @@ SELECT modelo
 - Razonamiento
   >Esta consulta devuelve el modelo del avion   cuando la suma de las horas de dicho avion sea  menor o igual que 3
 
-
+[Volver al Índice](#Indice)
 ### Qué pareja de aviones tienen el mismo número de horas de vuelo
 
 - Consulta SQL:
@@ -540,7 +545,7 @@ SELECT m1.modelo, m2.modelo
 - Resultado:
 
 ![image](https://user-images.githubusercontent.com/23047899/55671223-068cc580-588e-11e9-9be2-c451fff4866f.png)
-
+[Volver al Índice](#Indice)
 ### Inserta en la tabla RUTA la tupla **555 IBE MADRID BARCELONA 1 Qué pareja de compañias tienen en común algún destino**
 
 - Insert a la tabla ruta:
@@ -563,7 +568,7 @@ SELECT c1.compan, c2.compan
           GROUP BY c1.compan, c2.compan
             ORDER BY c1.compan;
 ```
-
+[Volver al Índice](#Indice)
 ### Muestra aquellas compañías que hacen todas las rutas
 
 - Consulta SQL:
@@ -575,7 +580,7 @@ SELECT c1.compan
         GROUP BY c1.compan
           HAVING COUNT(c1.compan)>3;
 ```
-
+[Volver al Índice](#Indice)
 ## Subconsultas DDL
 
 >Subconsultas en las sentencias INSERT, DELETE y UPDATE
@@ -594,7 +599,7 @@ INSERT INTO vuelo(cod,mat,ocupacion,fecha)
 - Resultado:
 
 ![Captura](https://user-images.githubusercontent.com/23047899/55674128-cb4fbe00-58b0-11e9-8ee1-7367cceaf50b.PNG)
-
+[Volver al Índice](#Indice)
 #### Actualiza con un único comando UPDATE e independientemente de los datos que se tengan almacenados en la base de datos la ocupación de los vuelos realizados por el modelo ABUS200 de tal manera que se establezca al máximo permitido por ese avión
 
 ![image](https://user-images.githubusercontent.com/23047899/55674161-0b16a580-58b1-11e9-9284-88152fb48dd8.png)
@@ -613,7 +618,7 @@ UPDATE vuelo
 - Resultado:
 
 ![Captura](https://user-images.githubusercontent.com/23047899/55674392-65fdcc00-58b4-11e9-8862-e846f71387a3.PNG)
-
+[Volver al Índice](#Indice)
 #### Actualiza con un único comando UPDATE e independientemente de los datos que se tengan almacenados la ocupación de todos los vuelos de tal manera que se establezca al máximo permitido por el avión que los realiza
 
 ![image](https://user-images.githubusercontent.com/23047899/55674411-9f363c00-58b4-11e9-9738-5dc3abe8505e.png)
@@ -642,7 +647,7 @@ MERGE INTO vuelo
 
 ![Captura](https://user-images.githubusercontent.com/23047899/55683851-a9a01680-5944-11e9-8715-c9d2ab02799d.PNG)
 
-
+[Volver al Índice](#Indice)
 #### Actualiza a 20-JUL-2019 la fecha de revisión de aquellos aviones que tienen **5 o más horas de vuelo**
 
 ![image](https://user-images.githubusercontent.com/23047899/55682047-35f30f00-592e-11e9-8f41-aae814e10148.png)
@@ -662,7 +667,7 @@ UPDATE avion a
 - Resultado:
 
 ![Captura](https://user-images.githubusercontent.com/23047899/55683875-f388fc80-5944-11e9-9730-bc622dc00577.PNG)
-
+[Volver al Índice](#Indice)
 #### Teniendo en cuenta que en la clausula WHERE del comando DELETE se pueden utilizar también subconsultas y variables de tupla borra los vuelos cuya fecha es posterior a la fecha actual y estrictamente anterior a la fecha de revisión del avión que debería realizarlo
 
 ![image](https://user-images.githubusercontent.com/23047899/55683889-3054f380-5945-11e9-8a41-139ccc638251.png)
@@ -679,7 +684,7 @@ DELETE FROM vuelo v
 - Resultado:
 
 ![image](https://user-images.githubusercontent.com/23047899/55684012-b160ba80-5946-11e9-952a-c12951b4d492.png)
-
+[Volver al Índice](#Indice)
 ## Vista
 
 >Crear los ficheros de comandos SQL que resuelvan las siguientes cuestiones y se muestren los resultados como se indica.
@@ -695,6 +700,7 @@ DELETE FROM vuelo v
         GROUP BY cod,compan,origen,destino,num_horas
           HAVING SUM(num_horas)>=2;
   ```
+ [Volver al Índice](#Indice)
 ####  Inserta en la vista anterior las siguientes tuplas comentando la causa de los posibles errores que pudieran aparecer
 
 - Datos a insertar:
@@ -713,12 +719,12 @@ DELETE FROM vuelo v
   INSERT INTO RUTA_LARGA 
     VALUES (666,'IBE','MADRID','NEWYORK',8);
   ```
-
 - Fila insertada en la tabla:
   ```sql
   INSERT INTO RUTA_LARGA 
     VALUES (666,'IBE','MADRID','GRANADA',1);
   ```
+ 
 ![Captura](https://user-images.githubusercontent.com/23047899/55688751-9ad55600-597c-11e9-89d9-ec7f97c4925f.PNG)
 
 - Error 1:
@@ -751,7 +757,7 @@ DELETE FROM vuelo v
   ```
 - Imagen del error
 ![Captura](https://user-images.githubusercontent.com/23047899/55688775-fa336600-597c-11e9-91b9-ef1e2aebe5f3.PNG)
-
+[Volver al Índice](#Indice)
 #### Crea una vista llamada HORAS_VUELO_AVION que muestre para cada avión el número de horas de vuelo que tiene
 
 ![image](https://user-images.githubusercontent.com/23047899/55688791-1800cb00-597d-11e9-8bb7-a8327d54f7c3.png)
@@ -770,7 +776,7 @@ CREATE VIEW HORAS_VUELO_AVION AS
 - Resultado:
 
 ![image](https://user-images.githubusercontent.com/23047899/55689038-37e5be00-5980-11e9-9631-031c67782da1.png)
-
+[Volver al Índice](#Indice)
 #### Utilizando la vista anterior resuelve con un select la consulta que muestre el avión que tiene más horas de vuelo
 
 ![image](https://user-images.githubusercontent.com/23047899/55689049-68c5f300-5980-11e9-89a0-b38de1074f15.png)
@@ -785,3 +791,4 @@ SELECT mat,modelo,HORAS AS HORAS
 - Resultado:
 
 ![image](https://user-images.githubusercontent.com/23047899/55689158-995a5c80-5981-11e9-9fed-c03a17fe8649.png)
+[Volver al Índice](#Indice)
