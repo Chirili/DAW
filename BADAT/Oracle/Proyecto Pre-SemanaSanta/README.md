@@ -1,24 +1,24 @@
 # Proyecto Pre-Semana Santa
 ## Indice
-* [1. Creación de las tablas:](#1.-Creación-de-las-tablas)
+* [1. Creación de las tablas:](#Creación-de-las-tablas)
 
-  * [1.1 Creación tabla **RUTA**](#1.1-Create-table-RUTA)
+  * [1.1 Creación tabla **RUTA**](#Create-table-RUTA)
 
-  * [1.2 Creación tabla **AVION**](#1.-Create-table-avion)
+  * [1.2 Creación tabla **AVION**](#Create-table-avion)
 
-  * [1.3 Creación tabla **VUELO**](#1.3-Create-table-vuelo)
+  * [1.3 Creación tabla **VUELO**](#Create-table-vuelo)
 
-* [2. Modificaciones en las tablas](##2.-Modificaciones-en-las-tablas)
+* [2. Modificaciones en las tablas](#Modificaciones-en-las-tablas)
 
-  * [2.1 Añadir atributo **fecha_de_vuelo** a la tabla vuelo.](###2.1-Añade-a-la-tabla-VUELO-el-atributo:-FECHA:fecha-de-vuelo)
+  * [2.1 Añadir atributo **fecha_de_vuelo** a la tabla vuelo.](#Añade-a-la-tabla-VUELO-el-atributo:-FECHA:fecha-de-vuelo)
 
 
 
-  * [2.2 Añadir restricción al atributo **fecha** anteriormente introducido](###2.2-Añade-el-atributo-FECHA,-anteriormente-introducido,-la-restricción-de-integridad-correspondiente-para-que-no-admita-valores-nulos.)
+  * [2.2 Añadir restricción al atributo **fecha** anteriormente introducido](#Añade-el-atributo-FECHA,-anteriormente-introducido,-la-restricción-de-integridad-correspondiente-para-que-no-admita-valores-nulos.)
 
-  * [2.3 Establecer el atributo **COD** de la tabla **VUELO** como llave externa respecto de **RUTA**](###2.3-Establece-el-atributo-COD-de-la-tabla-VUELO-como-llave-externa-respecto-de-RUTA.)
+  * [2.3 Establecer el atributo **COD** de la tabla **VUELO** como llave externa respecto de **RUTA**](#Establece-el-atributo-COD-de-la-tabla-VUELO-como-llave-externa-respecto-de-RUTA.)
 
-  * [2.4 Establece el conjunto de atributos formado por **COD, MAT y FECHA** como llave primaria de la tabla **VUELO**.](###2.4-Establece-el-conjunto-de-atributos-formado-por-COD,-MAT-y-FECHA-como-llave-primaria-de-la-tabla-VUELO.)
+  * [2.4 Establece el conjunto de atributos formado por **COD, MAT y FECHA** como llave primaria de la tabla **VUELO**.](#Establece-el-conjunto-de-atributos-formado-por-COD,-MAT-y-FECHA-como-llave-primaria-de-la-tabla-VUELO.)
 
 * [3. Inserción de datos con **INSERT**](##3.-Inserción-de-datos)
   
@@ -92,9 +92,9 @@
 
   * [8.4  Utilizando la vista anterior, resuelve con un select la consulta que muestre el avión que tiene más horas de vuelo.](####8.4-Utilizando-la-vista-anterior,-resuelve-con-un-select-la-consulta-que-muestre-el-avión-que-tiene-más-horas-de-vuelo.)
 
-## 1. Creación de las tablas
+## Creación de las tablas
 
-### 1.1 Create table RUTA
+### Create table RUTA
 
 ```sql
 CREATE TABLE ruta(
@@ -108,7 +108,7 @@ CREATE TABLE ruta(
 ALTER TABLE ruta ADD CONSTRAINT ck_compan CHECK(compan IN('IBE','SPA','AIR'));
 ```
 
-### 1.2 Create table avion
+### Create table avion
 
 ```sql
 CREATE TABLE avion(
@@ -121,7 +121,7 @@ CREATE TABLE avion(
 ALTER TABLE avion ADD CONSTRAINT ck_avion CHECK(plazas >=5 AND plazas <=300);
 ```
 
-### 1.3 Create table vuelo
+### Create table vuelo
 
 ```sql
 CREATE TABLE vuelo(
@@ -134,23 +134,23 @@ CREATE TABLE vuelo(
 ALTER TABLE vuelo ADD CONSTRAINT ck_ocupacion CHECK(ocupacion <= 300);
 ```
 
-## 2. Modificaciones en las tablas
+## Modificaciones en las tablas
 
-### 2.1 Añade a la tabla VUELO el atributo: FECHA:fecha de vuelo
+### Añade a la tabla VUELO el atributo: FECHA:fecha de vuelo
 
   ```sql
   ALTER TABLE vuelo 
     ADD fecha DATE;
   ```
 
-### 2.2 Añade el atributo FECHA, anteriormente introducido, la restricción de integridad correspondiente para que no admita valores nulos.
+### Añade el atributo FECHA, anteriormente introducido, la restricción de integridad correspondiente para que no admita valores nulos.
 
 ```sql
 ALTER TABLE vuelo
    MODIFY fecha DATE NOT NULL;
 ```
 
-### 2.3 Establece el atributo COD de la tabla VUELO como llave externa respecto de RUTA.
+### Establece el atributo COD de la tabla VUELO como llave externa respecto de RUTA.
 
 ```sql
 ALTER TABLE vuelo
@@ -159,7 +159,7 @@ ALTER TABLE vuelo
       REFERENCES ruta(cod);
 ```
 
-### 2.4 Establece el conjunto de atributos formado por COD, MAT y FECHA como llave primaria de la tabla VUELO.
+### Establece el conjunto de atributos formado por COD, MAT y FECHA como llave primaria de la tabla VUELO.
 
 ```sql
 ALTER TABLE vuelo
