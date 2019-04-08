@@ -12,8 +12,6 @@
 
   * [2.1 Añadir atributo **fecha_de_vuelo** a la tabla vuelo.](#Añade-a-la-tabla-VUELO-el-atributo:-FECHA:fecha-de-vuelo)
 
-
-
   * [2.2 Añadir restricción al atributo **fecha** anteriormente introducido](#Añade-el-atributo-FECHA,-anteriormente-introducido,-la-restricción-de-integridad-correspondiente-para-que-no-admita-valores-nulos.)
 
   * [2.3 Establecer el atributo **COD** de la tabla **VUELO** como llave externa respecto de **RUTA**](#Establece-el-atributo-COD-de-la-tabla-VUELO-como-llave-externa-respecto-de-RUTA.)
