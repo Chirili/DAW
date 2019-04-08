@@ -55,7 +55,7 @@
 
   * [5.10 Obtener las parejas de compañías aéreas que vuelan al mismo destino](#Obtener-las-parejas-de-compañías-aéreas-que-vuelan-al-mismo-destino)
 
-* [6. Consultas SELECT(II)](##6.-Consultas-SELECT-II)
+* [6. Consultas SELECT(II)](#Consultas-SELECT-II)
 
   * [6.1 ¿Cuál es la **ocupación media** y la **suma total** de pasajeros de los vuelos del **10-FEB-2018**?](#Cuál-es-la-ocupación-media-y-la-suma-total-de-pasajeros-de-los-vuelos-del-10-FEB-2018)
 
