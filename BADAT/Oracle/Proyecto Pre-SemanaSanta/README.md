@@ -1,6 +1,6 @@
 # Proyecto Pre-Semana Santa
 ## Indice
-* [1. Creación de las tablas:](#Creación-de-las-tablas)
+* [1. Creación de las tablas](#Creación-de-las-tablas)
 
   * [1.1 Creación tabla **RUTA**](#Create-table-RUTA)
 
@@ -105,7 +105,7 @@ CREATE TABLE ruta(
 );
 ALTER TABLE ruta ADD CONSTRAINT ck_compan CHECK(compan IN('IBE','SPA','AIR'));
 ```
-[Volver al Indice](#1.)
+[Volver al Indice](#1.-Creación-de-las-tablas)
 ### Create table avion
 
 ```sql
