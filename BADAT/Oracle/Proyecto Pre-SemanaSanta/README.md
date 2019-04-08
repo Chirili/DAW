@@ -105,7 +105,7 @@ CREATE TABLE ruta(
 );
 ALTER TABLE ruta ADD CONSTRAINT ck_compan CHECK(compan IN('IBE','SPA','AIR'));
 ```
-[Volver al Indice](1.)
+[Volver al Indice](#1.)
 ### Create table avion
 
 ```sql
