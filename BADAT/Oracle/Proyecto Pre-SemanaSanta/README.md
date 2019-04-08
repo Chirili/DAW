@@ -33,7 +33,7 @@
 
   * [4.3 Insert las siguientes tuplas en la tabla **VUELO**:](#Insert-las-siguientes-tuplas-en-la-tabla-VUELO)
 
-* [5. Consultas Select(I)](#Consultas-Select(I))
+* [5. Consultas Select(I)](#Consultas-Select-I)
 
   * [5.1 Mostrar todos los **aviones**](#Muestra-todos-los-aviones)
 
@@ -41,17 +41,17 @@
 
   * [5.3 Mostrar el origen y el destino de todas las rutas que sean distintas](#Muestra-el-origen-y-el-destino-de-todas-las-rutas-que-sean-distintas)
 
-  * [5.4 Mostrar la ocupación y la fecha de todos los vuelos. La información debe aparecer tal y como aparece abajo, ordenada por la fecha en orden inverso y con cuatro dígitos para el año.](#Muestra-la-ocupación-y-la-fecha-de-todos-los-vuelos.-La-información-debe-aparecer-tal-y-como-aparece-abajo,-ordenada-por-la-fecha-en-orden-inverso-y-con-cuatro-dígitos-para-el-año.)
+  * [5.4 Mostrar la ocupación y la fecha de todos los vuelos. La información debe aparecer tal y como aparece abajo, ordenada por la fecha en orden inverso y con cuatro dígitos para el año.](#Muestra-la-ocupación-y-la-fecha-de-todos-los-vuelos)
 
-  * [5.5 Mostrar cómo quedarían las plazas de los aviones si fuera posible incrementarlas en un **10%**.](#Muestra-cómo-quedarían-las-plazas-de-los-aviones-si-fuera-posible-incrementarlas-en-un-10%.)
+  * [5.5 Mostrar cómo quedarían las plazas de los aviones si fuera posible incrementarlas en un **10%**.](#Muestra-cómo-quedarían-las-plazas-de-los-aviones-si-fuera-posible-incrementarlas-en-un-10%)
 
-  * [5.6 ¿Qué compañías tiene como destino **BARCELONA**?](#¿Qué-compañías-tiene-como-destino-BARCELONA?)
+  * [5.6 ¿Qué compañías tiene como destino **BARCELONA**?](#Qué-compañías-tiene-como-destino-BARCELONA)
 
-  * [5.7 ¿Qué aviones no tienen todavía **fecha de revisión**?](#¿Qué-aviones-no-tienen-todavía-fecha-de-revisión?)
+  * [5.7 ¿Qué aviones no tienen todavía **fecha de revisión**?](#Qué-aviones-no-tienen-todavía-fecha-de-revisión)
 
-  * [5.8 Obtener un listado de los vuelos donde figure el origen y el destino de cada uno.](#Obtener-un-listado-de-los-vuelos-donde-figure-el-origen-y-el-destino-de-cada-uno.)
+  * [5.8 Obtener un listado de los vuelos donde figure el origen y el destino de cada uno.](#Obtener-un-listado-de-los-vuelos-donde-figure-el-origen-y-el-destino-de-cada-uno)
 
-  * [5.9 Mostrar el **origen, destino, compañía y ocupación** de aquellos vuelos que van llenos.](#Muestra-el-origen,-destino,-compañía-y-ocupación-de-aquellos-vuelos-que-van-llenos.)
+  * [5.9 Mostrar el **origen, destino, compañía y ocupación** de aquellos vuelos que van llenos.](#Muestra-el-origen-destino-compañía-y-ocupación-de-aquellos-vuelos-que-van-llenos)
 
   * [5.10 Obtener las parejas de compañías aéreas que vuelan al mismo destino](#Obtener-las-parejas-de-compañías-aéreas-que-vuelan-al-mismo-destino)
 
@@ -314,7 +314,7 @@ INSERT INTO vuelo
 
 ![image](https://user-images.githubusercontent.com/23047899/55558503-82e7a300-56ec-11e9-9ba1-e2f0096d4fe9.png)
 
-## Consultas Select(I)
+## Consultas Select I
 
 ### Muestra todos los aviones
 
@@ -347,7 +347,7 @@ SELECT DISTINCT destino, origen
 
 ![image](https://user-images.githubusercontent.com/23047899/55561878-35226900-56f3-11e9-9069-ae9799af1883.png)
 
-### Muestra la ocupación y la fecha de todos los vuelos. La información debe aparecer tal y como aparece abajo, ordenada por la fecha en orden inverso y con cuatro dígitos para el año.
+### Muestra la ocupación y la fecha de todos los vuelos
 
 ```sql
 SELECT ocupacion,to_char(fecha,'DD-MONTH-YYYY') AS FECHA2
@@ -358,7 +358,7 @@ SELECT ocupacion,to_char(fecha,'DD-MONTH-YYYY') AS FECHA2
 
 ![image](https://user-images.githubusercontent.com/23047899/55563883-04443300-56f7-11e9-9de3-d0cf84aa6474.png)
 
-### Muestra cómo quedarían las plazas de los aviones si fuera posible incrementarlas en un 10%.
+### Muestra cómo quedarían las plazas de los aviones si fuera posible incrementarlas en un 10%
 
 ```sql
 SELECT modelo, plazas, plazas+plazas* 0.1
@@ -370,7 +370,7 @@ SELECT modelo, plazas, plazas+plazas* 0.1
 
 ![image](https://user-images.githubusercontent.com/23047899/55563932-1cb44d80-56f7-11e9-87d1-b5274e0d38f2.png)
 
-### ¿Qué compañías tiene como destino BARCELONA?
+### Qué compañías tiene como destino BARCELONA
 
 ```sql
 SELECT compan
@@ -382,7 +382,7 @@ SELECT compan
 
 ![image](https://user-images.githubusercontent.com/23047899/55564194-9f3d0d00-56f7-11e9-851d-336652da8af1.png)
 
-### ¿Qué aviones no tienen todavía fecha de revisión?
+### Qué aviones no tienen todavía fecha de revisión
 
 ```sql
 SELECT *
@@ -394,7 +394,7 @@ SELECT *
 
 ![image](https://user-images.githubusercontent.com/23047899/55564405-183c6480-56f8-11e9-8571-70d93a64207c.png)
 
-### Obtener un listado de los vuelos donde figure el origen y el destino de cada uno.
+### Obtener un listado de los vuelos donde figure el origen y el destino de cada uno
 
 ```sql
 SELECT v.cod,mat,ocupacion,r.destino,fecha,r.origen
@@ -406,7 +406,7 @@ SELECT v.cod,mat,ocupacion,r.destino,fecha,r.origen
 
 ![image](https://user-images.githubusercontent.com/23047899/55566934-f5607f00-56fc-11e9-94db-bd97594f2307.png)
 
-### Muestra el origen, destino, compañía y ocupación de aquellos vuelos que van llenos.
+### Muestra el origen destino compañía y ocupación de aquellos vuelos que van llenos
 
 ```sql
 SELECT origen,destino,compan,ocupacion,plazas
