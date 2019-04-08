@@ -16,7 +16,7 @@
     1.9 [Filas duplicada](#1.9)
 
 
-#### 1. La sentencia SELECT
+#### 1.La sentencia SELECT
 
 #### Concepto {#1.1}
 La sentencia **SELECT** recupera información de la base de datos.
