@@ -55,9 +55,9 @@
 
   * [5.10 Obtener las parejas de compañías aéreas que vuelan al mismo destino](#Obtener-las-parejas-de-compañías-aéreas-que-vuelan-al-mismo-destino)
 
-* [6. Consultas SELECT(II)](##6.-Consultas-SELECT(II))
+* [6. Consultas SELECT(II)](##6.-Consultas-SELECT-II)
 
-  * [6.1 ¿Cuál es la **ocupación media** y la **suma total** de pasajeros de los vuelos del **10-FEB-2018**?](#¿Cuál-es-la-ocupación-media-y-la-suma-total-de-pasajeros-de-los-vuelos-del-10-FEB-2018?)
+  * [6.1 ¿Cuál es la **ocupación media** y la **suma total** de pasajeros de los vuelos del **10-FEB-2018**?](#Cuál-es-la-ocupación-media-y-la-suma-total-de-pasajeros-de-los-vuelos-del-10-FEB-2018)
 
   * [6.2 Mostrar el número de compañias que vuelan a cada destino](#Muestra-el-número-de-compañias-que-vuelan-a-cada-destino)
 
@@ -65,11 +65,11 @@
 
   * [6.4 Mostrar los aviones que tienen **3 o más horas de vuelo**](#Muestra-los-aviones-que-tienen-3-o-más-horas-de-vuelo)
 
-  * [6.5 ¿Cuáles son las matrículas de los aviones que vuelan en las mismas fechas que el avión de matrícula **AAA**?](#¿Cuáles-son-las-matrículas-de-los-aviones-que-vuelan-en-las-mismas-fechas-que-el-avión-de-matrícula-AAA?)
-  * [6.6 ¿Qué devuelve la siguiente consulta? Razona tu respuesta.](#¿Qué-devuelve-la-siguiente-consulta?-Razona-tu-respuesta.)
+  * [6.5 ¿Cuáles son las matrículas de los aviones que vuelan en las mismas fechas que el avión de matrícula **AAA**?](#Cuáles-son-las-matrículas-de-los-aviones-que-vuelan-en-las-mismas-fechas-que-el-avión-de-matrícula-AAA)
+  * [6.6 ¿Qué devuelve la siguiente consulta? Razona tu respuesta.](#Qué-devuelve-la-siguiente-consulta-Razona-tu-respuesta)
 
-  * [6.7 ¿Qué pareja de aviones tienen el mismo número de horas de vuelo? (Nivel: Alto)](#¿Qué-pareja-de-aviones-tienen-el-mismo-número-de-horas-de-vuelo? (Nivel: Alto))
-  * [6.8 Insertar en la tabla RUTA la tupla **(555,'IBE','MADRID','BARCELONA',1)** ¿Qué pareja de compañias tienen en común algún destino?](#Inserta-en-la-tabla-RUTA-la-tupla-(555,'IBE','MADRID','BARCELONA',1)-¿Qué-pareja-de-compañias-tienen-en-común-algún-destino?)
+  * [6.7 ¿Qué pareja de aviones tienen el mismo número de horas de vuelo? (Nivel: Alto)](#Qué-pareja-de-aviones-tienen-el-mismo-número-de-horas-de-vuelo)
+  * [6.8 Insertar en la tabla RUTA la tupla **(555,'IBE','MADRID','BARCELONA',1)** ¿Qué pareja de compañias tienen en común algún destino?](#Inserta-en-la-tabla-RUTA-la-tupla-555-IBE-MADRID-BARCELONA-1)
   * [6.9 Muestra aquellas compañías que hacen todas las rutas](#Muestra-aquellas-compañías-que-hacen-todas-las-rutas)
 * [7. Subconsultas DDL](#Subconsultas-DDL)
 
@@ -435,9 +435,9 @@ SELECT compan,destino
 
 ![image](https://user-images.githubusercontent.com/23047899/55581427-1a64ea00-571d-11e9-88fa-c3faf1fbd090.png)
 
-## Consultas SELECT(II)
+## Consultas SELECT II
 
-### ¿Cuál es la ocupación media y la suma total de pasajeros de los vuelos del 10-FEB-2018?
+### Cuál es la ocupación media y la suma total de pasajeros de los vuelos del 10 FEB 2018
 
 ```sql
 SELECT AVG(ocupacion) AS ocupacion_media,
@@ -485,7 +485,7 @@ SELECT MAX(modelo),SUM(num_horas)
 
 ![image](https://user-images.githubusercontent.com/23047899/55593907-e51cc400-573d-11e9-8b63-7fe854649d69.png)
 
-### ¿Cuáles son las matrículas de los aviones que vuelan en las mismas fechas que el avión de matrícula AAA?
+### Cuáles son las matrículas de los aviones que vuelan en las mismas fechas que el avión de matrícula AAA
 ```sql
 SELECT v.mat,v.fecha
   FROM vuelo v
@@ -496,7 +496,7 @@ SELECT v.mat,v.fecha
             ORDER BY mat ASC;
 ```
 
-### ¿Qué devuelve la siguiente consulta? Razona tu respuesta.
+### Qué devuelve la siguiente consulta Razona tu respuesta
 
 - Consulta:
 
@@ -515,7 +515,7 @@ SELECT modelo
   >Esta consulta devuelve el modelo del avion   cuando la suma de las horas de dicho avion sea  menor o igual que 3
 
 
-### ¿Qué pareja de aviones tienen el mismo número de horas de vuelo? (Nivel: Alto)
+### Qué pareja de aviones tienen el mismo número de horas de vuelo
 
 - Consulta SQL:
 
@@ -539,7 +539,7 @@ SELECT m1.modelo, m2.modelo
 
 ![image](https://user-images.githubusercontent.com/23047899/55671223-068cc580-588e-11e9-9be2-c451fff4866f.png)
 
-### Inserta en la tabla RUTA la tupla (555,'IBE','MADRID','BARCELONA',1) ¿Qué pareja de compañias tienen en común algún destino?
+### Inserta en la tabla RUTA la tupla 555 IBE MADRID BARCELONA 1
 
 - Insert a la tabla ruta:
 ```sql
