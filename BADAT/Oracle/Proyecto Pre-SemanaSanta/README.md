@@ -12,11 +12,11 @@
 
   * [2.1 Añade a la tabla VUELO el atributo FECHA fecha de vuelo](#Añade-a-la-tabla-VUELO-el-atributo-FECHA-fecha-de-vuelo)
 
-  * [2.2 Añadir restricción al atributo **fecha** anteriormente introducido](#Añade-el-atributo-FECHA,-anteriormente-introducido,-la-restricción-de-integridad-correspondiente-para-que-no-admita-valores-nulos)
+  * [2.2 Añadir restricción al atributo **fecha** anteriormente introducido](#Añade-el-atributo-FECHA-anteriormente-introducido-la-restricción-de-integridad-correspondiente-para-que-no-admita-valores-nulos)
 
   * [2.3 Establecer el atributo **COD** de la tabla **VUELO** como llave externa respecto de **RUTA**](#Establece-el-atributo-COD-de-la-tabla-VUELO-como-llave-externa-respecto-de-RUTA)
 
-  * [2.4 Establece el conjunto de atributos formado por **COD, MAT y FECHA** como llave primaria de la tabla **VUELO**.](#Establece-el-conjunto-de-atributos-formado-por-COD,-MAT-y-FECHA-como-llave-primaria-de-la-tabla-VUELO)
+  * [2.4 Establece el conjunto de atributos formado por **COD, MAT y FECHA** como llave primaria de la tabla **VUELO**](#Establece-el-conjunto-de-atributos-formado-por-COD-MAT-y-FECHA-como-llave-primaria-de-la-tabla-VUELO)
 
 * [3. Inserción de datos con **INSERT**](#Inserción-de-datos)
   
@@ -141,7 +141,7 @@ ALTER TABLE vuelo ADD CONSTRAINT ck_ocupacion CHECK(ocupacion <= 300);
     ADD fecha DATE;
   ```
 
-### Añade el atributo FECHA, anteriormente introducido, la restricción de integridad correspondiente para que no admita valores nulos
+### Añade el atributo FECHA anteriormente introducido la restricción de integridad correspondiente para que no admita valores nulos
 
 ```sql
 ALTER TABLE vuelo
@@ -157,7 +157,7 @@ ALTER TABLE vuelo
       REFERENCES ruta(cod);
 ```
 
-### Establece el conjunto de atributos formado por COD, MAT y FECHA como llave primaria de la tabla VUELO
+### Establece el conjunto de atributos formado por COD MAT y FECHA como llave primaria de la tabla VUELO
 
 ```sql
 ALTER TABLE vuelo
