@@ -1,6 +1,6 @@
 # Proyecto Pre-Semana Santa
 ## Indice
-* [1. Creación de las tablas:](#1. Creación de las tablas)
+* [1. Creación de las tablas:](#-Creación-de-las-tablas)
 
   * [1.1 Creación tabla **RUTA**](#1.1-Create-table-RUTA)
 
