@@ -307,7 +307,7 @@ ALTER TABLE vuelo
 
 ```sql
 UPDATE vuelo 
-  SET fecha = '09-MAY-2018'
+  SET fecha = fecha+1
     WHERE fecha = '10-MAY-2018';
 ```
 [Volver al Índice](#Indice)
