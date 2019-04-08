@@ -16,9 +16,9 @@
 
   * [2.2 Añadir restricción al atributo **fecha** anteriormente introducido](#Añade-el-atributo-FECHA-anteriormente-introducido-la-restricción-de-integridad-correspondiente-para-que-no-admita-valores-nulos)
 
-  * [2.3 Establecer el atributo **COD** de la tabla **VUELO** como llave externa respecto de **RUTA**](#Establece-el-atributo-COD-de-la-tabla-VUELO-como-llave-externa-respecto-de-RUTA.)
+  * [2.3 Establecer el atributo **COD** de la tabla **VUELO** como llave externa respecto de **RUTA**](#Establece-el-atributo-COD-de-la-tabla-VUELO-como-llave-externa-respecto-de-RUTA)
 
-  * [2.4 Establece el conjunto de atributos formado por **COD, MAT y FECHA** como llave primaria de la tabla **VUELO**.](#Establece-el-conjunto-de-atributos-formado-por-COD,-MAT-y-FECHA-como-llave-primaria-de-la-tabla-VUELO.)
+  * [2.4 Establece el conjunto de atributos formado por **COD, MAT y FECHA** como llave primaria de la tabla **VUELO**.](#Establece-el-conjunto-de-atributos-formado-por-COD-MAT-y-FECHA-como-llave-primaria-de-la-tabla-VUELO)
 
 * [3. Inserción de datos con **INSERT**](#Inserción-de-datos)
   
