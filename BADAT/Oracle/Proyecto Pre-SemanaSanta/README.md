@@ -27,9 +27,9 @@
   * [3.3 Inserción tala **VUELO**](#Inserción-tala-VUELO)
 * [4. Update a las tablas con **UPDATE**](#Update-a-las-tablas)
 
-  * [4.1 Retrasa un día la fecha de los vuelos del **'10-MAY-2018'**](#Retrasa-un-día-la-fecha-de-los-vuelos-del-'10-MAY-2018')
+  * [4.1 Retrasa un día la fecha de los vuelos del **'10-MAY-2018'**](#Retrasa-un-día-la-fecha-de-los-vuelos-del-10-MAY-2018)
 
-  * [4.2 Aumenta en 1 hora la duración de las rutas con destino **'PARIS'**](#Aumenta-en-1-hora-la-duración-de-las-rutas-con-destino-'PARIS')
+  * [4.2 Aumenta en 1 hora la duración de las rutas con destino **'PARIS'**](#Aumenta-en-1-hora-la-duración-de-las-rutas-con-destino-PARIS)
 
   * [4.3 Insert las siguientes tuplas en la tabla **VUELO**:](#Insert-las-siguientes-tuplas-en-la-tabla-VUELO)
 
@@ -284,7 +284,7 @@ ALTER TABLE vuelo
 
   >Realiza de una en una las siguientes modificaciones sobre la base de datos. Estudiar los posibles errores que aparezcan, comentando su significado (los comentarios se insertan utilizando /* ...comentario...*/). 
 
-### Retrasa un día la fecha de los vuelos del '10-MAY-2018'
+### Retrasa un día la fecha de los vuelos del 10-MAY-2018
 
 ```sql
 UPDATE vuelo 
@@ -292,7 +292,7 @@ UPDATE vuelo
     WHERE fecha = '10-MAY-2018';
 ```
 
-### Aumenta en 1 hora la duración de las rutas con destino 'PARIS'
+### Aumenta en 1 hora la duración de las rutas con destino PARIS
 
 ```sql
 UPDATE ruta 
