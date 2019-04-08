@@ -68,7 +68,7 @@
   * [6.4 Mostrar los aviones que tienen **3 o más horas de vuelo**](#Muestra-los-aviones-que-tienen-3-o-más-horas-de-vuelo)
 
   * [6.5 ¿Cuáles son las matrículas de los aviones que vuelan en las mismas fechas que el avión de matrícula **AAA**?](#Cuáles-son-las-matrículas-de-los-aviones-que-vuelan-en-las-mismas-fechas-que-el-avión-de-matrícula-AAA)
-  * [6.6 ¿Qué devuelve la siguiente consulta? Razona tu respuesta.](#Qué-devuelve-la-siguiente-consulta?-Razona-tu-respuesta)
+  * [6.6 ¿Qué devuelve la siguiente consulta? Razona tu respuesta.](#Qué-devuelve-la-siguiente-consulta-Razona-tu-respuesta)
 
   * [6.7 ¿Qué pareja de aviones tienen el mismo número de horas de vuelo? (Nivel: Alto)](#Qué-pareja-de-aviones-tienen-el-mismo-número-de-horas-de-vuelo)
   * [6.8 Insertar en la tabla RUTA la tupla **(555,'IBE','MADRID','BARCELONA',1)** ¿Qué pareja de compañias tienen en común algún destino?](#Inserta-en-la-tabla-RUTA-la-tupla-555-IBE-MADRID-BARCELONA-1-Qué-pareja-de-compañias-tienen-en-común-algún-destino)
