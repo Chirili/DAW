@@ -24,3 +24,4 @@ MINUTES
 }
 
 @enduml
+java -jar plantuml.jar -testdot
