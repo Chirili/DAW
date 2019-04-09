@@ -4,7 +4,7 @@
 
 ### Create table trabajador
 
-```js
+```SQL
 CREATE TABLE trabajador(
 	id_t INT,
     nombre VARCHAR(20),
@@ -16,13 +16,13 @@ CREATE TABLE trabajador(
 
 ### Alter table trabajador
 
-```js
+```SQL
 ALTER TABLE trabajador ADD id_supv INT NULL REFERENCES trabajador;
 ```
 
 ### Create table edificio
 
-```js
+```SQL
 CREATE TABLE edificio (
 	id_e INT,
     dir VARCHAR(15) NOT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE edificio (
 
 ### Create table asignacion
 
-```js
+```SQL
 CREATE TABLE asignacion (
 	id_t INT,
     id_e INT,
@@ -49,7 +49,7 @@ CREATE TABLE asignacion (
 
 ### Isert into trabajador
 
-```js
+```SQL
 INSERT INTO trabajador(id_t,nombre,tarifa,oficio,id_supv) VALUES
 (1235,'M.FARADAY',12.5,'ELECTRICISTA',1311),
 (1311,'C.COULOMB',15.5,'ELECTRICISTA',1311),
@@ -62,7 +62,7 @@ INSERT INTO trabajador(id_t,nombre,tarifa,oficio,id_supv) VALUES
 
 ### Insert into edificio
 
-```js
+```SQL
 INSERT INTO edificio(id_e,dir,tipo,nivel_calidad,categoria) VALUES
 (111,'1213 ASPEN','OFICINA',4,1),
 (210,'1011 BIRCH','OFICINA',3,1),
@@ -74,7 +74,7 @@ INSERT INTO edificio(id_e,dir,tipo,nivel_calidad,categoria) VALUES
 
 ### Insert into asignacion
 
-```js
+```SQL
 INSERT INTO asignacion(id_t,id_e,fecha_inicio,num_dias) VALUES
 (1235,312,'2001-10-10',5),
 (1235,515,'2001-10-17',22),
@@ -100,99 +100,103 @@ INSERT INTO asignacion(id_t,id_e,fecha_inicio,num_dias) VALUES
 
 - Nombre de los trabajadores cuya tarifa este entre 10 y 12 euros:
 
-```js
+```SQL
 SELECT nombre FROM trabajador WHERE tarifa BETWEEN 10 AND 12;
 ```
 
 - ¿Cuáles son los oficiones de los trabjadores asignados al edificio 435?
 
-```js
+```SQL
 SELECT oficio FROM trabajador WHERE id_t IN(SELECT id_t FROM asignacion WHERE id_e=435);
 ```
 
 - Indicar el nombre del trabajador y el de su supervisor
 
-```js
+```SQL
 SELECT t.nombre,s.nombre FROM trabajador t, trabajador s WHERE t.id_t = s.id_supv;
 ```
 
 - Nombre de los trabjadores asignados a oficinas
 
-```js
+```SQL
 SELECT nombre FROM trabajador WHERE id_t IN(SELECT id_t FROM asignacion);
 ```
 
 - ¿Qué trabajadores reciben una tarifa por hora mayor que la de su supervisor?
 
-```js
+```SQL
 SELECT trabajador.nombre FROM trabajador trabajador WHERE trabajador.id_supv IN (SELECT supervisor.id_supv FROM trabajador supervisor WHERE trabajador.tarifa > supervisor.tarifa) AND trabajador.id_t <> trabajador.id_supv;
 ```
 
 - ¿Cuál es el número total de días que se han dedicado a fontanería en el edificio 312?
 
-```js
+```SQL
 SELECT SUM(num_dias) AS total_dias FROM asignacion WHERE id_t IN(SELECT id_t FROM trabajador WHERE oficio LIKE 'Fontanero') AND id_e = 312;
 ```
 
 - ¿Cuántos tipos de oficios diferentes hay?
 
-```js
+```SQL
 SELECT COUNT(DISTINCT oficio) AS oficio FROM trabajador;
 ```
 
 - Para cada supervisor, ¿cuál es la tarifa por horas más alta que se paga a un trabajador
 que informa a ese supervisor?
 
-```js
+```SQL
 SELECT id_supv,MAX(tarifa) FROM trabajador GROUP BY id_supv;
 ```
 Y si queremos el nombre:
 
-```js
+```SQL
 SELECT nombre,MAX(tarifa) FROM trabajador GROUP BY id_supv;
 ```
 
 - Para cada supervisor que supervise a más de un trabajador, ¿cuál es la tarifa más alta que se paga a un trabajor que informa a ese supervisor?
 
-```js
+```SQL
 SELECT id_supv,MAX(tarifa) FROM trabajador GROUP BY id_supv HAVING COUNT(id_t) > 1;
 ```
 
 - Para cada tipo de edificio, ¿cuál es el nivel de calidad medio de los edificios con categoría 1? Considérense solo aquellos tipos de edificios que tienen un nivel de calidad máximo no mayor de 3
 
-```js
+```SQL
 SELECT tipo,AVG(nivel_calidad) FROM edificio WHERE categoria=1 AND nivel_calidad < 3;
 ```
 
 - ¿Qué trabajadores reciben una tarifa por hora menor que la del promedi?
 
-```js
+```SQL
 SELECT nombre FROM trabajador WHERE tarifa < (SELECT AVG(tarifa) FROM trabajador);
 ```
 
 - ¿Qué trabajadores reciben una trarifa por hora menor que la del promedio de los trabajadores que tienen su mismo oficio?
 
-```js
-SELECT nombre FROM trabajador WHERE tarifa < (SELECT AVG(tarifa) FROM trabajador) AND oficio IN(SELECT oficio FROM trabajador GROUP BY oficio HAVING COUNT(oficio)>1)
+```SQL
+SELECT nombre FROM trabajador WHERE tarifa < (SELECT AVG(tarifa) FROM trabajador) AND oficio IN(SELECT oficio FROM trabajador GROUP BY oficio HAVING COUNT(oficio)>1);
 
 ```
 
 - ¿Qué trabajadores reciben una trarifa por hora menor que la del promedio de los trabajadores que dependen del mismo supervisor que él?
 
-```js
-SELECT nombre FROM trabajador trabajador WHERE tarifa < (SELECT AVG(tarifa) FROM trabajador) AND oficio IN(SELECT oficio FROM trabajador GROUP BY id_supv HAVING COUNT(oficio)>1)
+```SQL
+SELECT nombre FROM trabajador trabajador WHERE tarifa < (SELECT AVG(tarifa) FROM trabajador) AND oficio IN(SELECT oficio FROM trabajador GROUP BY id_supv HAVING COUNT(oficio)>1);
 ```
 
 - Seleccione el nombre de los electricistas asignados al edificio 435 y la fecha en la que empezaron a trabajar en el.
 
-```js
+```SQL
 SELECT nombre,fecha_inicio FROM asignacion,trabajador WHERE trabajador.id_t=asignacion.id_t AND oficio LIKE 'Electricista' AND id_e = 435
 ```
 
 - ¿Qué supervisores tiene trabajadores que tienen una tarifa por hora por encima de los 12 euros?
 
-```js
-
+```SQL
+SELECT DISTINCT sup.nombre 
+    FROM trabajador AS sup
+        JOIN trabajador AS trab on trab.id_t = sup.id_supv
+            WHERE sup.id_supv = sup.id_t
+                AND trab.tarifa > 12;
 ```
 
 

@@ -1,0 +1,1 @@
+# Relación de ejercicios/Información de MYSQL
