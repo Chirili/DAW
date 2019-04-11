@@ -207,7 +207,7 @@ INSERT INTO ventas VALUES
 
 - Resuelve los siguientes apartados:
     
-    - Obtener todos los campos de todos los clientes de 'MADRID'
+    1. Obtener todos los campos de todos los clientes de 'MADRID'
     ```sql
     SELECT * 
         FROM clientes
@@ -215,7 +215,7 @@ INSERT INTO ventas VALUES
                 LIKE 'MADRID'
     ````
 
-    - Obtener los nombres de todas las marcas de coches ordenadas alfabéticamente
+    2. Obtener los nombres de todas las marcas de coches ordenadas alfabéticamente
 
     ```sql
     SELECT
@@ -224,7 +224,7 @@ INSERT INTO ventas VALUES
                 ORDER BY nombre ASC
     ```
 
-    - Obtener el cifc de todos los concesionarios cuya cantidad en la tabla DISTRIBUCION es mayor que 18
+    3. Obtener el cifc de todos los concesionarios cuya cantidad en la tabla DISTRIBUCION es mayor que 18
 
     ```sql
     SELECT cifc
@@ -232,7 +232,7 @@ INSERT INTO ventas VALUES
             WHERE cantidad > 18;
     ```
 
-    - Obtener el cifc de todos los concesionarios cuya cantidad en la tabla de DISTRIBUCION esté comprendida entre 10 y 18 ambos inclusive
+    4. Obtener el cifc de todos los concesionarios cuya cantidad en la tabla de DISTRIBUCION esté comprendida entre 10 y 18 ambos inclusive
 
     ```sql
     SELECT cifc
@@ -240,7 +240,7 @@ INSERT INTO ventas VALUES
             WHERE cantidad
                 BETWEEN 9 AND 19
     ```
-    - Resolver el problema anterior de otro modo
+    5. Resolver el problema anterior de otro modo
 
     ```sql
     SELECT cifc FROM distribucion
@@ -254,7 +254,7 @@ INSERT INTO ventas VALUES
                                     AND cantidad <> 5)
     ```
 
-    - Obtener el cifc de todos los concesionarios que han adquirido más de 10 coches o menos de 5
+    6. Obtener el cifc de todos los concesionarios que han adquirido más de 10 coches o menos de 5
 
     ```sql
     SELECT cifc
@@ -262,14 +262,14 @@ INSERT INTO ventas VALUES
             WHERE cantidad < 5 OR cantidad > 10
     ```
 
-    - Obtener cuántos modelos de coches hay
+    7. Obtener cuántos modelos de coches hay
 
     ```sql
     SELECT COUNT(modelo) AS cantidad_modelos
         FROM coches
     ```
 
-    - Obtener cuántos coches distribuye cada concesionario.
+    8. Obtener cuántos coches distribuye cada concesionario.
 
     ```sql
     SELECT c.nombre,SUM(d.cantidad)
@@ -278,7 +278,7 @@ INSERT INTO ventas VALUES
                 GROUP BY c.nombre
     ```
 
-    - Obtener los codcoche suministrados por algún concesionario de ‘BARCELONA’.
+    9. Obtener los codcoche suministrados por algún concesionario de ‘BARCELONA’.
 
     ```sql
     SELECT d.codcoche
@@ -289,8 +289,103 @@ INSERT INTO ventas VALUES
                                     LIKE 'BARCELONA')
     ```
 
-    - Obtener el codcoche de los coches que han sido adquiridos por un cliente de ‘MADRID’ a un concesionario de ‘MADRID’
+    10. Obtener el codcoche de los coches que han sido adquiridos por un cliente de ‘MADRID’ a un concesionario de ‘MADRID’
 
     ```sql
-    
+    SELECT v.codcoche
+        FROM ventas v,concesionarios c,clientes cl
+            WHERE v.cifc=c.cifc
+                AND v.dni=cl.dni
+                    AND c.ciudad=cl.ciudad
+                        AND c.ciudad
+                            LIKE 'MADRID'
+    ```
+
+    11.  Obtener los codcoche de los coches comprados en un concesionario de distinta ciudad que el cliente lo compra.
+
+    ```sql
+    SELECT v.codcoche
+        FROM ventas v,concesionarios c,clientes cl
+            WHERE v.cifc=c.cifc
+                AND v.dni=cl.dni
+                    AND c.ciudad<>cl.ciudad
+    ```
+
+    12.  Obtener las parejas de modelos de coches cuyo nombre es el mismo y cuya marca es de ‘MADRID’.
+
+    ```sql
+    SELECT m1.modelo,m2.modelo
+        FROM ventas,clientes c, coches m1
+            JOIN coches m2
+                ON m1.nombre=m2.nombre
+                    WHERE ventas.codcoche=m1.codcoche
+                        AND ventas.dni=c.dni
+                            AND c.ciudad
+                                LIKE 'MADRID'
+                                    AND m1.modelo=m2.modelo
+    ```
+
+    13. Obtener todos los codcoche de los coches cuyo nombre no contiene ninguna ‘A’.
+
+    ```sql
+    SELECT codcoche
+        FROM coches
+            WHERE nombre
+                NOT LIKE '%A%'
+    ```
+
+    14. Obtener la media de la cantidad de coches que tienen todos los concesionarios.
+
+    ```sql
+    SELECT distri.nombre,AVG(suma_cantidad)
+        FROM (
+            SELECT c.nombre
+                AS nombre,SUM(d.cantidad)
+                    AS suma_cantidad FROM
+                        concesionarios c, distribucion d
+                            WHERE d.cifc=c.cifc
+                                GROUP BY nombre
+            ) AS distri
+                GROUP BY distri.nombre
+    ```
+
+    15. Obtener el dni con numeración más baja de todos los clientes que han comprado un coche ‘BLANCO’.
+
+    ```sql
+    SELECT MIN(dni)
+        FROM ventas
+            WHERE color
+                LIKE 'BLANCO'
+    ```
+
+    16. Obtener cifm y nombre de las marcas de coches cuya segunda letra del nombre de la ciudad de origen sea una ‘I’.
+
+    ```sql
+    SELECT cifm,nombre
+        FROM marcas
+            WHERE nombre REGEXP '.I.I*'
+    ```
+
+    17. Obtener el NOMBRE y el APELLIDO de los clientes cuyo dni es menor que el de los clientes que son de ‘BARCELONA’.
+
+    ```sql
+    SELECT cl1.nombre,cl1.dni
+        FROM clientes cl1   
+            JOIN clientes cl2
+                ON cl1.dni<cl2.dni  
+                    WHERE cl1.ciudad<>'BARCELONA'   
+                        GROUP BY cl1.nombre,cl1.dni,cl1.ciudad
+    ```
+
+    18. Obtener el NOMBRE y el APELLIDO de los clientes cuyo nombre empieza por ‘A’ y cuyo dni es mayor que el de ALGUNO de los clientes que son de ‘MADRID’.
+
+    ```sql
+    SELECT cl1.nombre, cl1.apellido
+        FROM clientes cl1
+        JOIN  clientes cl2
+            ON cl2.dni<cl1.dni
+                WHERE cl1.nombre
+                    LIKE 'A%'
+                        AND cl1.ciudad <> 'MADRID'
+                            GROUP BY cl1.nombre
     ```
