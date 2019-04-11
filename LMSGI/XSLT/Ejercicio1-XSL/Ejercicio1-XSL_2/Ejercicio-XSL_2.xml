@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ejercicio>
+    <ejercicio2>
+        <nombre>ejercicio2</nombre>
+        <numero>2</numero>
+    </ejercicio2>
+    <prueba>
+        <numero>3</numero>
+    </prueba>
+</ejercicio>

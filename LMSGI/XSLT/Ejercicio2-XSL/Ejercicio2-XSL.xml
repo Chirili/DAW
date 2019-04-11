@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Ejercicio2-XSL.xslt" type="text/xsl"?>
+<clasificacion>
+    <equipo>
+        <nombre>Madrid</nombre>
+        <goles_favor>20</goles_favor>
+        <goles_contra>10</goles_contra>
+    </equipo>
+        <equipo>
+        <nombre>Barcelona</nombre>
+        <goles_favor>30</goles_favor>
+        <goles_contra>29</goles_contra>
+    </equipo>
+        <equipo>
+        <nombre>Sevilla</nombre>
+        <goles_favor>15</goles_favor>
+        <goles_contra>20</goles_contra>
+    </equipo>
+</clasificacion>
