@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding='ISO-8859-1'?>
+<?xml-stylesheet href="tienda0.xsl" type="text/xsl"?>
+<tienda>
+   <nombre>La tiendecilla  </nombre>
+   <telefono>953 87 12 23  </telefono>
+</tienda>
