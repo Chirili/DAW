@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding='ISO-8859-1'?>
+
+<?xml-stylesheet href="Ejercicio2-XSLT" type="text/xsl"?>
+
+<clasificacion>
+    <equipo>
+     <nombre>Real madrid</nombre>
+     <puntuacion>40  </puntuacion>
+     <goles_favor>30  </goles_favor>
+     <goles_contra>25 </goles_contra>
+    </equipo>
+    <equipo>
+     <nombre>Barcelona</nombre>
+     <puntuacion>38  </puntuacion>
+     <goles_favor>27  </goles_favor>
+     <goles_contra>23 </goles_contra>
+    </equipo>
+    <equipo>
+     <nombre>Sevilla</nombre>
+     <puntuacion>39  </puntuacion>
+     <goles_favor>28  </goles_favor>
+     <goles_contra>20 </goles_contra>
+    </equipo>
+</clasificacion>

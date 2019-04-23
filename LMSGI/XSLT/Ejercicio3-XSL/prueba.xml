@@ -1,0 +1,46 @@
+<tienda>
+    <nombre>La tiendecilla </nombre>
+    <telefono>953 87 12 23 </telefono>
+    <url etiqueta="URL: ">http://www.tiendecilla.es </url>
+    <url prefijo="mailto:" etiqueta="Informacion: ">info@tiendecilla.es </url>
+    <producto>
+        <codigo>92 </codigo>
+        <cantidad>10 </cantidad>
+        <articulo>Radio-Casette </articulo>
+        <seccion>Electrónica </seccion>
+        <marca>Sony </marca>
+        <modelo>MKJ-800 </modelo>
+        <caracteristicas>
+            <linea>Auto-reverse </linea>
+            <linea>Dolby-sorround </linea>
+            <linea>Doble pletina </linea>
+            <linea>Ecualizador de cinco bandas </linea>
+            <linea>Garantía de 9 meses. </linea>
+        </caracteristicas>
+        <precio moneda="euro">90 </precio>
+    </producto>
+    <producto>
+        <codigo>103 </codigo>
+        <cantidad>50 </cantidad>
+        <articulo>Reloj Cocina </articulo>
+        <seccion>Electrónica </seccion>
+        <marca>Kenwood </marca>
+        <modelo>Blue ONE </modelo>
+        <caracteristicas>
+            <linea>Varios diseños </linea>
+        </caracteristicas>
+        <opciones nombre="color" tipo="unica">
+            <opcion valor="rojo" />
+            <opcion valor="azul" />
+            <opcion valor="blanco" />
+        </opciones>
+        <opciones nombre="forma" tipo="unica">
+            <opcion valor="cuadrado" />
+            <opcion valor="triangular" />
+            <opcion valor="redondo" />
+            <linea>Garantía de 6 meses. </linea>
+        </opciones>
+        <precio moneda="euro">12 </precio>
+    </producto>
+    <!-- Más cosas por aquí... -->
+</tienda>
