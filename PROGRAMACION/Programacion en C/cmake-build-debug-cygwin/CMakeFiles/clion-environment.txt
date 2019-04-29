@@ -1,0 +1,4 @@
+ToolSet: 3.0.6 (local)@C:\cygwin64
+Options: 
+
+Options:-DCMAKE_MAKE_PROGRAM=C:/Program Files/CMake/cmake-3.10.0-rc2-win64-x64/bin/cmake.exe

@@ -19,20 +19,21 @@
 </xsl:template>
 
 
+<xsl:template match='equipo'>
+  <tr><xsl:apply-templates /></tr>
+</xsl:template>
+
 <xsl:template match='nombre'>
   <td><b><xsl:apply-templates /></b></td>
 </xsl:template>
 
-
-
-
-<xsl:template match='equipo'>
-  <td><xsl:value-of select="@goles_favor"/>
-  </td>
-  <td><xsl:value-of select="@goles_favor"/></td>
+<xsl:template match='puntuacion'>
+<td><xsl:apply-templates /></td>
 </xsl:template>
 
-<xsl:template match='goles_contra'>
-  <td><xsl:apply-templates /></td>
+<xsl:template match='goles'>
+<td><xsl:value-of select='@en_contra' /></td>
+<td><xsl:value-of select='@a_favor' /></td>
 </xsl:template>
+
 </xsl:stylesheet>

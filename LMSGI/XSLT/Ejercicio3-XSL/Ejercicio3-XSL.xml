@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding='ISO-8859-1'?>
 
-<?xml-stylesheet href="Ejercicio2-XSLT" type="text/xsl"?>
+<?xml-stylesheet href="Ejercicio3-XSLT" type="text/xsl"?>
 
 <clasificacion>
-    <equipo puntuacion="40" goles_favor="30">
+    <equipo>
      <nombre>Real madrid</nombre>
-     <goles_contra>25 </goles_contra>
+     <puntuacion>40</puntuacion>
+     <goles en_contra="25" a_favor="30"></goles>
     </equipo>
-    <equipo puntuacion="38" goles_favor="27">
+    <equipo>
      <nombre>Barcelona</nombre>
-     <goles_contra>23 </goles_contra>
+     <puntuacion>38</puntuacion>
+     <goles en_contra="23" a_favor="27"></goles>
     </equipo>
-    <equipo puntuacion="39" goles_favor="28">
+    <equipo>
      <nombre>Sevilla</nombre>
-     <goles_contra>20 </goles_contra>
+     <puntuacion>39</puntuacion>
+     <goles en_contra="20" a_favor="28"></goles>
     </equipo>
-    <equipo puntuacion="29" goles_favor="18">
+    <equipo>
      <nombre>Betis</nombre>
-     <goles_contra>25 </goles_contra>
+     <puntuacion>29</puntuacion>
+     <goles en_contra="25" a_favor="18"></goles>
     </equipo>
-    <equipo puntuacion="20" goles_favor="10">
+    <equipo>
      <nombre>Malaga</nombre>
-     <goles_contra>23 </goles_contra>
+     <puntuacion>20</puntuacion>
+     <goles en_contra="23" a_favor="10"></goles>
     </equipo>
 </clasificacion>

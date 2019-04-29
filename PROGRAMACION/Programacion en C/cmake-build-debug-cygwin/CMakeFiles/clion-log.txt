@@ -1,0 +1,10 @@
+"C:\Program Files\CMake\cmake-3.10.0-rc2-win64-x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/CMake/cmake-3.10.0-rc2-win64-x64/bin/cmake.exe" -G "CodeBlocks - Unix Makefiles" "/cygdrive/c/Users/Andres/workspace/DAW/PROGRAMACION/Programacion en C"
+CMake Error: The source directory "/cygdrive/c/Users/Andres/workspace/DAW/PROGRAMACION/Programacion en C" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+
+CMake Error:
+  ------------------------------------------------------------------------------------
+  Selected CMake might be incompatible with the Cygwin environment.
+  In order to run on Cygwin, CMake needs to be specially compiled.
+  Please select either CMake bundled with CLion or CMake from the Cygwin installation.
+  ------------------------------------------------------------------------------------

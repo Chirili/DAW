@@ -1,0 +1,1 @@
+char path[9]="> path.txt";

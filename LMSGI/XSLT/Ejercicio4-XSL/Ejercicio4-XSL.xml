@@ -4,21 +4,28 @@
 
 <clasificacion>
     <equipo>
-     <nombre>Real madrid</nombre>
-     <puntuacion>40  </puntuacion>
-     <goles_favor>30  </goles_favor>
-     <goles_contra>25 </goles_contra>
-    </equipo>
-    <equipo>
      <nombre>Barcelona</nombre>
-     <puntuacion>38  </puntuacion>
-     <goles_favor>27  </goles_favor>
-     <goles_contra>23 </goles_contra>
+     <puntuacion>38</puntuacion>
+     <goles en_contra="23" a_favor="27"></goles>
     </equipo>
     <equipo>
      <nombre>Sevilla</nombre>
-     <puntuacion>39  </puntuacion>
-     <goles_favor>28  </goles_favor>
-     <goles_contra>20 </goles_contra>
+     <puntuacion>39</puntuacion>
+     <goles en_contra="20" a_favor="28"></goles>
+    </equipo>
+    <equipo>
+     <nombre>Betis</nombre>
+     <puntuacion>29</puntuacion>
+     <goles en_contra="25" a_favor="18"></goles>
+    </equipo>
+    <equipo>
+     <nombre>Real madrid</nombre>
+     <puntuacion>40</puntuacion>
+     <goles en_contra="25" a_favor="30"></goles>
+    </equipo>
+    <equipo>
+     <nombre>Malaga</nombre>
+     <puntuacion>20</puntuacion>
+     <goles en_contra="23" a_favor="10"></goles>
     </equipo>
 </clasificacion>
