@@ -2,30 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="703a2970-ab3e-44fd-a2e1-6b2839d8a644" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Ej7/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ej7/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ej8/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ej8/src/Ej8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ej9/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ej9/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ej9/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ej9/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ej9/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ej9/Ej9.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ej9/src/Ej9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Prueba.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Form/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Form/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Practica3.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica3.2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/Ejercicios/Perro_Gato_Bucle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROGRAMACION/Ejercicios/Perro_Gato_Bucle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/Entornos/Ej1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROGRAMACION/Entornos/Ej1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/Entornos/Ej3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROGRAMACION/Entornos/Ej3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PROGRAMACION/Entornos/Ej4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROGRAMACION/Entornos/Ej4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica32/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica32/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/doc/img/logo_crop-mid-blue-background.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/doc/img/saxonica_logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/doc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/doc/saxondocs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/CERN.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/HRLDCPR.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/JAMESCLARK.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/THAI.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/UNICODE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/petOutput.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/prueba.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/prueba.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/saxon9-test.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/saxon9-xqj.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/saxon9he.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/prueba_final.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/prueba_final2.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,7 +85,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,11 +102,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552586748244" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -139,7 +137,8 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25642964" />
+      <window_info id="simpleUML" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2602118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -156,6 +155,8 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="right" id="PlantUML" />
+      <window_info anchor="right" id="UML design tool window" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -181,5 +182,55 @@
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="simpleUML.UMLToolWindowPlugin">
+    <General>
+      <option name="birdViewUpdateDelay" value="2000" />
+      <option name="defaultFileLocation" value="file://$PROJECT_DIR$/.." />
+    </General>
+    <Classdiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="defaultFieldsExpanded" value="false" />
+      <option name="defaultContructorsExpanded" value="false" />
+      <option name="defaultMethodsExpanded" value="false" />
+      <option name="showParameters" value="true" />
+      <option name="showTooltip" value="true" />
+      <option name="showReturnValues" value="true" />
+      <option name="longModifier" value="true" />
+      <option name="implementsBehaviour" value="1" />
+      <option name="extendsBehaviour" value="1" />
+      <option name="compartmentBehaviour" value="1" />
+      <option name="interfaceBackgroundColor" value="-6494306" />
+      <option name="abstractClassBackgroundColor" value="-1580132" />
+      <option name="classBackgroundColor" value="-6508057" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="quickSourceLinkColor" value="-16776961" />
+      <option name="quickDiagramLinkColor" value="-8454144" />
+      <option name="drawDecorations" value="false" />
+      <option name="hideFieldList" value="" />
+      <option name="showFieldList" value="" />
+      <option name="hideConstructorList" value="" />
+      <option name="showConstructorList" value="" />
+      <option name="hideMethodList" value="" />
+      <option name="showMethodList" value="" />
+      <option name="minimumFigureSize" value="0,0" />
+    </Classdiagram>
+    <Dependencydiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="0" />
+    </Dependencydiagram>
+    <Packagediagram>
+      <option name="diagramTitleFont" value="SansSerif,0,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="packageBackgroundColor" value="-4144960" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="2" />
+    </Packagediagram>
   </component>
 </project>

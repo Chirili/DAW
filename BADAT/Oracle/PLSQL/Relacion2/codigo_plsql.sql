@@ -1,0 +1,11 @@
+DECLARE
+Num1 NUMBER(8,2) := 0
+Num2 NUMBER(8,2) NOT NULL
+Num3 NUMBER(8,2) NOT NULL;
+Cantidad INTEGER(3);
+Precio, Descuento NUMBER(6) ;
+Num4 Num1%ROWTYPE;
+Dto CONSTANT INTEGER;
+BEGIN
+. . .
+END;
