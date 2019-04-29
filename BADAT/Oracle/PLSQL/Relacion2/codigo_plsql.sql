@@ -6,6 +6,7 @@ Cantidad INTEGER(3);
 Precio, Descuento NUMBER(6) ;
 Num4 Num1%ROWTYPE;
 Dto CONSTANT INTEGER;
+
 BEGIN
-. . .
+
 END;

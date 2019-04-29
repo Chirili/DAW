@@ -1,4 +1,4 @@
-# Relacion de ejercicio de PL/SQL
+# Relacion 1 de ejercicio de PL/SQL
 
 1. Construye un bloque PL/SQL que escriba el texto ‘Hola’
 
