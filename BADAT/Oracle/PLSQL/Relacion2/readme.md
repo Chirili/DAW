@@ -45,3 +45,52 @@ END;
 2. Escribe un bloque PL/SQL que realice la misma  función del ejemplo 4 de la relación complementaria pero usando un bucle ITERAR.
 
 3. 
+
+5. Escribe un procedimiento que reciba dos números y visualice su suma.
+
+```sql
+SET SERVEROUTPUT ON;
+CREATE OR REPLACE PROCEDURE SUMA_NUMEROS(
+    NUM1 NUMBER,
+    NUM2 NUMBER
+)
+AS
+    SUMA NUMBER(6);
+BEGIN
+    SUMA := NUM1+NUM2;
+    DBMS_OUTPUT.PUT_LINE('LA SUMA ES: ' || SUMA);
+END SUMA_NUMEROS;
+```
+
+6. Codifica un procedimiento que reciba una cadena y la visualice al revés.
+
+```sql
+CREATE OR REPLACE PROCEDURE REVES(
+    CADENA VARCHAR2
+)
+AS
+    CADENA_REVES VARCHAR2(50); 
+BEGIN 
+    FOR i IN REVERSE 1..LENGTH(CADENA) LOOP
+        CADENA_REVES := CADENA_REVES || SUBSTR(CADENA,i,1);
+    END LOOP;
+    DBMS_OUTPUT.PUT_LINE(CADENA_REVES);
+END REVES;
+```
+
+7. Reescribe el código de los dos ejercicios anteriores para convertirlos en funciones que retomen los valores que mostraban los procedimientos.
+
+- Cadena al revés:
+
+```sql
+DECLARE 
+    CADENA VARCHAR2(50);
+    CADENA_REVES VARCHAR2(50);
+BEGIN 
+    CADENA:='&VALORCADENA';
+    FOR i IN REVERSE 1..LENGTH(CADENA) LOOP
+        CADENA_REVES := CADENA_REVES || SUBSTR(CADENA,i,1);
+    END LOOP;
+    DBMS_OUTPUT.PUT_LINE(CADENA_REVES);
+END;
+```
