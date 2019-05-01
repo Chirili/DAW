@@ -49,20 +49,6 @@ END;
 
 3. 
 
-<<<<<<< HEAD
-4. Indica cuáles de las siguientes llamadas son correctas y cuáles incorrectas. En el caso de que sean incorrectas, escribe la llamada correcta usando la notación posicional, siempre que sea posible:
-
-crear_depart; 
-crear_depart (50) ;
-crear_depart (‘COMPRAS’) ;
-crear-depart (50,’ COMPRAS’ ) ;
-crear_depart (‘COMPRAS’, 50) ;
-crear-depart (‘COMPRAS’,’VALENCIA’ ) ;
-crear-depart (50,’COMPRAS’,’VALENCIA’ ) ;
-crear-depart ( ‘COMPRAS’ , 50, ‘VALENCIA’ ) ;
-crear_depart (‘VALENCIA’,’COMPRAS’) ;
-crear_depart (‘VALENCIA’, 50);
-=======
 5. Escribe un procedimiento que reciba dos números y visualice su suma.
 
 ```sql
@@ -111,4 +97,76 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE(CADENA_REVES);
 END;
 ```
->>>>>>> 99f032a0d7d8bb876767616cc960a8bb9b090ecd
+
+8. Escribir una función que reciba una fecha y devuelva el año, en número, correspondiente a esa fecha.
+
+```SQL
+CREATE OR REPLACE FUNCTION ANIO	(DATA DATE)
+RETURN NUMBER
+AS
+	ANIO NUMBER(4);
+BEGIN
+	ANIO := TO_NUMBER(TO_CHAR(data, 'YYYY'));
+	RETURN ANIO;
+END ANIO;
+```
+
+9. Escribe un bloque PL/SQL que haga uso de la función anterior
+
+```SQL
+DECLARE
+ 	n NUMBER(4);
+BEGIN
+ 	n := ANIO(SYSDATE);
+ 	DBMS_OUTPUT.PUT_LINE('ANY : '|| n);
+END;
+```
+
+10. Codifica un procedimiento que reciba una lista de hasta cinco números y visualice su suma.
+
+```SQL
+CREATE OR REPLACE PROCEDURE SUMA_5 (
+	NUM1 NUMBER := 100,
+	NUM2 NUMBER := 40,
+	NUM3 NUMBER := 30,
+	NUM4 NUMBER := 20,
+	NUM5 NUMBER := 15)
+AS
+BEGIN
+	DBMS_OUTPUT.PUT_LINE(NUM1 + NUM2 + NUM3 + NUM4 + NUM5);
+    
+END SUMA_5;
+```
+
+11. Escribe una función que devuelva solamente caracteres alfabéticos sustituyendo cualquier
+otro carácter por blancos a partir de una cadena que se pasará en la llamada.
+
+```SQL
+CREATE OR REPLACE FUNCTION C_ALFABETO (CADENA VARCHAR2) RETURN VARCHAR2
+AS
+	NUEVA_CADENA VARCHAR2(30);
+	CARACTER CHARACTER;
+BEGIN
+	FOR i IN 1..LENGTH(CADENA) LOOP
+	  	CARACTER:=SUBSTR(CADENA,i,1);
+ 	  	IF (ASCII(CARACTER) NOT BETWEEN 65 AND 90) AND (ASCII(CARACTER) NOT BETWEEN 97 AND 122) THEN
+		  	CARACTER :=' ';
+  		END IF;
+	     NUEVA_CADENA := NUEVA_CADENA || CARACTER;	
+	END LOOP;
+	RETURN NUEVA_CADENA;
+END C_ALFABETO;
+```
+
+12. Codifica un procedimiento que permita borrar un empleado cuyo número se pasará en la llamada
+
+    >NO REALIZADO
+
+
+13. Visualiza todos los procedimientos y funciones del usuario almacenados en la base de datos y situación (valid o invalid)
+
+```SQL
+SELECT OBJECT_NAME, OBJECT_TYPE, STATUS 
+    FROM USER_OBJECTS 
+        WHERE OBJECT_TYPE IN ('PROCEDURE','FUNCTION');
+```
