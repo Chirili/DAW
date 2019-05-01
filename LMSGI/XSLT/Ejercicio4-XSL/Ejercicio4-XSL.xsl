@@ -2,6 +2,7 @@
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+<<<<<<< HEAD:LMSGI/XSLT/Ejercicio4-XSL/Ejercicio4-XSL.xslt
 <xsl:variable name="primeros">
 <xsl:for-each select="//puntuacion">
 <xsl:choose>
@@ -14,6 +15,8 @@
 </xsl:choose>
 </xsl:for-each>
 </xsl:variable>
+=======
+>>>>>>> 99f032a0d7d8bb876767616cc960a8bb9b090ecd:LMSGI/XSLT/Ejercicio4-XSL/Ejercicio4-XSL.xsl
 
 
 <xsl:template match='/'>
@@ -48,7 +51,13 @@
 
 
 <xsl:template match='puntuacion'>
+<<<<<<< HEAD:LMSGI/XSLT/Ejercicio4-XSL/Ejercicio4-XSL.xslt
 <xsl:copy-of select="$primeros" />
+=======
+<xsl:choose>
+  <xsl:when test="position()=1"><td bgcolor="#F32454"><xsl:value-of select="puntuacion" /></td></xsl:when>
+</xsl:choose>
+>>>>>>> 99f032a0d7d8bb876767616cc960a8bb9b090ecd:LMSGI/XSLT/Ejercicio4-XSL/Ejercicio4-XSL.xsl
 </xsl:template>
 
 <xsl:template match='goles'>

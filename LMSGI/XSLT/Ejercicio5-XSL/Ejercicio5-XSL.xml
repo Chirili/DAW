@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding='ISO-8859-1'?>
+<encuesta>
+    <cuestion tipo='multiple'>
+        <pregunta>¿Eres un listillo?</pregunta>
+        <respuesta>Si</respuesta>
+        <respuesta>No</respuesta>
+        <respuesta>Lo que diga mi senora</respuesta>
+        <respuesta>La gallina</respuesta>
+    </cuestion>
+    <cuestion tipo='multiple' varios='1'>
+        <pregunta>¿Porque contestas encuestas?</pregunta>
+        <respuesta>Porque si</respuesta>
+        <respuesta>Porque me lo ha dicho mi senora</respuesta>
+        <respuesta>A ti te lo voy a decir</respuesta>
+        <respuesta>La gallina</respuesta>
+    </cuestion>
+</encuesta>
