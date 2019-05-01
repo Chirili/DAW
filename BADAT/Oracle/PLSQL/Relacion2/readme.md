@@ -25,6 +25,8 @@ END;
     - En el %ROWTYPE tiene que existir la tabla de antes del % para que pueda almacenar una fila de esa tabla. Tambien se puede poner %TYPE para que la variable tome el valor de otra variable anteriormente declarada
 
     - A DTO se le tiene que asignar un valor ya que se ha declarado como constante es decir que tiene que tener un valor preasginado el cual no se puede modificar.
+    
+    - Integer no lleva ningun tamaño
 
 - Codigo corregido:
 ```sql
@@ -44,4 +46,18 @@ END;
 
 2. Escribe un bloque PL/SQL que realice la misma  función del ejemplo 4 de la relación complementaria pero usando un bucle ITERAR.
 
+
 3. 
+
+4. Indica cuáles de las siguientes llamadas son correctas y cuáles incorrectas. En el caso de que sean incorrectas, escribe la llamada correcta usando la notación posicional, siempre que sea posible:
+
+crear_depart; 
+crear_depart (50) ;
+crear_depart (‘COMPRAS’) ;
+crear-depart (50,’ COMPRAS’ ) ;
+crear_depart (‘COMPRAS’, 50) ;
+crear-depart (‘COMPRAS’,’VALENCIA’ ) ;
+crear-depart (50,’COMPRAS’,’VALENCIA’ ) ;
+crear-depart ( ‘COMPRAS’ , 50, ‘VALENCIA’ ) ;
+crear_depart (‘VALENCIA’,’COMPRAS’) ;
+crear_depart (‘VALENCIA’, 50);
