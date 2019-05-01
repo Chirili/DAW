@@ -52,29 +52,29 @@ END;
 > No realizado
 
 4. Indica cuáles de las siguientes llamadas son correctas y cuáles incorrectas.
+    - Elementos sin corregir:
+        1. crear_depart; -> Incorrecta ya que hay que     pasarle el numero del departamento
+        2. crear_depart (50) ; -> Correcta
+        3. crear_depart (‘COMPRAS’) ; -> Incorrecta     ya  que tambien hay que pasarle el numero de       departamento
+        4. crear-depart (50,’ COMPRAS’ ) ; ->   Correcta 
+        5. crear_depart (‘COMPRAS’, 50) ; -> El orden   no    es correcto primero tiene que ser el    numero de     departamento
+        6. crear-depart (‘COMPRAS’,’VALENCIA’ ) ; ->    Hay    que poner el numero de departamento
+        7. crear-depart (50,’COMPRAS’,’VALENCIA’ ) ;    ->     Correcta
+        8. crear-depart ( ‘COMPRAS’ , 50, ‘VALENCIA’ )   ;    -> El orden es incorrecto primero   numero   departamento, despues nombre del     departamento y   ultimo localidad.
+        9. crear_depart (‘VALENCIA’,’COMPRAS’) ; ->       Necesita el numero de departamento
+        10. crear_depart (‘VALENCIA’, 50); -> Lo    argumento
+    - Corrección:
 
-    1. crear_depart; -> Incorrecta ya que hay que   pasarle el numero del departamento
-    2. crear_depart (50) ; -> Correcta
-    3. crear_depart (‘COMPRAS’) ; -> Incorrecta ya  que tambien hay que pasarle el numero de     departamento
-    4. crear-depart (50,’ COMPRAS’ ) ; -> Correcta 
-    5. crear_depart (‘COMPRAS’, 50) ; -> El orden no    es correcto primero tiene que ser el numero de     departamento
-    6. crear-depart (‘COMPRAS’,’VALENCIA’ ) ; -> Hay    que poner el numero de departamento
-    7. crear-depart (50,’COMPRAS’,’VALENCIA’ ) ; ->     Correcta
-    8. crear-depart ( ‘COMPRAS’ , 50, ‘VALENCIA’ ) ;    -> El orden es incorrecto primero numero   departamento, despues nombre del departamento y   ultimo localidad.
-    9. crear_depart (‘VALENCIA’,’COMPRAS’) ; ->     Necesita el numero de departamento
-    10. crear_depart (‘VALENCIA’, 50); -> Lo argumento
-- Corrección:
-
-    1. crear_depart(50,NULL,NULL);
-    2. crear_depart (50) ;
-    3. crear_depart (50,‘COMPRAS’,NULL) ;
-    4. crear-depart (50,’ COMPRAS’) ;
-    5. crear_depart (50,‘COMPRAS’) ;
-    6. crear-depart (50,‘COMPRAS’,’VALENCIA’ ) ;
-    7. crear-depart (50,’COMPRAS’,’VALENCIA’ ) ;
-    8. crear-depart ( 50,‘COMPRAS’, ‘VALENCIA’ ) ;
-    9. crear_depart (50,‘VALENCIA’,’COMPRAS’) ;
-    10. crear_depart (50,NULL,‘VALENCIA’);
+        1. crear_depart(50,NULL,NULL);
+        2. crear_depart (50) ;
+        3. crear_depart (50,‘COMPRAS’,NULL) ;
+        4. crear-depart (50,’ COMPRAS’) ;
+        5. crear_depart (50,‘COMPRAS’) ;
+        6. crear-depart (50,‘COMPRAS’,’VALENCIA’ ) ;
+        7. crear-depart (50,’COMPRAS’,’VALENCIA’ ) ;
+        8. crear-depart ( 50,‘COMPRAS’, ‘VALENCIA’ ) ;
+        9. crear_depart (50,‘VALENCIA’,’COMPRAS’) ;
+        10. crear_depart (50,NULL,‘VALENCIA’);
 
 5. Escribe un procedimiento que reciba dos números y visualice su suma.
 
