@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Practica4.1">
+  <ClassDiagramComponents>
+    <Class name="Proyecto" package="" visibility="public" xPosition="270.0" yPosition="162.0">
+      <Fields>
+        <Field name="denominacion" type="String" visibility="private"/>
+        <Field name="descripcion" type="String" visibility="private"/>
+        <Field name="anioInicio" type="Integer" visibility="private"/>
+        <Field name="anioFin" type="Integer" visibility="private"/>
+        <Field name="subvencion" type="Real" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Grupo" package="" visibility="public" xPosition="270.0" yPosition="18.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Movimiento" package="" visibility="public" xPosition="585.0" yPosition="195.0">
+      <Fields>
+        <Field name="importe" type="Real" visibility="private"/>
+        <Field name="fecha" type="Date" visibility="private"/>
+        <Field name="concepto" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Profesor" package="" visibility="public" xPosition="427.0" yPosition="489.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ProfesorDoctor" package="" visibility="public" xPosition="255.0" yPosition="418.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Tesis" package="" visibility="public" xPosition="-67.0" yPosition="418.0">
+      <Fields>
+        <Field name="titulo" type="String" visibility="private"/>
+        <Field name="fecha" type="Date" visibility="private"/>
+        <Field name="calificacion" type="Calificacion" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="realiza" source="Grupo" target="Proyecto" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="esResponsableDe" source="ProfesorDoctor" target="Proyecto" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="autor" source="ProfesorDoctor" target="Tesis" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="{ordered}" source="Proyecto" target="Movimiento" type="Composition" sourceCardinality="0..1" targetCardinality="0..*" collectionType="List"/>
+    <HasRelation name="director" source="ProfesorDoctor" target="Tesis" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="participaEn" source="Profesor" target="Proyecto" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

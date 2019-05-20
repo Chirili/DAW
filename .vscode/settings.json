@@ -1,0 +1,34 @@
+{
+    "plsql-language.connections": [
+        {
+            "ID": 2,
+            "active": false,
+            "database": "localhost:1521/xe",
+            "hidden": false,
+            "password": "admin2018",
+            "privilege": "SYSDBA",
+            "username": "admin",
+            "name": "admin@localhost:1521/xe"
+        },
+        {
+            "ID": 3,
+            "active": false,
+            "database": "locahost:1521/xe",
+            "hidden": false,
+            "password": "plsql",
+            "username": "plsql",
+            "name": "plsql@locahost:1521/xe"
+        },
+        {
+            "ID": 4,
+            "active": true,
+            "database": "localhost:1521/xe",
+            "hidden": false,
+            "password": "plsql",
+            "privilege": "SYSDBA",
+            "username": "plsql",
+            "name": "plsql@localhost:1521/xe"
+        }
+    ],
+    "plsql-language.connection.activeInfos": "plsql/plsql@localhost:1521/xe"
+}
