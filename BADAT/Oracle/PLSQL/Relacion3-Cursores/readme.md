@@ -77,3 +77,80 @@ todos los empleados ordenador por fecha de alta.
         > Primero antes de nada se declara el cursor con nombre apellidos y despues de eso en el begin se crea un bucle while que hace que mientras que se encuentren tuplas en el cursor va ir imprimiendolas por pantalla.
         
 4. (EXCEPCIONES) Recibe un número de empleado y una cantidad que se incrementará al salario del empleado correspondiente. Utilizaremos dos excepciones, una definida por el usuario “salario_nulo” y la otra predefinida NO_DATA_FOUND.
+```sql
+CREATE OR REPLACE PROCEDURE subir_salario(
+    num_empleado INTEGER,
+    incremento REAL)
+IS   
+    salario_actual REAL;
+    salario_nulo EXCEPTION;
+BEGIN
+    SELECT salario INTO salario_actual FROM emple WHERE emp_no=num_empleado;
+    IF salario_actual IS NULL THEN
+        RAISE salario_nulo;
+    ELSE
+        UPDATE emple SET salario=salario+Incremento WHERE emp_no=num_empleado;
+    END IF;
+EXCEPTION 
+WHEN NO_DATA_FOUND THEN
+    DMBS_OUTPUT.PUT_LINE (num_empleado||’* Error. Empleado no encontrado’);
+WHEN salario_nulo THEN
+    DMBS_OUTPUT.PUT_LINE (num_empleado||’* Error. Salario nulo’);
+END subir_salario;
+```
+
+> Primero se crea la procedure con las dos variables num_empleado(de tipo INTEGER) y incremento(de tipo REAL), después se declara el salario_actual de tipo REAL también, y la excepción que es el salario_nulo para cuando se introduzca un salario nulo.
+
+> En el begin se empieza metiendo en el salario_actual el salario del empleado que tenga el mismo codigo que el num_empleado que se le pasa a la procedure y si el salario esta vacio entonces se lanza el salario_nulo que es la excepcion sino se actualiza el salario del empleado ese, con el incremento que se le ha pasado a la procedure.
+
+> En las excepciones está la de no_data_found que es para cuando no se encuentran datos del empleado y imprime el error por pantalla y también está la del salario nulo para avisarnos por si hay algun salario_nulo introducido.
+
+5. (OPCIONAL - EXCEPCIONES) Bloque donde se define la excepción err_blancos asociada con un error definido por el programa y la excepción no_hay_espacio asociándola con el error número -1547 de Oracle.
+
+```sql
+DECLARE 
+	cod_err NUMBER(6);
+	vnif VARCHAR2(10);
+	vnom VARCHAR2(15);
+	err_blancos EXCEPTION;
+	no_hay_espacio EXCEPTION;
+	PRAGMA EXCEPTION_INIT(no_hay_espacio, -1547);
+BEGIN
+	SELECT col1, col2 INTO vnif, vnom FROM TEMP2;
+	IF SUBSTR(vnom, 1, 1) <= ‘ ‘ THEN
+		RAISE err_blancos;
+	END;
+	UPDATE clients SET nombre = vnom WHERE nif = vnif;
+EXCEPTION
+	WHEN err_blancos THEN
+		INSERT INTO temp2(col1) VALUES (‘ERR blancos’);
+	WHEN no_hay_espacio THEN
+		INSERT INTO temp2(col1) VALUES (‘ERR tablespace’);
+	WHEN NO_DATA_FOUND THEN
+		INSERT INTO temp2(col1) VALUES (‘ERR no había datos’);
+	WHEN TOO_MANY_ROWS THEN
+		INSERT INTO temp2(col1) VALUES (‘ERR demasiados datos’);
+	WHEN OTHERS THEN
+		cod_err := SQLCODE;
+		INSERT INTO temp2(col1) VALUES (cod_err);
+END;
+```
+
+> Empezando por el declare que se declaran las siguientes variables:
+    >> - **cod_err** de tipo **NUMBER**.
+    >> - **vnif** de tipo **VARCHAR2**.
+    >> - **vnom** de tipo **VARCHAR** también.
+    >> - Tambien se declaran las siguientes **excepciones**:
+    >> - **err_blancos**
+    >> - **no_hay_espacio**
+    >> - **PRAGMA EXCEPTION_INIT (no_hay_espacio, -1547)**(esta instrucción se encarga de darle un nombre a un error que salta en ORACLE en este caso es el 1547 que pasará a llamarse no_hay_espacio).
+
+> El begin comienza metiendo la **col1** y la **col2** en las variables **vnif** y **vnom** de la tabla TEMP2, despues comienza una condición if se encarga de sustraer la posición uno y de longitud uno y compararla con lo que hay entre las comillas simples que es un espacio blanco si la condición se cumple salta la exepción **err_blancos** sino se actualiza la tabla clients, el campo **nombre** con lo que hay en la variable **vnom** cuando el **nif** sea igual al contenido de la variable **vnif**
+
+> Las expceciones son las siguientes:
+    >> - Cuando **err_blancos** se cumpla entonces inserta en la tabla **temp2(en la col1)** los datos **ERR blancos**.
+    >> - Cuando **no_hay_espacio** se cumpla entonces se interta en la tabla **temp2(en la col1)** los datos **ERR tablespace**
+    >> - Cuando no se encuentren datos se insertará en la tabla **temp2(en la col1)** los datos **ERR no había datos**.
+    >> - Cuando hayan demasiadas filas  entonces se insertará en la tabla **temp2(en la col1)** los datos **ERR demasiados datos**.
+    >> - La última excepción es cuando ocurran cualquier otro error entonces se inicializa la variable cod_err con el codigo del error y lo inserta en la tabla **temp2(en la col1)** el contenido de la variable cod_err que será el codigo de error que haya saltado. 
+    
