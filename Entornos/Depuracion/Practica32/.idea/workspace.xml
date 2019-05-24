@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b541553-fddb-41fd-ba1d-cf6f0fb86729" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Form/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Form/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/doc/img/logo_crop-mid-blue-background.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/doc/img/saxonica_logo.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/doc/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/doc/saxondocs.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/CERN.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/HRLDCPR.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/JAMESCLARK.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/THAI.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/UNICODE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/petOutput.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/prueba.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/prueba.xslt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/saxon9-test.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/saxon9-xqj.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/saxon9he.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/prueba_final.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/prueba_final2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/src/VentanaCalculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/src/VentanaCalculadora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Memoria practicas 3 y 4.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Memoria practicas 3 y 4.docx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Principal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+            <state relative-caret-position="620">
+              <caret line="51" column="28" lean-forward="true" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -76,8 +62,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,9 +78,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552076002039" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Practica3.2" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -129,16 +116,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="simpleUML" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25586355" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -150,8 +137,6 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="right" id="PlantUML" />
-      <window_info anchor="right" id="UML design tool window" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -160,13 +145,15 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="PlantUML" order="8" />
+      <window_info anchor="right" id="UML design tool window" order="9" />
     </layout>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Principal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        <state relative-caret-position="620">
+          <caret line="51" column="28" lean-forward="true" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
         </state>
       </provider>
     </entry>

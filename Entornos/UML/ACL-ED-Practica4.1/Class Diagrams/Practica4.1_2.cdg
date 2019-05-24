@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Practica4.1_2">
+  <ClassDiagramComponents>
+    <Class name="Publicacion" package="" visibility="public" xPosition="564.0" yPosition="186.0">
+      <Fields>
+        <Field name="titulo" type="String" visibility="private"/>
+        <Field name="anio" type="Integer" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Revista" package="" visibility="public" xPosition="1106.0" yPosition="221.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Grupo" package="" visibility="public" xPosition="167.0" yPosition="223.0">
+      <Fields>
+        <Field name="numeroRegistro" type="NR" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ProfesorDoctor" package="" visibility="public" xPosition="167.0" yPosition="468.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Profesor" package="" visibility="public" xPosition="591.0" yPosition="468.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="produce" source="Publicacion" target="Grupo" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="grupoprofesordoctor" source="ProfesorDoctor" target="Grupo" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="publicacion" source="Revista" target="Publicacion" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="compuestoPor" source="Profesor" target="Grupo" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="esautorde" source="Profesor" target="Publicacion" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

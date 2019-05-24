@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b40571d8-9217-4741-8c00-9dc1c95c86c5" name="Default Changelist" comment="" />
+    <list default="true" id="b40571d8-9217-4741-8c00-9dc1c95c86c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VentanaCalculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VentanaCalculadora.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/VentanaCalculadora.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="176" column="9" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="17" selection-start-line="17" selection-end-line="176" />
             </state>
           </provider>
         </entry>
@@ -30,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="19" selection-end-column="1" />
+              <caret line="9" selection-start-line="9" selection-end-line="16" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -38,7 +38,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../PROGRAMACION/Entornos/Calculadora_Ejercicio3.3/prueba.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2924">
+            <state relative-caret-position="841">
               <caret line="184" column="5" selection-start-line="21" selection-start-column="4" selection-end-line="184" selection-end-column="5" />
             </state>
           </provider>
@@ -63,6 +63,12 @@
         <option value="JavaFXApplication" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>calcularresultado</find>
+      <find>operacionPulsado</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -96,6 +102,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -113,11 +120,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Depuracion/Practica32" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -164,7 +171,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -197,12 +204,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Class.java" />
     <entry file="file://$PROJECT_DIR$/src/org/francho/java/calculadora/VentanaCalculadora.java" />
-    <entry file="file://$PROJECT_DIR$/src/VentanaCalculadora.java">
+    <entry file="file://$PROJECT_DIR$/../../PROGRAMACION/Entornos/Calculadora_Ejercicio3.3/form.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="176" column="9" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
+        <state>
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -210,23 +216,21 @@
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="19" selection-end-column="1" />
+          <caret line="9" selection-start-line="9" selection-end-line="16" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../PROGRAMACION/Entornos/Calculadora_Ejercicio3.3/prueba.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2924">
+        <state relative-caret-position="841">
           <caret line="184" column="5" selection-start-line="21" selection-start-column="4" selection-end-line="184" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../PROGRAMACION/Entornos/Calculadora_Ejercicio3.3/form.java">
+    <entry file="file://$PROJECT_DIR$/src/VentanaCalculadora.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="17" selection-start-line="17" selection-end-line="176" />
         </state>
       </provider>
     </entry>

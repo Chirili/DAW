@@ -1,11 +1,3 @@
-/**
- * By Francho Joven - http://francho.org/lab/
- *
- * This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License.
- * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/
- * or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
- *
- */
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -23,25 +15,18 @@ import javax.swing.border.EmptyBorder;
 
 
 
+public class Calculadora extends JFrame {
 
-
-public class VentanaCalculadora extends JFrame {
-
-    /**
-     * generado
-     */
-    private static final long serialVersionUID = 1583724102189855698L;
-
-    /** numero tecleado */
+    /** Muestra el numero tecleado tecleado */
     JTextField pantalla;
 
-    /** guarda el resultado de la operacion anterior o el número tecleado */
+    /** Guarda el resultado de la operacion anterio o el numero tecleado*/
     double resultado;
 
-    /** para guardar la operacion a realizar */
+    /** Variable encargada de guardar la operacion */
     String operacion;
 
-    /** Los paneles donde colocaremos los botones */
+    /** Paneles donde se colocaran los botones */
     JPanel panelNumeros, panelOperaciones;
 
     /** Indica si estamos iniciando o no una operación */
@@ -50,7 +35,7 @@ public class VentanaCalculadora extends JFrame {
     /**
      * Constructor. Crea los botones y componentes de la calculadora
      */
-    public VentanaCalculadora() {
+    public Calculadora() {
         super();
         setSize(250, 300);
         setTitle("Calculadora Simple");
@@ -72,13 +57,13 @@ public class VentanaCalculadora extends JFrame {
         panelNumeros = new JPanel();
         panelNumeros.setLayout(new GridLayout(4, 3));
         panelNumeros.setBorder(new EmptyBorder(4, 4, 4, 4));
-
+        //Matríz de botones numéricos
         for (int n = 9; n >= 0; n--) {
             nuevoBotonNumerico("" + n);
         }
 
         nuevoBotonNumerico(".");
-
+        //Se añaden los botones al panel central
         panel.add("Center", panelNumeros);
 
         panelOperaciones = new JPanel();
@@ -98,10 +83,7 @@ public class VentanaCalculadora extends JFrame {
     }
 
     /**
-     * Crea un boton del teclado numérico y enlaza sus eventos con el listener
-     * correspondiente
-     *
-     * @param digito
+     * Crea los botones numericos y enlaza sus eventos con el listener que le corresponde
      *            boton a crear
      */
     private void nuevoBotonNumerico(String digito) {
@@ -120,9 +102,7 @@ public class VentanaCalculadora extends JFrame {
     }
 
     /**
-     * Crea un botón de operacion y lo enlaza con sus eventos.
-     *
-     * @param operacion
+     * Crea los botones de operacion y los enlaza con sus eventos
      */
     private void nuevoBotonOperacion(String operacion) {
         JButton btn = new JButton(operacion);
@@ -133,7 +113,7 @@ public class VentanaCalculadora extends JFrame {
             @Override
             public void mouseReleased(MouseEvent evt) {
                 JButton btn = (JButton) evt.getSource();
-                operacionPulsado(btn.getText());
+                teclaOperacion(btn.getText());
             }
         });
 
@@ -143,8 +123,7 @@ public class VentanaCalculadora extends JFrame {
     /**
      * Gestiona las pulsaciones de teclas numéricas
      *
-     * @param digito
-     *            tecla pulsada
+     *            Tecla pulsada
      */
     private void numeroPulsado(String digito) {
         if (pantalla.getText().equals("0") || nuevaOperacion) {
@@ -157,12 +136,10 @@ public class VentanaCalculadora extends JFrame {
 
     /**
      * Gestiona el gestiona las pulsaciones de teclas de operación
-     *
-     * @param tecla
      */
-    private void operacionPulsado(String tecla) {
+    private void teclaOperacion(String tecla) {
         if (tecla.equals("=")) {
-            calcularResultado();
+            Operar();
         } else if (tecla.equals("CE")) {
             resultado = 0;
             pantalla.setText("");
@@ -170,7 +147,7 @@ public class VentanaCalculadora extends JFrame {
         } else {
             operacion = tecla;
             if ((resultado > 0) && !nuevaOperacion) {
-                calcularResultado();
+                Operar();
             } else {
                 resultado = new Double(pantalla.getText());
             }
@@ -182,7 +159,7 @@ public class VentanaCalculadora extends JFrame {
     /**
      * Calcula el resultado y lo muestra por pantalla
      */
-    private void calcularResultado() {
+    private void Operar() {
         if (operacion.equals("+")) {
             resultado += new Double(pantalla.getText());
         } else if (operacion.equals("-")) {

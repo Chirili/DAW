@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7d6a484-0c41-4d1e-9852-1b68d33a7889" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Form/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Form/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/src/VentanaCalculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/src/VentanaCalculadora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica32/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica32/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Practica32/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica32/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/doc/img/logo_crop-mid-blue-background.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/doc/img/saxonica_logo.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/doc/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/doc/saxondocs.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/CERN.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/HRLDCPR.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/JAMESCLARK.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/THAI.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/notices/UNICODE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/petOutput.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/prueba.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/prueba.xslt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/saxon9-test.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/saxon9-xqj.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/SaxonHE9-9-1-1J/saxon9he.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/prueba_final.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LMSGI/XSLT/prueba_final2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Memoria practicas 3 y 4.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Memoria practicas 3 y 4.docx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +23,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-389">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            <state relative-caret-position="161">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="e#1525#1526#0" expanded="true" />
+                <element signature="e#1570#1571#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,6 +58,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -88,12 +81,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552076609591" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Prueba" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../PROGRAMACION/Entornos/Calculadora_Ejercicio3.3" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -138,19 +131,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="simpleUML" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2595949" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -159,8 +152,6 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="right" id="PlantUML" />
-      <window_info anchor="right" id="UML design tool window" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -169,13 +160,19 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="PlantUML" order="8" />
+      <window_info anchor="right" id="UML design tool window" order="9" />
     </layout>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-389">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="161">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1570#1571#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

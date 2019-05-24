@@ -13,7 +13,9 @@ public class Main {
         String num2;
         String aux;
         char c;
-
+        /*
+        * Declaración de todas las variables que usara esta calculadora
+        * */
         int i;
         int p1;
         int p2;

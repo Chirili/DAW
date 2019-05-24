@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>130</y>
+      <w>150</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Grupo
+--
+numeroRegistro: NR
+nombre: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>650</x>
+      <y>120</y>
+      <w>180</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Publicacion
+--
+titulo: String
+año: integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>El director de un grupo es
+uno de los profesores que
+(componen el grupo)
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>90</x>
+      <y>150</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>90</x>
+      <y>60</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>340</y>
+      <w>160</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>ProfesorDoctor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>200</y>
+      <w>50</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=1..1
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>170</x>
+      <y>210</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>gruposDirigidos
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>200</x>
+      <y>260</y>
+      <w>80</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>dirigidoPor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>220</x>
+      <y>310</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>director</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>140</y>
+      <w>320</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=*
+produce</panel_attributes>
+    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>340</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Profesor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>170</y>
+      <w>230</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1= *
+m2=1..*
+</panel_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0;190.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>430</x>
+      <y>250</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>compuestoPor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>90</x>
+      <y>490</y>
+      <w>130</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>¿Cuantos grupos
+puede dirigir un
+mismo profesor?
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>170</x>
+      <y>390</y>
+      <w>90</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>370</x>
+      <y>460</y>
+      <w>130</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>¿A cuantos grupos
+puede pertenecer
+un profesor?
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>360</y>
+      <w>100</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>580</x>
+      <y>330</y>
+      <w>190</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m2=1..*
+</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>600</x>
+      <y>320</y>
+      <w>80</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>{ordered}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>740</x>
+      <y>200</y>
+      <w>110</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+esAutorDe ^</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+</diagram>

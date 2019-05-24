@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="alumnos2.xsd">
+    <alumno>
+        <nombre>Jose Ramón</nombre>
+        <apellidos>Garcia González</apellidos>
+        <direccion>
+            <domicilio>El Pez, 12</domicilio>
+            <codigo_postal>85620</codigo_postal>
+            <localidad>Suances</localidad>
+            <provincia>Cantabria</provincia>
+        </direccion>
+        <contactar>
+            <telf_casa>985623165</telf_casa>
+            <telf_movil>611233544</telf_movil>
+            <telf_trabajo>965847536</telf_trabajo>
+            <email>pepito@educadistancia.co1n</email>
+        </contactar>
+    </alumno>
+    <alumno>
+        <nombre>Jose Ramón</nombre>
+        <apellidos>Garcia González</apellidos>
+        <direccion>
+            <domicilio>El Pez, 12</domicilio>
+            <codigo_postal>85620</codigo_postal>
+            <localidad>Suances</localidad>
+            <provincia>Cantabria</provincia>
+        </direccion>
+        <contactar>
+            <telf_casa>985623165</telf_casa>
+            <telf_movil>611233544</telf_movil>
+            <telf_trabajo>965847536</telf_trabajo>
+            <email>pepito@educadistancia.com</email>
+        </contactar>
+    </alumno>
+</alumnos>

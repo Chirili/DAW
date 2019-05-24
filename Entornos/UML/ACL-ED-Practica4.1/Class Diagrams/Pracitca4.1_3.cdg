@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Pracitca4.1_3">
+  <ClassDiagramComponents>
+    <Class name="Profesor" package="" visibility="public" xPosition="620.0" yPosition="255.0">
+      <Fields>
+        <Field name="dni" type="DNI" visibility="private"/>
+        <Field name="nombre" type="Nombre" visibility="private"/>
+        <Field name="domicilio" type="Direccion" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Titulacion" package="" visibility="public" xPosition="177.0" yPosition="312.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ProfesorTitular" package="" visibility="public" xPosition="675.0" yPosition="36.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="AsignaturaTitulacion" package="" visibility="public" xPosition="1151.0" yPosition="274.0">
+      <Fields>
+        <Field name="curso" type="Curso" visibility="private"/>
+        <Field name="cuatrimestre" type="Cuatrimestre" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="CargaDocente" package="" visibility="public" xPosition="891.0" yPosition="414.0">
+      <Fields>
+        <Field name="creditos" type="Real" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ProfesorDoctor" package="" visibility="public" xPosition="720.0" yPosition="592.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ProfesorNoDoctor" package="" visibility="public" xPosition="496.0" yPosition="592.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="AsignaturaDoctorado" package="" visibility="public" xPosition="1033.0" yPosition="742.0">
+      <Fields>
+        <Field name="prerrequisitos" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Asignatura" package="" visibility="public" xPosition="1293.0" yPosition="80.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="Creditos" type="Real" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="profesornodoctor" source="ProfesorNoDoctor" target="Profesor" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="coordina" source="AsignaturaTitulacion" target="ProfesorTitular" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="seImparteEn" source="AsignaturaTitulacion" target="Titulacion" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="asignaturatitulacion" source="AsignaturaTitulacion" target="Asignatura" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="impartedocenciaen" source="AsignaturaTitulacion" target="Profesor" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="profesornodoctor" source="ProfesorDoctor" target="Profesor" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="matriculadoEn" source="AsignaturaDoctorado" target="ProfesorNoDoctor" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="asignaturadoctorad" source="AsignaturaDoctorado" target="Asignatura" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="impartedocenciaen" source="AsignaturaDoctorado" target="ProfesorDoctor" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="titularidad" source="ProfesorTitular" target="Profesor" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="tituladoEn" source="Profesor" target="Titulacion" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
